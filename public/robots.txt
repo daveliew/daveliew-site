@@ -11,6 +11,10 @@ Sitemap: https://daveliew.com/sitemap.xml
 # Block admin/api paths
 Disallow: /api/
 
+# Next.js: Block data routes but allow static assets for rendering
+Disallow: /_next/data/
+Allow: /_next/static/
+
 # === AI Crawlers (verified Q1 2026) ===
 
 # OpenAI
