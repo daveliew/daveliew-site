@@ -126,47 +126,91 @@ export default function AboutContent() {
         </Card>
       </motion.section>
 
-      {/* Key Achievements */}
+      {/* Where This Comes From - Triangle of Competencies */}
       <motion.section
         {...sectionAnimation(3)}
         className="mb-12"
       >
-        <SectionHeader title="Key Achievements" />
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-          <Card className="p-6 text-center bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-800">
-            <div className="text-3xl mb-3">💰</div>
-            <h3 className="text-2xl font-bold text-amber-700 dark:text-amber-300 mb-2">S$1M+</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Revenue growth contributed across multiple ventures</p>
-          </Card>
+        <SectionHeader title="Where This Comes From" />
+        <Card className="p-6">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            {/* Triangle Visualization */}
+            <div className="flex-shrink-0 w-full lg:w-1/2">
+              <svg viewBox="0 0 400 350" className="w-full max-w-md mx-auto">
+                {/* Triangle edges */}
+                <polygon
+                  points="200,40 60,300 340,300"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="text-gray-300 dark:text-gray-600"
+                />
 
-          <Card className="p-6 text-center bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-blue-200 dark:border-blue-800">
-            <div className="text-3xl mb-3">🚀</div>
-            <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-300 mb-2">4</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Ventures co-founded and scaled from inception</p>
-          </Card>
+                {/* Vertex labels */}
+                {/* Top - Commercial Lens */}
+                <text x="200" y="25" textAnchor="middle" className="fill-amber-600 dark:fill-amber-400 text-sm font-semibold">
+                  Commercial Lens
+                </text>
 
-          <Card className="p-6 text-center bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20 border-green-200 dark:border-green-800">
-            <div className="text-3xl mb-3">⭐</div>
-            <h3 className="text-2xl font-bold text-green-700 dark:text-green-300 mb-2">Michelin</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Restaurant recognition achieved and maintained</p>
-          </Card>
+                {/* Bottom Left - 0→1 Execution */}
+                <text x="60" y="325" textAnchor="middle" className="fill-blue-600 dark:fill-blue-400 text-sm font-semibold">
+                  0→1 Execution
+                </text>
 
-          <Card className="p-6 text-center bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-purple-200 dark:border-purple-800">
-            <div className="text-3xl mb-3">📈</div>
-            <h3 className="text-2xl font-bold text-purple-700 dark:text-purple-300 mb-2">35%</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Revenue growth in web3 analytics platform</p>
-          </Card>
+                {/* Bottom Right - AI Engineering */}
+                <text x="340" y="325" textAnchor="middle" className="fill-teal-600 dark:fill-teal-400 text-sm font-semibold">
+                  AI Engineering
+                </text>
 
-          <Card className="p-6 text-center bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 border-teal-200 dark:border-teal-800">
-            <div className="text-3xl mb-3">🏆</div>
-            <h3 className="text-2xl font-bold text-teal-700 dark:text-teal-300 mb-2">2nd Place</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              <Link href="/ai-journey/portfolio" className="hover:underline">
-                ElevenLabs Global Hackathon
-              </Link>
-            </p>
-          </Card>
-        </div>
+                {/* Center label */}
+                <text x="200" y="200" textAnchor="middle" className="fill-purple-600 dark:fill-purple-400 text-xs font-medium">
+                  You
+                </text>
+
+                {/* Vertex dots */}
+                <circle cx="200" cy="40" r="6" className="fill-amber-500" />
+                <circle cx="60" cy="300" r="6" className="fill-blue-500" />
+                <circle cx="340" cy="300" r="6" className="fill-teal-500" />
+
+                {/* Center dot */}
+                <circle cx="200" cy="175" r="8" className="fill-purple-500" />
+              </svg>
+            </div>
+
+            {/* Descriptions */}
+            <div className="flex-1 space-y-4">
+              <div className="p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg border-l-4 border-amber-500">
+                <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-1">Commercial Lens</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Unity, Meta, Google ads context—understanding how businesses buy, sell, and operate.
+                </p>
+              </div>
+
+              <div className="p-3 bg-teal-50 dark:bg-teal-900/20 rounded-lg border-l-4 border-teal-500">
+                <h4 className="font-semibold text-teal-700 dark:text-teal-300 mb-1">AI Engineering</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Full-stack + AI implementation—can actually build the thing.
+                </p>
+              </div>
+
+              <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border-l-4 border-blue-500">
+                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-1">0→1 Execution</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  4 ventures, Michelin kitchen—shipped from scratch, repeatedly.
+                </p>
+              </div>
+
+              <div className="mt-6 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
+                <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <strong className="text-purple-700 dark:text-purple-300">The intersection:</strong> Knows what to build, can build it, and has shipped from zero—multiple times.
+                </p>
+                <p className="text-xs text-gray-500 dark:text-gray-500">
+                  Try this framework yourself: What 3 fields define your unique combination?
+                </p>
+              </div>
+            </div>
+          </div>
+        </Card>
       </motion.section>
 
       {/* Growth Philosophy */}
@@ -188,11 +232,13 @@ export default function AboutContent() {
           </p>
           <div className="grid md:grid-cols-2 gap-6 mt-6">
             <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-              <h4 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">Pivots I&apos;ve Made</h4>
+              <h4 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">The Commercial → Technical Arc</h4>
               <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
-                <li>• Business operations → Full-stack development (2021)</li>
-                <li>• AdTech consulting → AI-first engineering (2024)</li>
-                <li>• Solo building → Human-AI collaboration (ongoing)</li>
+                <li>• Commercial analyst → SaaS/tech from business side (Unity, 2013-2014)</li>
+                <li>• Business ops → CS fundamentals alongside (SG Code Campus, 2017-2020)</li>
+                <li>• Career pivot → Full-stack immersion (GA, 2021)</li>
+                <li>• Growth ops → Workflow automations (Nansen, 2021-2022)</li>
+                <li>• AdTech consulting → AI-first engineering (Meta, 2022-2024)</li>
               </ul>
             </div>
             <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
