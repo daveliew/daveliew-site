@@ -129,18 +129,18 @@ const Navbar: React.FC = () => {
             />
           </div>
 
-          {/* Voice Agents - Specialization */}
+          {/* Agents */}
           <Link
-            href="/voice-agents"
+            href="/agents"
             className={`relative transition-colors duration-200 px-1 py-2 flex items-center rounded-sm
               hover:text-[var(--deep-purple)]
               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2
-              ${pathname.startsWith('/voice-agents')
+              ${pathname.startsWith('/agents')
                 ? 'text-[var(--deep-purple)] font-medium after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-0.5 after:bg-[var(--deep-purple)] after:rounded-full after:content-[""]'
                 : 'text-gray-700 dark:text-gray-300'}
             `}
           >
-            <span className="text-sm md:text-base">Voice Agents</span>
+            <span className="text-sm md:text-base">Agents</span>
           </Link>
 
           {/* Teaching */}
@@ -227,16 +227,16 @@ const Navbar: React.FC = () => {
             About
           </Link>
 
-          {/* Voice Agents */}
+          {/* Agents */}
           <Link
-            href="/voice-agents"
+            href="/agents"
             onClick={() => setIsMobileMenuOpen(false)}
-            className={`py-2 ${pathname.startsWith('/voice-agents')
+            className={`py-2 ${pathname.startsWith('/agents')
               ? 'text-[var(--deep-purple)] font-medium'
               : 'text-gray-700 dark:text-gray-300'
             }`}
           >
-            Voice Agents
+            Agents
           </Link>
 
           {/* Teaching */}

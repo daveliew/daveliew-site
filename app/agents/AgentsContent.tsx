@@ -156,8 +156,33 @@ export default function AgentsContent() {
         </Link>
       </motion.section>
 
+      {/* Specializations */}
+      <motion.section {...sectionAnimation(3)} className="mb-12">
+        <h2 className="text-2xl font-semibold mb-6 text-center">Specializations</h2>
+        <Link href="/agents/voice">
+          <Card className="p-6 hover:shadow-lg transition-all border-2 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500">
+            <div className="flex items-start justify-between mb-3">
+              <h3 className="text-lg font-semibold text-[var(--teal)]">
+                Voice Agents
+              </h3>
+              <span className="text-xs px-2 py-1 bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 rounded">
+                ElevenLabs
+              </span>
+            </div>
+            <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+              Voice-first AI experiences. Conversational agents, voice synthesis, and audio generation. 2nd place at ElevenLabs Worldwide Hackathon.
+            </p>
+            <ul className="text-xs text-gray-500 dark:text-gray-500 space-y-1">
+              <li>&bull; Conversational AI &amp; voice synthesis</li>
+              <li>&bull; Sound &amp; music generation</li>
+              <li>&bull; Give your business a voice</li>
+            </ul>
+          </Card>
+        </Link>
+      </motion.section>
+
       {/* Key insight */}
-      <motion.section {...sectionAnimation(3)} className="text-center">
+      <motion.section {...sectionAnimation(4)} className="text-center">
         <Card className="p-6 bg-gradient-to-r from-[var(--gold)]/5 to-transparent">
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
             The question isn&apos;t IF you&apos;re using agents—

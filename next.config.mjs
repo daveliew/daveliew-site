@@ -151,6 +151,13 @@ const nextConfig = {
         permanent: true,
       },
 
+      // Voice Agents moved under /agents
+      {
+        source: '/voice-agents',
+        destination: '/agents/voice',
+        permanent: true,
+      },
+
       // 4-pillar refactor redirects
       {
         source: '/laboratory',
