@@ -131,8 +131,33 @@ export default function AgentsContent() {
         </div>
       </motion.section>
 
+      {/* Risk Assessments */}
+      <motion.section {...sectionAnimation(2)} className="mb-12">
+        <h2 className="text-2xl font-semibold mb-6 text-center">Risk Assessments</h2>
+        <Link href="/agents/moltbot-risk-assessment">
+          <Card className="p-6 hover:shadow-lg transition-all border-2 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500">
+            <div className="flex items-start justify-between mb-3">
+              <h3 className="text-lg font-semibold text-red-600 dark:text-red-400">
+                Moltbot Risk Assessment
+              </h3>
+              <span className="text-xs px-2 py-1 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 rounded">
+                Opinion
+              </span>
+            </div>
+            <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+              Independent security analysis of a popular open-source AI agent framework. Two-tier format: plain language risks with expandable technical detail.
+            </p>
+            <ul className="text-xs text-gray-500 dark:text-gray-500 space-y-1">
+              <li>&bull; Security-by-default analysis</li>
+              <li>&bull; Enterprise readiness evaluation</li>
+              <li>&bull; Phased pilot recommendation</li>
+            </ul>
+          </Card>
+        </Link>
+      </motion.section>
+
       {/* Key insight */}
-      <motion.section {...sectionAnimation(2)} className="text-center">
+      <motion.section {...sectionAnimation(3)} className="text-center">
         <Card className="p-6 bg-gradient-to-r from-[var(--gold)]/5 to-transparent">
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
             The question isn&apos;t IF you&apos;re using agents—
