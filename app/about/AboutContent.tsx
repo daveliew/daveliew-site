@@ -62,9 +62,156 @@ export default function AboutContent() {
         </Card>
       </motion.section>
 
-      {/* Current Focus */}
+      {/* Three Languages */}
       <motion.section
         {...sectionAnimation(1)}
+        className="mb-12"
+      >
+        <SectionHeader title="Three Languages" />
+        <Card className="p-6">
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            When I look back, my career only started making sense when I realized I&apos;d been
+            learning three languages—not spoken ones, but ways of thinking.
+          </p>
+
+          <div className="space-y-6">
+            <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border-l-4 border-amber-500">
+              <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Numbers</h4>
+              <p className="text-gray-600 dark:text-gray-400">
+                Numbers taught me how to think about value—that&apos;s the language of the C-suite.
+                Economics degree, trading, then Unity under the global CFO. I modeled their SaaS
+                pricing pivot—translating unit economics into a story the board could act on.
+                But I got curious: how do these numbers actually drive decisions on the ground?
+              </p>
+            </div>
+
+            <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border-l-4 border-teal-500">
+              <h4 className="font-semibold text-teal-700 dark:text-teal-300 mb-2">Operating</h4>
+              <p className="text-gray-600 dark:text-gray-400">
+                Operating taught me to build the map while walking it—0-1 ownership, no playbook.
+                At SG Code Campus as employee number one, I ran Google Ads, created a B2B vertical
+                selling corporate workshops. Scaled from $100K to $2M. I learned to experiment my
+                way forward—test, measure, learn, decide. But I hit a wall: I couldn&apos;t speak my
+                dev team&apos;s language. I&apos;d describe features, they&apos;d build something different.
+              </p>
+            </div>
+
+            <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border-l-4 border-blue-500">
+              <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Systems</h4>
+              <p className="text-gray-600 dark:text-gray-400">
+                Systems gave me a technical awakening—how things actually work. General Assembly
+                gave me code. At Meta, I joined right as SKAN 4.0 rolled out—two years in the weeds
+                on signal loss, Conversions API, troubleshooting at scale. That&apos;s where I learned
+                why attribution matters. But I understood the system—I was still waiting on engineers
+                to ship. To solve problems today, I needed to build.
+              </p>
+            </div>
+          </div>
+
+          <p className="text-sm text-gray-500 dark:text-gray-500 mt-6">
+            Full history on{' '}
+            <a
+              href="https://linkedin.com/in/daveliew"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              LinkedIn
+            </a>
+          </p>
+        </Card>
+      </motion.section>
+
+      {/* AI as Force Multiplier */}
+      <motion.section
+        {...sectionAnimation(2)}
+        className="mb-12"
+      >
+        <SectionHeader title="The Force Multiplier" />
+        <Card className="p-6">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            {/* Pyramid Visualization */}
+            <div className="flex-shrink-0 w-full lg:w-1/2">
+              <svg viewBox="0 0 400 380" className="w-full max-w-md mx-auto">
+                {/* Base triangle (Numbers, Operating, Systems) */}
+                <polygon
+                  points="200,320 60,320 130,260"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="text-gray-300 dark:text-gray-600"
+                />
+                <polygon
+                  points="200,320 340,320 270,260"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="text-gray-300 dark:text-gray-600"
+                />
+                <polygon
+                  points="130,260 270,260 200,320"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="text-gray-300 dark:text-gray-600"
+                />
+
+                {/* Edges to apex (AI) */}
+                <line x1="60" y1="320" x2="200" y2="80" stroke="currentColor" strokeWidth="2" className="text-pink-400 dark:text-pink-500" />
+                <line x1="340" y1="320" x2="200" y2="80" stroke="currentColor" strokeWidth="2" className="text-teal-400 dark:text-teal-500" />
+                <line x1="200" y1="200" x2="200" y2="80" stroke="currentColor" strokeWidth="2" strokeDasharray="4" className="text-amber-400 dark:text-amber-500" />
+
+                {/* Vertex labels */}
+                <text x="200" y="60" textAnchor="middle" className="fill-purple-600 dark:fill-purple-400 text-sm font-bold">
+                  AI
+                </text>
+                <text x="50" y="345" textAnchor="middle" className="fill-amber-600 dark:fill-amber-400 text-xs font-semibold">
+                  Numbers
+                </text>
+                <text x="200" y="345" textAnchor="middle" className="fill-teal-600 dark:fill-teal-400 text-xs font-semibold">
+                  Operating
+                </text>
+                <text x="350" y="345" textAnchor="middle" className="fill-blue-600 dark:fill-blue-400 text-xs font-semibold">
+                  Systems
+                </text>
+
+                {/* Vertex dots */}
+                <circle cx="200" cy="80" r="8" className="fill-purple-500" />
+                <circle cx="60" cy="320" r="6" className="fill-amber-500" />
+                <circle cx="200" cy="320" r="6" className="fill-teal-500" />
+                <circle cx="340" cy="320" r="6" className="fill-blue-500" />
+              </svg>
+            </div>
+
+            {/* Description */}
+            <div className="flex-1 space-y-4">
+              <p className="text-gray-600 dark:text-gray-400">
+                Then AI arrived—my force multiplier. Suddenly I could create, not just advise.
+                My wife needed a clinic website—I shipped it in weeks, despite not touching React
+                in years. That&apos;s when I knew: the three languages weren&apos;t separate. They were a foundation.
+              </p>
+
+              <p className="text-gray-600 dark:text-gray-400">
+                I started a prototyping business—testing if the market needed AI-assisted solutions.
+                Entered two hackathons in a month—a decade-old ambition I&apos;d never checked off.
+              </p>
+
+              <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
+                <h4 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">The Languages in Motion</h4>
+                <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                  <li>• 2nd place, ElevenLabs Voice AI Hackathon</li>
+                  <li>• Solo build, Gemini API Developer Competition</li>
+                  <li>• 3 active client projects shipping with AI-assisted development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </motion.section>
+
+      {/* Current Focus */}
+      <motion.section
+        {...sectionAnimation(3)}
         className="mb-12"
       >
         <SectionHeader title="Current Focus" />
@@ -88,180 +235,9 @@ export default function AboutContent() {
         </Card>
       </motion.section>
 
-      {/* Background */}
-      <motion.section
-        {...sectionAnimation(2)}
-        className="mb-12"
-      >
-        <SectionHeader title="Background" />
-        <Card className="p-6">
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            10+ years across tech, ventures, and operations. The thread: building systems that work.
-          </p>
-          <div className="grid md:grid-cols-3 gap-4 text-sm">
-            <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-              <span className="font-medium text-blue-700 dark:text-blue-300">Tech</span>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">Meta, Unity, Nansen</p>
-            </div>
-            <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
-              <span className="font-medium text-green-700 dark:text-green-300">Ventures</span>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">4 co-founded, Michelin recognition</p>
-            </div>
-            <div className="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-              <span className="font-medium text-purple-700 dark:text-purple-300">Now</span>
-              <p className="text-gray-600 dark:text-gray-400 mt-1">AI-first engineering</p>
-            </div>
-          </div>
-          <p className="text-sm text-gray-500 dark:text-gray-500 mt-4">
-            Full history on{' '}
-            <a
-              href="https://linkedin.com/in/daveliew"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 hover:underline"
-            >
-              LinkedIn
-            </a>
-          </p>
-        </Card>
-      </motion.section>
-
-      {/* Where This Comes From - Triangle of Competencies */}
-      <motion.section
-        {...sectionAnimation(3)}
-        className="mb-12"
-      >
-        <SectionHeader title="Where This Comes From" />
-        <Card className="p-6">
-          <div className="flex flex-col lg:flex-row gap-8 items-center">
-            {/* Triangle Visualization */}
-            <div className="flex-shrink-0 w-full lg:w-1/2">
-              <svg viewBox="0 0 400 350" className="w-full max-w-md mx-auto">
-                {/* Triangle edges */}
-                <polygon
-                  points="200,40 60,300 340,300"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="text-gray-300 dark:text-gray-600"
-                />
-
-                {/* Vertex labels */}
-                {/* Top - Commercial Lens */}
-                <text x="200" y="25" textAnchor="middle" className="fill-amber-600 dark:fill-amber-400 text-sm font-semibold">
-                  Commercial Lens
-                </text>
-
-                {/* Bottom Left - 0→1 Execution */}
-                <text x="60" y="325" textAnchor="middle" className="fill-blue-600 dark:fill-blue-400 text-sm font-semibold">
-                  0→1 Execution
-                </text>
-
-                {/* Bottom Right - AI Engineering */}
-                <text x="340" y="325" textAnchor="middle" className="fill-teal-600 dark:fill-teal-400 text-sm font-semibold">
-                  AI Engineering
-                </text>
-
-                {/* Center label */}
-                <text x="200" y="200" textAnchor="middle" className="fill-purple-600 dark:fill-purple-400 text-xs font-medium">
-                  You
-                </text>
-
-                {/* Vertex dots */}
-                <circle cx="200" cy="40" r="6" className="fill-amber-500" />
-                <circle cx="60" cy="300" r="6" className="fill-blue-500" />
-                <circle cx="340" cy="300" r="6" className="fill-teal-500" />
-
-                {/* Center dot */}
-                <circle cx="200" cy="175" r="8" className="fill-purple-500" />
-              </svg>
-            </div>
-
-            {/* Descriptions */}
-            <div className="flex-1 space-y-4">
-              <div className="p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg border-l-4 border-amber-500">
-                <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-1">Commercial Lens</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Unity, Meta, Google ads context—understanding how businesses buy, sell, and operate.
-                </p>
-              </div>
-
-              <div className="p-3 bg-teal-50 dark:bg-teal-900/20 rounded-lg border-l-4 border-teal-500">
-                <h4 className="font-semibold text-teal-700 dark:text-teal-300 mb-1">AI Engineering</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Full-stack + AI implementation—can actually build the thing.
-                </p>
-              </div>
-
-              <div className="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border-l-4 border-blue-500">
-                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-1">0→1 Execution</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  4 ventures, Michelin kitchen—shipped from scratch, repeatedly.
-                </p>
-              </div>
-
-              <div className="mt-6 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-                <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
-                  <strong className="text-purple-700 dark:text-purple-300">The intersection:</strong> Knows what to build, can build it, and has shipped from zero—multiple times.
-                </p>
-                <p className="text-xs text-gray-500 dark:text-gray-500">
-                  Try this framework yourself: What 3 fields define your unique combination?
-                </p>
-              </div>
-            </div>
-          </div>
-        </Card>
-      </motion.section>
-
-      {/* Growth Philosophy */}
-      <motion.section
-        {...sectionAnimation(4)}
-        className="mb-12"
-      >
-        <SectionHeader title="Growth Philosophy" />
-        <Card className="p-6">
-          <div className="mb-6">
-            <blockquote className="text-xl italic text-gray-700 dark:text-gray-300 border-l-4 border-purple-500 pl-4 mb-4">
-              &quot;Strong opinions, loosely held.&quot;
-            </blockquote>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">— Paul Saffo, Stanford futurist</p>
-          </div>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            This principle guides how I approach learning and building. I commit fully to current best understanding,
-            but remain ready to update when new evidence arrives. It&apos;s the difference between being confident and being stubborn.
-          </p>
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-              <h4 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">The Commercial → Technical Arc</h4>
-              <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
-                <li>• Commercial analyst → SaaS/tech from business side (Unity, 2013-2014)</li>
-                <li>• Business ops → CS fundamentals alongside (SG Code Campus, 2017-2020)</li>
-                <li>• Career pivot → Full-stack immersion (GA, 2021)</li>
-                <li>• Growth ops → Workflow automations (Nansen, 2021-2022)</li>
-                <li>• AdTech consulting → AI-first engineering (Meta, 2022-2024)</li>
-              </ul>
-            </div>
-            <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-              <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">What Each Taught Me</h4>
-              <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
-                <li>• Every skill compounds into the next chapter</li>
-                <li>• The best time to learn is when you&apos;re scared to start</li>
-                <li>• Being wrong quickly beats being right slowly</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
-            <p className="text-sm text-gray-700 dark:text-gray-300">
-              <strong>For students:</strong> You don&apos;t need to have it all figured out. What you need is the willingness to
-              keep learning, keep building, and keep updating your mental models. That&apos;s the real competitive advantage in an AI world.
-            </p>
-          </div>
-        </Card>
-      </motion.section>
-
       {/* What I Bring */}
       <motion.section
-        {...sectionAnimation(5)}
+        {...sectionAnimation(4)}
         className="mb-12"
       >
         <SectionHeader title="What I Bring" />
@@ -298,16 +274,19 @@ export default function AboutContent() {
         </Card>
       </motion.section>
 
-      {/* Call to Action */}
+      {/* The Landing */}
       <motion.section
-        {...sectionAnimation(6)}
-        className="bg-gradient-to-r from-blue-50 to-teal-50 dark:from-blue-900/20 dark:to-teal-900/20 rounded-lg p-8 text-center"
+        {...sectionAnimation(5)}
+        className="bg-gradient-to-r from-blue-50 to-teal-50 dark:from-blue-900/20 dark:to-teal-900/20 rounded-lg p-8"
       >
-        <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Let&apos;s Collaborate</h2>
-        <p className="mb-6 max-w-2xl mx-auto text-gray-600 dark:text-gray-400">
-          If you&apos;re exploring how AI can augment human capabilities rather than replace them, or if you&apos;re
-          building systems that require thoughtful human-AI collaboration, let&apos;s compare notes.
-        </p>
+        <div className="max-w-2xl mx-auto text-center mb-8">
+          <blockquote className="text-xl md:text-2xl font-medium text-gray-800 dark:text-gray-200 mb-4">
+            &quot;I navigate these worlds—and translate between them.&quot;
+          </blockquote>
+          <p className="text-gray-600 dark:text-gray-400">
+            That&apos;s what I bring.
+          </p>
+        </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
