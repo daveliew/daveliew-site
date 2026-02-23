@@ -1,52 +1,70 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { Card } from '@/components/common';
-import { fadeInUp, sectionAnimation } from '@/utils/animations';
+import React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Card } from "@/components/common";
+import { fadeInUp, sectionAnimation } from "@/utils/animations";
 
 const agentSections = [
   {
-    title: 'Personal Systems',
-    description: 'How I orchestrate AI agents for my own productivity',
-    href: '/agents/personal-systems',
-    colorClass: 'text-[var(--hot-pink)]',
-    borderClass: 'border-[var(--hot-pink)]',
-    bgClass: 'bg-[var(--hot-pink)]',
-    level: 'Level 1',
-    items: ['Claude Code orchestration', 'MCP-powered workflows', 'Trust patterns in practice']
+    title: "Personal Systems",
+    description: "How I orchestrate AI agents for my own productivity",
+    href: "/agents/personal-systems",
+    colorClass: "text-[var(--hot-pink)]",
+    borderClass: "border-[var(--hot-pink)]",
+    bgClass: "bg-[var(--hot-pink)]",
+    level: "Level 1",
+    items: [
+      "Claude Code orchestration",
+      "MCP-powered workflows",
+      "Trust patterns in practice",
+    ],
   },
   {
-    title: 'Learning Path',
-    description: 'For curious professionals ready to build their own agent systems',
-    href: '/agents/learning-path',
-    colorClass: 'text-[var(--teal)]',
-    borderClass: 'border-[var(--teal)]',
-    bgClass: 'bg-[var(--teal)]',
-    level: 'Level 2',
-    items: ['Agent fundamentals', 'Progressive trust building', 'First agent projects']
+    title: "Learning Path",
+    description:
+      "For curious professionals ready to build their own agent systems",
+    href: "/agents/learning-path",
+    colorClass: "text-[var(--teal)]",
+    borderClass: "border-[var(--teal)]",
+    bgClass: "bg-[var(--teal)]",
+    level: "Level 2",
+    items: [
+      "Agent fundamentals",
+      "Progressive trust building",
+      "First agent projects",
+    ],
   },
   {
-    title: 'Patterns Library',
-    description: 'Reusable patterns for multi-agent orchestration',
-    href: '/agents/patterns',
-    colorClass: 'text-[var(--gold)]',
-    borderClass: 'border-[var(--gold)]',
-    bgClass: 'bg-[var(--gold)]',
-    level: 'Reference',
-    items: ['Multi-agent orchestration', 'Human-in-the-loop gates', 'Scope lock systems']
+    title: "Patterns Library",
+    description: "Reusable patterns for multi-agent orchestration",
+    href: "/agents/patterns",
+    colorClass: "text-[var(--gold)]",
+    borderClass: "border-[var(--gold)]",
+    bgClass: "bg-[var(--gold)]",
+    level: "Reference",
+    items: [
+      "Multi-agent orchestration",
+      "Human-in-the-loop gates",
+      "Scope lock systems",
+    ],
   },
   {
-    title: 'Trust Engineering',
-    description: 'The key differentiator: calibrating how much to trust your agents',
-    href: '/agents/trust-engineering',
-    colorClass: 'text-[var(--deep-purple)]',
-    borderClass: 'border-[var(--deep-purple)]',
-    bgClass: 'bg-[var(--deep-purple)]',
-    level: 'Advanced',
-    items: ['Trust levels framework', 'Deliberative refinement', 'When trust fails']
-  }
+    title: "Trust Engineering",
+    description:
+      "The key differentiator: calibrating how much to trust your agents",
+    href: "/agents/trust-engineering",
+    colorClass: "text-[var(--deep-purple)]",
+    borderClass: "border-[var(--deep-purple)]",
+    bgClass: "bg-[var(--deep-purple)]",
+    level: "Advanced",
+    items: [
+      "Trust levels framework",
+      "Deliberative refinement",
+      "When trust fails",
+    ],
+  },
 ];
 
 export default function AgentsContent() {
@@ -54,9 +72,7 @@ export default function AgentsContent() {
     <div className="max-w-4xl mx-auto px-4 py-12">
       {/* Header */}
       <motion.div {...fadeInUp()} className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          AI Agents
-        </h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">AI Agents</h1>
         <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
           Where We&apos;re Going: Building AI Teams for 2026
         </p>
@@ -70,9 +86,10 @@ export default function AgentsContent() {
                 Software now has agency and personality.
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                The paradigm shift isn&apos;t about AI doing more work—it&apos;s about
-                AI becoming a capable colleague who understands context, takes initiative
-                within boundaries, and can be trusted with increasing autonomy.
+                The paradigm shift isn&apos;t about AI doing more work—it&apos;s
+                about AI becoming a capable colleague who understands context,
+                takes initiative within boundaries, and can be trusted with
+                increasing autonomy.
               </p>
             </blockquote>
           </div>
@@ -82,7 +99,9 @@ export default function AgentsContent() {
       {/* Evolution story */}
       <motion.section {...sectionAnimation(0)} className="mb-12">
         <Card className="p-6 bg-gradient-to-r from-[var(--deep-purple)]/5 to-[var(--teal)]/5">
-          <h2 className="text-lg font-semibold mb-4 text-center">The Evolution</h2>
+          <h2 className="text-lg font-semibold mb-4 text-center">
+            The Evolution
+          </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm">
             <div className="text-center">
               <div className="text-gray-500 dark:text-gray-400">2023-2024</div>
@@ -91,12 +110,16 @@ export default function AgentsContent() {
             <div className="text-2xl text-gray-400">→</div>
             <div className="text-center">
               <div className="text-gray-500 dark:text-gray-400">2024-2025</div>
-              <div className="font-medium text-[var(--teal)]">Context Engineering</div>
+              <div className="font-medium text-[var(--teal)]">
+                Context Engineering
+              </div>
             </div>
             <div className="text-2xl text-gray-400">→</div>
             <div className="text-center">
               <div className="text-gray-500 dark:text-gray-400">2025-2026</div>
-              <div className="font-medium text-[var(--deep-purple)]">Agent Orchestration</div>
+              <div className="font-medium text-[var(--deep-purple)]">
+                Agent Orchestration
+              </div>
             </div>
           </div>
         </Card>
@@ -133,19 +156,23 @@ export default function AgentsContent() {
 
       {/* Risk Assessments */}
       <motion.section {...sectionAnimation(2)} className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6 text-center">Risk Assessments</h2>
-        <Link href="/agents/moltbot-risk-assessment">
+        <h2 className="text-2xl font-semibold mb-6 text-center">
+          Risk Assessments
+        </h2>
+        <Link href="/agents/openclaw-risk-assessment">
           <Card className="p-6 hover:shadow-lg transition-all border-2 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500">
             <div className="flex items-start justify-between mb-3">
               <h3 className="text-lg font-semibold text-red-600 dark:text-red-400">
-                Moltbot Risk Assessment
+                OpenClaw Risk Assessment
               </h3>
               <span className="text-xs px-2 py-1 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 rounded">
                 Opinion
               </span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-              Independent security analysis of a popular open-source AI agent framework. Two-tier format: plain language risks with expandable technical detail.
+              Independent security analysis of a popular open-source AI agent
+              framework. Two-tier format: plain language risks with expandable
+              technical detail.
             </p>
             <ul className="text-xs text-gray-500 dark:text-gray-500 space-y-1">
               <li>&bull; Security-by-default analysis</li>
@@ -158,7 +185,9 @@ export default function AgentsContent() {
 
       {/* Specializations */}
       <motion.section {...sectionAnimation(3)} className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6 text-center">Specializations</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-center">
+          Specializations
+        </h2>
         <Link href="/agents/voice">
           <Card className="p-6 hover:shadow-lg transition-all border-2 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500">
             <div className="flex items-start justify-between mb-3">
@@ -170,7 +199,9 @@ export default function AgentsContent() {
               </span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-              Voice-first AI experiences. Conversational agents, voice synthesis, and audio generation. 2nd place at ElevenLabs Worldwide Hackathon.
+              Voice-first AI experiences. Conversational agents, voice
+              synthesis, and audio generation. 2nd place at ElevenLabs Worldwide
+              Hackathon.
             </p>
             <ul className="text-xs text-gray-500 dark:text-gray-500 space-y-1">
               <li>&bull; Conversational AI &amp; voice synthesis</li>
