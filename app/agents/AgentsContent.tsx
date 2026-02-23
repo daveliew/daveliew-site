@@ -176,7 +176,7 @@ export default function AgentsContent() {
             </p>
             <ul className="text-xs text-gray-500 dark:text-gray-500 space-y-1">
               <li>&bull; OpenClaw Risk Assessment (published)</li>
-              <li>&bull; MCP Trust Assessment (coming soon)</li>
+              <li>&bull; MCP Trust Assessment (published)</li>
             </ul>
           </Card>
         </Link>

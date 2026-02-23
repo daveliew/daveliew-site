@@ -83,10 +83,10 @@ const assessments = [
   {
     title: "MCP Trust Assessment",
     layer: "Protocol Layer",
-    href: "#",
+    href: "/agents/mcp-trust-assessment",
     description:
-      "How the universal connector for AI agents handles authentication, tool verification, and trust boundaries. The USB port that has no lock.",
-    status: "Coming soon",
+      "315 vulnerabilities in year one, the first malicious server on npm, and an ecosystem where 53% of servers rely on static credentials. The USB port that has no lock.",
+    status: "Published",
   },
 ];
 
