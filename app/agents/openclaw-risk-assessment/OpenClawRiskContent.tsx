@@ -182,8 +182,48 @@ export default function OpenClawRiskContent() {
         </p>
       </motion.section>
 
-      {/* Core Problem */}
+      {/* What It Does Well */}
       <motion.section {...sectionAnimation(1)} className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">What It Does Well</h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+          This isn&apos;t a takedown piece. OpenClaw has made real investments
+          in security tooling&mdash;including 34 security-focused commits in the
+          rebrand release and published machine-checkable security models. The
+          problem is that none of it is on by default.
+        </p>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Card className="p-4 border-l-4 border-[var(--teal)]">
+            <h3 className="font-semibold text-[var(--teal)] mb-2">
+              Docker Sandboxing
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Optional containerised execution isolates skills from the host
+              system. When enabled, it significantly limits blast radius.
+            </p>
+          </Card>
+          <Card className="p-4 border-l-4 border-[var(--teal)]">
+            <h3 className="font-semibold text-[var(--teal)] mb-2">
+              Permissions System
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Granular permission controls exist for skills, tool access, and
+              user authorisation. Configuration-driven with role-based access.
+            </p>
+          </Card>
+          <Card className="p-4 border-l-4 border-[var(--teal)]">
+            <h3 className="font-semibold text-[var(--teal)] mb-2">
+              Security CLI
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              A dedicated security command-line tool scans configurations for
+              common misconfigurations and suggests hardening steps.
+            </p>
+          </Card>
+        </div>
+      </motion.section>
+
+      {/* Core Problem */}
+      <motion.section {...sectionAnimation(2)} className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">The Core Problem</h2>
         <Card className="p-6 bg-gradient-to-r from-red-500/5 to-red-500/10 border-l-4 border-red-500">
           <p className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">
@@ -209,7 +249,7 @@ export default function OpenClawRiskContent() {
       </motion.section>
 
       {/* Risk Matrix */}
-      <motion.section {...sectionAnimation(2)} className="mb-12">
+      <motion.section {...sectionAnimation(3)} className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">Risk Matrix</h2>
 
         {/* Critical */}
@@ -295,7 +335,7 @@ export default function OpenClawRiskContent() {
       </motion.section>
 
       {/* Supply Chain Warning */}
-      <motion.section {...sectionAnimation(3)} className="mb-12">
+      <motion.section {...sectionAnimation(4)} className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Supply Chain Warning</h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           Think browser extensions, but worse. OpenClaw skills are
@@ -337,46 +377,6 @@ export default function OpenClawRiskContent() {
             </li>
           </ul>
         </TechnicalDetail>
-      </motion.section>
-
-      {/* What It Does Well */}
-      <motion.section {...sectionAnimation(4)} className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">What It Does Well</h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
-          This isn&apos;t a takedown piece. OpenClaw has made real investments
-          in security tooling&mdash;including 34 security-focused commits in the
-          rebrand release and published machine-checkable security models. The
-          problem is that none of it is on by default.
-        </p>
-        <div className="grid md:grid-cols-3 gap-4">
-          <Card className="p-4 border-l-4 border-[var(--teal)]">
-            <h3 className="font-semibold text-[var(--teal)] mb-2">
-              Docker Sandboxing
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Optional containerised execution isolates skills from the host
-              system. When enabled, it significantly limits blast radius.
-            </p>
-          </Card>
-          <Card className="p-4 border-l-4 border-[var(--teal)]">
-            <h3 className="font-semibold text-[var(--teal)] mb-2">
-              Permissions System
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Granular permission controls exist for skills, tool access, and
-              user authorisation. Configuration-driven with role-based access.
-            </p>
-          </Card>
-          <Card className="p-4 border-l-4 border-[var(--teal)]">
-            <h3 className="font-semibold text-[var(--teal)] mb-2">
-              Security CLI
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              A dedicated security command-line tool scans configurations for
-              common misconfigurations and suggests hardening steps.
-            </p>
-          </Card>
-        </div>
       </motion.section>
 
       {/* Pilot Recommendation */}
