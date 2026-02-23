@@ -154,30 +154,29 @@ export default function AgentsContent() {
         </div>
       </motion.section>
 
-      {/* Risk Assessments */}
+      {/* The Adoption Curve */}
       <motion.section {...sectionAnimation(2)} className="mb-12">
         <h2 className="text-2xl font-semibold mb-6 text-center">
-          Risk Assessments
+          The Adoption Curve
         </h2>
-        <Link href="/agents/openclaw-risk-assessment">
+        <Link href="/agents/adoption-curve">
           <Card className="p-6 hover:shadow-lg transition-all border-2 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500">
             <div className="flex items-start justify-between mb-3">
-              <h3 className="text-lg font-semibold text-red-600 dark:text-red-400">
-                OpenClaw Risk Assessment
+              <h3 className="text-lg font-semibold text-[var(--deep-purple)]">
+                The AI Adoption Curve
               </h3>
-              <span className="text-xs px-2 py-1 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 rounded">
-                Opinion
+              <span className="text-xs px-2 py-1 bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 rounded">
+                Series
               </span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-              Independent security analysis of a popular open-source AI agent
-              framework. Two-tier format: plain language risks with expandable
-              technical detail.
+              Every layer of the AI stack is being democratized faster than
+              it&apos;s being secured. Tracking the pattern from ChatGPT to
+              DeepSeek to OpenClaw.
             </p>
             <ul className="text-xs text-gray-500 dark:text-gray-500 space-y-1">
-              <li>&bull; Security-by-default analysis</li>
-              <li>&bull; Enterprise readiness evaluation</li>
-              <li>&bull; Phased pilot recommendation</li>
+              <li>&bull; OpenClaw Risk Assessment (published)</li>
+              <li>&bull; MCP Trust Assessment (coming soon)</li>
             </ul>
           </Card>
         </Link>

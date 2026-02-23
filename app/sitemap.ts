@@ -98,6 +98,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/agents/adoption-curve`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/agents/openclaw-risk-assessment`,
       lastModified: new Date(),
       changeFrequency: "monthly",

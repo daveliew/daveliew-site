@@ -143,15 +143,17 @@ export default function OpenClawRiskContent() {
     <div className="max-w-4xl mx-auto px-4 py-12">
       {/* Header */}
       <motion.div {...fadeInUp()} className="mb-12">
-        <Link
-          href="/agents"
-          className="text-sm text-[var(--teal)] hover:underline mb-4 inline-block"
-        >
-          &larr; Back to Agents
-        </Link>
+        <div className="flex gap-4 mb-4">
+          <Link
+            href="/agents/adoption-curve"
+            className="text-sm text-[var(--teal)] hover:underline"
+          >
+            &larr; Adoption Curve Series
+          </Link>
+        </div>
         <h1 className="text-4xl font-bold mb-2">OpenClaw Risk Assessment</h1>
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-          Opinion piece &middot; Updated February 2026
+          Part of the Adoption Curve series &middot; Updated February 2026
         </p>
         <p className="text-xl text-gray-600 dark:text-gray-400">
           An independent look at security risks in one of the most popular
