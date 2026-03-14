@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import type { Metadata } from 'next';
+import Link from "next/link";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: '404 - Page Not Found | David Liew',
-  description: 'The page you are looking for could not be found.',
+  title: "404 - Page Not Found | David Liew",
+  description: "The page you are looking for could not be found.",
 };
 
 export default function NotFound() {
@@ -38,7 +38,7 @@ export default function NotFound() {
         <p>Looking for something specific?</p>
         <ul className="mt-2 space-y-1">
           <li>
-            <Link href="/philosophy" className="text-blue-600 hover:underline">
+            <Link href="/about" className="text-blue-600 hover:underline">
               The Fitzgerald Principle
             </Link>
           </li>
