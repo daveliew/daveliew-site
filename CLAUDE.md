@@ -16,10 +16,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Core Thesis**: Time compounds faster than money. AI as complementarity (amplifies human capabilities) not replacement.
 
 **Target Audiences**:
+
 - **Beginners**: Philosophy → Context Engineering → LLM fundamentals → Claude Mastery
 - **Technical Professionals**: Fast-track through Technical Leadership → Claude Mastery → Advanced Systems
 
 **Key Differentiators**:
+
 - **Context Engineering**: Architecting informational environments where understanding emerges (not just prompts)
 - **Multi-Role Fluency**: Rapid context switching (Systems Architect / Product Manager / Implementation)
 - **ADHD-Optimized Workflows**: Neurodivergent patterns as AI-collaboration advantage
@@ -30,14 +32,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Career Positioning & Branding
 
-**Current Bio**: "business leader who builds AI solutions—ex-Meta"
+**Current Bio**: "AI Solutions Architect & Voice Agent Specialist—ex-Meta"
 
 **Enterprise Experience** (2022-2026):
+
 - Meta: 2 years Technical Solutions Consultant
 - Google: 4-month Advertising SA contract (enterprise clients)
 - AWS: SG Code Campus partnership (Bedrock reselling + AI tool building)
 
 **Branding Strategy**:
+
 - **Now**: Keep current bio, mention Meta+Google conversationally when relevant
 - **After Google**: If work substantial, consider "ex-Meta, ex-Google"
 - **AWS angle**: Lead with "building AI tools" not "AWS partner"
@@ -66,11 +70,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## SEO Process
 
 **Memory triggers:**
+
 - "Deploy = SEO check runs automatically"
 - "15th of month = Search Console quick review"
 - "New page = add to sitemap.ts + seo-tracker.json"
 
 **Automated Checks** (run via `npm run seo-check`):
+
 - Meta tag coverage (title, description per route)
 - Sitemap completeness (compare /app routes vs sitemap.ts)
 - Schema.org JSON-LD validation
@@ -105,14 +111,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Complete Site Map:**
 
-*Main Routes:*
+_Main Routes:_
+
 - `/` - Home (hero, virtuous cycle, Context Engineering, projects)
 - `/philosophy` - Fitzgerald Principle deep dive (9 sections)
 - `/about` - Professional journey, achievements, value proposition
 - `/laboratory` - Innovation experiments (AI/Sustainability/Robotics convergence)
-- `/contact` - Links to LinkedIn, GitHub, Agentic Brewery
+- `/contact` - Links to LinkedIn, GitHub, Agentic Brewery (voice agent solutions)
 
-*AI Journey Structure:*
+_AI Journey Structure:_
+
 - `/ai-journey` - Hub with tab navigation
 - `/ai-journey/overview` - Learning philosophy & path options
 - `/ai-journey/why-ai` - S-curve framework (Coatue research)
@@ -124,12 +132,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `/ai-journey/techniques/*` - Technical paths:
   - `prompt-engineering`, `tool-use`, `llm-handling`, `rag`, `agent-rag`
 
-*Agents Section:*
+_Agents Section:_
+
 - `/agents` - Agent development hub
 - `/agents/overview`, `/agents/learning-path`, `/agents/patterns`
 - `/agents/trust-engineering`, `/agents/personal-systems`
 
 **Key Data Files** (`/data/` - never hardcode content):
+
 - `ai-journey.json` - S-curve phases, foundation skills, roadmap, **case studies** (hidden gems)
 - `ai-journey-portfolio.json` - Portfolio structure (currently "coming soon")
 - `ai-journey-learning-paths.json` - Structured learning curriculum
@@ -141,6 +151,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **This portfolio (daveliew.com) and GitHub profile (github.com/daveliew) are intentionally separate:**
 
 ### Portfolio (daveliew.com) - Personal Philosophy & Journey
+
 - **Narrative**: "Time compounds faster than money" + virtuous cycle
 - **Audience**: Explorers, learners, potential collaborators
 - **Content**: AI journey, learning paths, philosophical exploration
@@ -148,6 +159,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Data Source**: `/data/*.json` files in this repo
 
 ### GitHub Profile (github.com/daveliew) - Professional Positioning
+
 - **Narrative**: Context Engineering + Multi-Role Fluency
 - **Audience**: Hiring managers, technical peers, consulting prospects
 - **Content**: Agentic Engineer positioning, validated outcomes, metrics
@@ -161,26 +173,31 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Key Frameworks & Concepts
 
 **Context Engineering** - Validated across 3 client projects:
+
 - Architecting informational environments where understanding emerges
 - Prompts are subset of broader environmental design
 - Focus: What context enables AI to reason effectively?
 
 **Multi-Role Fluency** - Rapid context switching between:
+
 - Systems Architect: High-level design, dependencies, trade-offs
 - Product Manager: User needs, feature prioritization, business value
 - Implementation: Technical execution, code quality, testing
 
 **Complementarity Principle**:
+
 - AI amplifies human capabilities (moral agency, creativity, embodied wisdom)
 - Not replacement narrative, but augmentation
 - Memory trigger: "AI handles what scales, humans handle what matters"
 
 **ADHD-AI Optimization**:
+
 - Neurodivergent patterns as collaboration advantage
 - Rapid context switching = natural multi-role operation
 - Hyperfocus + AI execution = competitive edge
 
 **Fitzgerald Principle Applications**:
+
 - Simple surfaces with rich depth
 - Technical rigor with human warmth
 - AI augmentation preserving human agency
@@ -189,6 +206,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Architecture Essentials
 
 **Core Philosophy**: Portfolio embodying the Fitzgerald Principle - holding two opposed ideas simultaneously while retaining ability to function. Built around three trends:
+
 1. **AI Revolution** - Exponential reasoning/automation capabilities
 2. **Sustainability Imperatives** - Climate urgency driving green tech
 3. **Robotic Systems** - Physical automation reaching cost parity
@@ -196,12 +214,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Tech Stack**: Next.js 16 with React 19, leveraging App Router, Turbopack dev builds, and React 19's improved hydration.
 
 **Data-Driven Content Pattern** (CRITICAL):
+
 - Content lives in `/data/*.json` files, NOT hardcoded in components
 - TypeScript interfaces in `/types/*.ts` enforce structure
 - Components consume data via props only
 - Never hardcode content directly in components
 
 **Component Organization**:
+
 - `/components/layout/` - Navbar, Footer (4-column comprehensive navigation)
 - `/components/common/` - Reusable UI with barrel exports: Card, PageLayout, SubpageLayout, BackLink, SectionHeader, CTAButton
 - `/components/skills/` - SkillsMatrix, CaseStudyCard, PhaseProgressBar, RoadmapTimeline
@@ -211,6 +231,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Strategic Context & Content Priorities
 
 **Recent Direction** (Last 5 commits):
+
 - URL flattening for SEO/AIEO optimization (improved discoverability)
 - Footer redesign: 4-column comprehensive navigation
 - 2026 predictions content (research-backed AI trajectory)
@@ -218,12 +239,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Portfolio section prep (data exists, awaiting activation)
 
 **Content Maturity Map** (guides development focus):
+
 - ✅ **Most Complete**: Claude Mastery (8 modules), Philosophy (deeply articulated)
 - ✅ **Well Developed**: About, Laboratory, AI Journey structure, Home
 - 🚀 **High-Impact Growth**: Portfolio activation (case studies in JSON, not visible on site)
 - 📊 **Opportunities**: Testimonials from 3 client projects, Context Engineering metrics, visual representations
 
 **Development Priorities**:
+
 1. Portfolio page activation (highest ROI: credibility + SEO)
 2. SEO/AIEO metadata optimization (ongoing)
 3. Case study detail pages (data ready, needs UI)
@@ -233,35 +256,42 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Theme System
 
 **Color Philosophy** (semantic meaning):
+
 - **Hot Pink (#FF0081)** - `time` - Human agency, energy, urgency
 - **Teal (#0CC0DF)** - `knowledge` - AI capabilities, growth, learning
 - **Beer Gold (#F8B400)** - `wealth` - Tangible outcomes, achievement, legacy
 
 **Usage**: Theme utilities in `styles/theme.ts` provide type-safe color mappings:
+
 ```typescript
-import { themeColors, getThemeColor } from '@/styles/theme';
+import { themeColors, getThemeColor } from "@/styles/theme";
 // Use: themeColors.border.time, themeColors.text.knowledge, etc.
 ```
 
 **Animation Utilities**: `utils/animations.ts` provides framer-motion helpers:
+
 ```typescript
-import { fadeInUp, containerVariants, itemVariants } from '@/utils/animations';
+import { fadeInUp, containerVariants, itemVariants } from "@/utils/animations";
 ```
 
 ## Common Development Patterns
 
 ### Content Updates
+
 1. Edit JSON files in `/data/` (e.g., `skills.json`, `experiences.json`)
 2. TypeScript interfaces in `/types/` enforce correct structure
 3. Components automatically reflect changes
 
 ### ESLint Quote Escaping (Common Deployment Blocker)
+
 **These errors WILL block Vercel deployments:**
+
 - Replace `'` with `&apos;`
 - Replace `"` with `&quot;`
 - Always run `npm run lint` before committing
 
 ### Adding New Pages
+
 1. Create page in `/app/[route]/page.tsx`
 2. Add data to appropriate JSON file in `/data/`
 3. Update Navbar links if needed in `/components/layout/Navbar.tsx`
@@ -276,6 +306,7 @@ import { fadeInUp, containerVariants, itemVariants } from '@/utils/animations';
 - **recharts** (^2.15.4) - Data visualizations
 
 **Build Config:**
+
 - Path alias `@/*` maps to root (tsconfig.json)
 - Strict TypeScript with `noEmit` flag
 - Standalone output mode (next.config.mjs)
@@ -283,6 +314,7 @@ import { fadeInUp, containerVariants, itemVariants } from '@/utils/animations';
 ## Dave's Voice & Terminology
 
 **Voice Guidelines**:
+
 - **Humble explorer**: "Still figuring it out", "happy to share what I've learned"
 - **Direct but warm**: Clear insights without aggressive claims or sales language
 - **Lead with contrarian insights**: "Most people use AI to do more. I use it to do less."
@@ -292,6 +324,7 @@ import { fadeInUp, containerVariants, itemVariants } from '@/utils/animations';
 - **Virtuous cycle**: Build time → Capture knowledge → Create value → Share freely
 
 **Terminology Preferences** (use these framings):
+
 - ✅ "Context Engineering" (not "Prompt Engineering") - broader, more accurate
 - ✅ "Complementarity" (not "replacement") - AI-human relationship
 - ✅ "ADHD-optimized workflows" (not "despite ADHD") - advantage framing
@@ -304,6 +337,7 @@ import { fadeInUp, containerVariants, itemVariants } from '@/utils/animations';
 ## Detailed Documentation
 
 For deep dives, see `/ai_docs/`:
+
 - `developer_guide/getting-started.md` - Setup, debugging tips
 - `developer_guide/design-system.md` - Fitzgerald design system, philosophy workflow
 - `architecture/codebase-analysis.md` - Full site map, tech stack, patterns
@@ -313,7 +347,8 @@ For deep dives, see `/ai_docs/`:
 **Philosophy Integration Note**: The codebase includes automated scoring for Fitzgerald Principle adherence. Components should demonstrate productive tensions (simple surfaces with rich depth, technical rigor with human warmth, AI augmentation preserving human agency).
 
 # important-instruction-reminders
+
 Do what has been asked; nothing more, nothing less.
 NEVER create files unless they're absolutely necessary for achieving your goal.
 ALWAYS prefer editing an existing file to creating a new one.
-NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
+NEVER proactively create documentation files (\*.md) or README files. Only create documentation files if explicitly requested by the User.
