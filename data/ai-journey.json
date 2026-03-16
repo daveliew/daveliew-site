@@ -36,7 +36,12 @@
         "skills": [
           {
             "name": "Pattern Recognition",
-            "strengths": ["Market Analysis", "Business Opportunities", "System Design", "Trend Identification"],
+            "strengths": [
+              "Market Analysis",
+              "Business Opportunities",
+              "System Design",
+              "Trend Identification"
+            ],
             "aiApplications": [
               "Identifying optimal use cases for AI implementation",
               "Spotting patterns in business processes for automation",
@@ -45,7 +50,12 @@
           },
           {
             "name": "Strategic Thinking",
-            "strengths": ["Business Modeling", "Risk Management", "Opportunity Analysis", "Strategic Planning"],
+            "strengths": [
+              "Business Modeling",
+              "Risk Management",
+              "Opportunity Analysis",
+              "Strategic Planning"
+            ],
             "aiApplications": [
               "Developing AI implementation roadmaps",
               "Assessing AI investment priorities",
@@ -54,7 +64,12 @@
           },
           {
             "name": "Business Development",
-            "strengths": ["Networking", "Sales Strategy", "Negotiation", "Partnership Building"],
+            "strengths": [
+              "Networking",
+              "Sales Strategy",
+              "Negotiation",
+              "Partnership Building"
+            ],
             "aiApplications": [
               "Positioning AI solutions for client needs",
               "Building partnerships with AI technology providers",
@@ -69,7 +84,12 @@
         "skills": [
           {
             "name": "Technical Skills",
-            "strengths": ["Web Development", "Data Analysis", "System Integration", "Technical Problem Solving"],
+            "strengths": [
+              "Web Development",
+              "Data Analysis",
+              "System Integration",
+              "Technical Problem Solving"
+            ],
             "aiApplications": [
               "Building interfaces for AI tools",
               "Analyzing data for AI training and testing",
@@ -78,7 +98,12 @@
           },
           {
             "name": "AI Implementation",
-            "strengths": ["Solution Design", "Prompt Engineering", "Use Case Analysis", "Tool Integration"],
+            "strengths": [
+              "Solution Design",
+              "Prompt Engineering",
+              "Use Case Analysis",
+              "Tool Integration"
+            ],
             "aiApplications": [
               "Designing effective prompts for LLMs",
               "Creating AI-powered workflows",
@@ -87,7 +112,12 @@
           },
           {
             "name": "Team Collaboration",
-            "strengths": ["Project Coordination", "Cross-functional Communication", "Relationship Building", "Stakeholder Management"],
+            "strengths": [
+              "Project Coordination",
+              "Cross-functional Communication",
+              "Relationship Building",
+              "Stakeholder Management"
+            ],
             "aiApplications": [
               "Leading AI implementation teams",
               "Aligning technical and business stakeholders on AI projects",
@@ -140,7 +170,11 @@
               "Webhook implementation for AI triggers"
             ],
             "completedDate": "2024-01-10",
-            "foundationSkills": ["Technical Skills", "AI Implementation", "Strategic Thinking"]
+            "foundationSkills": [
+              "Technical Skills",
+              "AI Implementation",
+              "Strategic Thinking"
+            ]
           },
           {
             "name": "Local LLM Implementation",
@@ -169,7 +203,11 @@
               "Tool integration for agents"
             ],
             "completedDate": "2024-02-20",
-            "foundationSkills": ["AI Implementation", "Strategic Thinking", "Pattern Recognition"]
+            "foundationSkills": [
+              "AI Implementation",
+              "Strategic Thinking",
+              "Pattern Recognition"
+            ]
           },
           {
             "name": "AI Customer Service",
@@ -181,7 +219,11 @@
               "Handling handoffs between AI and humans"
             ],
             "completedDate": "2024-03-15",
-            "foundationSkills": ["Business Development", "AI Implementation", "Team Collaboration"]
+            "foundationSkills": [
+              "Business Development",
+              "AI Implementation",
+              "Team Collaboration"
+            ]
           }
         ]
       },
@@ -208,7 +250,11 @@
         "name": "AI Solution Consulting",
         "description": "Identifying and implementing AI opportunities for business growth",
         "level": 4,
-        "foundation": ["Strategic Thinking", "AI Implementation", "Business Development"],
+        "foundation": [
+          "Strategic Thinking",
+          "AI Implementation",
+          "Business Development"
+        ],
         "applications": [
           "Creating AI implementation strategies for businesses",
           "Evaluating and selecting appropriate AI tools",
@@ -219,7 +265,11 @@
         "name": "Technical Solution Design",
         "description": "Combining technical knowledge with AI to solve business problems",
         "level": 3,
-        "foundation": ["Technical Skills", "AI Implementation", "Pattern Recognition"],
+        "foundation": [
+          "Technical Skills",
+          "AI Implementation",
+          "Pattern Recognition"
+        ],
         "applications": [
           "Designing intelligent automation workflows",
           "Creating agent-based systems for business processes",
@@ -230,7 +280,11 @@
         "name": "AI Implementation Leadership",
         "description": "Guiding teams through AI transformation projects",
         "level": 2,
-        "foundation": ["Team Collaboration", "Strategic Thinking", "AI Implementation"],
+        "foundation": [
+          "Team Collaboration",
+          "Strategic Thinking",
+          "AI Implementation"
+        ],
         "applications": [
           "Managing cross-functional AI implementation teams",
           "Aligning business and technical stakeholders",
@@ -241,7 +295,12 @@
         "name": "Context Engineering",
         "description": "Architecting what AI knows before it reasons - designing the informational environment where understanding emerges",
         "level": 4,
-        "foundation": ["Technical Skills", "Strategic Thinking", "AI Implementation", "Pattern Recognition"],
+        "foundation": [
+          "Technical Skills",
+          "Strategic Thinking",
+          "AI Implementation",
+          "Pattern Recognition"
+        ],
         "applications": [
           "System Prompts: CLAUDE.md files for persistent project memory",
           "Tools & MCP: Extending AI capabilities with external integrations",
@@ -258,33 +317,68 @@
         "targetDate": "2025-06-01",
         "startDate": "2025-03-01",
         "description": "Implement a system of autonomous agents that can perform market research and compile findings",
-        "requiredSkills": ["Autonomous Agents", "AI Workflow Integration", "Data Management"],
-        "technologies": ["CrewAI", "LangChain", "OpenAI API", "Vector Databases", "n8n"],
+        "requiredSkills": [
+          "Autonomous Agents",
+          "AI Workflow Integration",
+          "Data Management"
+        ],
+        "technologies": [
+          "CrewAI",
+          "LangChain",
+          "OpenAI API",
+          "Vector Databases",
+          "n8n"
+        ],
         "status": "In Progress",
         "completionPercentage": 20,
-        "foundationSkillsUtilized": ["Pattern Recognition", "Strategic Thinking", "Technical Skills"]
+        "foundationSkillsUtilized": [
+          "Pattern Recognition",
+          "Strategic Thinking",
+          "Technical Skills"
+        ]
       },
       {
         "milestone": "Develop AI Strategy Workshop",
         "targetDate": "2025-10-01",
         "startDate": "2025-07-01",
         "description": "Create a workshop framework to help businesses identify and implement AI opportunities",
-        "requiredSkills": ["AI Workflow Integration", "Business Process Analysis", "Strategic Planning"],
-        "technologies": ["Asana", "LLM Integration", "Process Mapping Tools", "Analytics Dashboard"],
+        "requiredSkills": [
+          "AI Workflow Integration",
+          "Business Process Analysis",
+          "Strategic Planning"
+        ],
+        "technologies": [
+          "Asana",
+          "LLM Integration",
+          "Process Mapping Tools",
+          "Analytics Dashboard"
+        ],
         "status": "Planning",
         "completionPercentage": 20,
-        "foundationSkillsUtilized": ["Strategic Thinking", "Business Development", "Team Collaboration"]
+        "foundationSkillsUtilized": [
+          "Strategic Thinking",
+          "Business Development",
+          "Team Collaboration"
+        ]
       },
       {
         "milestone": "Create Custom Agent Framework",
         "targetDate": "2026-06-01",
         "startDate": "2026-03-01",
         "description": "Develop a reusable framework for building industry-specific autonomous agents",
-        "requiredSkills": ["Autonomous Agents", "Programming", "System Architecture"],
+        "requiredSkills": [
+          "Autonomous Agents",
+          "Programming",
+          "System Architecture"
+        ],
         "technologies": ["Python", "LangChain", "CrewAI", "Docker", "FastAPI"],
         "status": "Not Started",
         "completionPercentage": 0,
-        "foundationSkillsUtilized": ["Technical Skills", "AI Implementation", "Pattern Recognition"]
+        "foundationSkillsUtilized": [
+          "Technical Skills",
+          "AI Implementation",
+          "Pattern Recognition"
+        ]
       }
     ],
     "casestudies": [
@@ -299,9 +393,19 @@
           "First voice AI project—learned the entire stack during the hackathon",
           "Proved that curiosity + AI tools beats years of specialized experience"
         ],
-        "technologies": ["Next.js 16", "ElevenLabs", "AI Music Generation", "React 19", "TypeScript"],
+        "technologies": [
+          "Next.js 16",
+          "ElevenLabs",
+          "AI Music Generation",
+          "React 19",
+          "TypeScript"
+        ],
         "demoUrl": "https://jazz-scat.vercel.app",
-        "foundationSkillsApplied": ["Technical Skills", "AI Implementation", "Creative Problem Solving"]
+        "foundationSkillsApplied": [
+          "Technical Skills",
+          "AI Implementation",
+          "Creative Problem Solving"
+        ]
       },
       {
         "title": "Nansen Voice - Conversational AI Foundation",
@@ -314,9 +418,19 @@
           "Learned mem0 memory system from scratch",
           "Now reusing this pattern across 2 client projects"
         ],
-        "technologies": ["Next.js 16", "ElevenLabs", "mem0", "TypeScript", "Tailwind CSS 4"],
+        "technologies": [
+          "Next.js 16",
+          "ElevenLabs",
+          "mem0",
+          "TypeScript",
+          "Tailwind CSS 4"
+        ],
         "demoUrl": "https://nansen-voice.vercel.app",
-        "foundationSkillsApplied": ["Technical Skills", "AI Implementation", "Pattern Recognition"]
+        "foundationSkillsApplied": [
+          "Technical Skills",
+          "AI Implementation",
+          "Pattern Recognition"
+        ]
       },
       {
         "title": "Autonomous Research Team for Market Analysis",
@@ -328,8 +442,18 @@
           "Increased depth of analysis through systematic research patterns",
           "Reduced costs of market intelligence gathering"
         ],
-        "technologies": ["CrewAI", "LangChain", "OpenAI API", "Vector Databases"],
-        "foundationSkillsApplied": ["Pattern Recognition", "Strategic Thinking", "Technical Skills", "AI Implementation"]
+        "technologies": [
+          "CrewAI",
+          "LangChain",
+          "OpenAI API",
+          "Vector Databases"
+        ],
+        "foundationSkillsApplied": [
+          "Pattern Recognition",
+          "Strategic Thinking",
+          "Technical Skills",
+          "AI Implementation"
+        ]
       },
       {
         "title": "Marketing & Operations Automation - Ray of Joy Therapy",
@@ -341,8 +465,17 @@
           "Automated marketing content distribution and engagement",
           "Enhanced operational efficiency through integrated systems"
         ],
-        "technologies": ["n8n", "OpenAI API", "Airtable", "Website Integration"],
-        "foundationSkillsApplied": ["Technical Skills", "AI Implementation", "Business Development"]
+        "technologies": [
+          "n8n",
+          "OpenAI API",
+          "Airtable",
+          "Website Integration"
+        ],
+        "foundationSkillsApplied": [
+          "Technical Skills",
+          "AI Implementation",
+          "Business Development"
+        ]
       },
       {
         "title": "E-commerce Platform AI Enhancement",
@@ -355,8 +488,17 @@
           "Automated tiered pricing calculations",
           "Integrated gift recommendation system"
         ],
-        "technologies": ["Shopify Liquid", "JavaScript", "AI Integration", "Custom Theme Development"],
-        "foundationSkillsApplied": ["Technical Skills", "Strategic Thinking", "Business Development"]
+        "technologies": [
+          "Shopify Liquid",
+          "JavaScript",
+          "AI Integration",
+          "Custom Theme Development"
+        ],
+        "foundationSkillsApplied": [
+          "Technical Skills",
+          "Strategic Thinking",
+          "Business Development"
+        ]
       }
     ]
   },
@@ -376,8 +518,16 @@
       "metadata": {
         "level": "Absolute Beginner",
         "duration": "4 weeks",
-        "prerequisites": ["Basic computer literacy", "A desire to build your professional presence"],
-        "targetAudience": ["Students", "Career changers", "Non-technical professionals", "Anyone building their personal brand"]
+        "prerequisites": [
+          "Basic computer literacy",
+          "A desire to build your professional presence"
+        ],
+        "targetAudience": [
+          "Students",
+          "Career changers",
+          "Non-technical professionals",
+          "Anyone building their personal brand"
+        ]
       },
       "phases": [
         {
@@ -527,8 +677,16 @@
       "metadata": {
         "level": "Beginner to Intermediate",
         "duration": "4-6 weeks",
-        "prerequisites": ["Basic programming knowledge", "Familiarity with API concepts"],
-        "targetAudience": ["Developers", "Content creators", "Business analysts", "Product managers"]
+        "prerequisites": [
+          "Basic programming knowledge",
+          "Familiarity with API concepts"
+        ],
+        "targetAudience": [
+          "Developers",
+          "Content creators",
+          "Business analysts",
+          "Product managers"
+        ]
       },
       "phases": [
         {
@@ -654,7 +812,12 @@
           "Basic knowledge of vector databases",
           "Programming proficiency in Python or JavaScript"
         ],
-        "targetAudience": ["AI developers", "Data engineers", "Solution architects", "ML engineers"]
+        "targetAudience": [
+          "AI developers",
+          "Data engineers",
+          "Solution architects",
+          "ML engineers"
+        ]
       },
       "phases": [
         {
@@ -769,7 +932,7 @@
         "Master data-driven product management for AI features",
         "Build robust implementation practices with quality gates and monitoring",
         "Learn to context-switch effectively between the three hats",
-        "Apply the framework to deliver fractional CTO-level value"
+        "Apply the framework to deliver technical leadership value"
       ],
       "metadata": {
         "level": "Intermediate to Advanced",
@@ -780,7 +943,12 @@
           "Some exposure to product management concepts",
           "Willingness to learn from failures and iterate"
         ],
-        "targetAudience": ["Technical leaders", "Senior developers", "AI consultants", "Aspiring fractional CTOs"]
+        "targetAudience": [
+          "Technical leaders",
+          "Senior developers",
+          "AI consultants",
+          "Aspiring technical leaders"
+        ]
       },
       "phases": [
         {
@@ -897,7 +1065,7 @@
             {
               "title": "Client Delivery Excellence",
               "topics": [
-                "Positioning as a fractional CTO",
+                "Positioning as a technical leader",
                 "Demonstrating value through the framework",
                 "Building long-term client relationships"
               ]

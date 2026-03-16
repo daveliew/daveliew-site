@@ -3,7 +3,7 @@
     {
       "route": "/",
       "priority": "high",
-      "targetKeywords": ["agentic AI architect", "AI consultant Singapore"],
+      "targetKeywords": ["agentic AI architect", "AI voice agents Singapore"],
       "lastOptimized": "2025-01-19",
       "status": "optimized"
     },
@@ -122,7 +122,10 @@
     {
       "route": "/ai-journey/technical-leadership",
       "priority": "high",
-      "targetKeywords": ["technical leadership", "context engineering validation"],
+      "targetKeywords": [
+        "technical leadership",
+        "context engineering validation"
+      ],
       "lastOptimized": "2025-01-19",
       "status": "optimized"
     },
