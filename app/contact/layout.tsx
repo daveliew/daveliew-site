@@ -1,17 +1,17 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Contact David Liew - Agentic AI Architect',
+  title: "Contact David Liew - AI Solutions Architect",
   description:
-    'Connect with David Liew for AI collaboration, consulting, or to explore how agentic systems can amplify your team. Based in Singapore.',
+    "Connect with David Liew for AI voice agent projects or to explore how agentic systems can amplify your team. Based in Singapore.",
   alternates: {
-    canonical: 'https://daveliew.com/contact',
+    canonical: "https://daveliew.com/contact",
   },
   openGraph: {
-    title: 'Contact David Liew - Agentic AI Architect',
+    title: "Contact David Liew - AI Solutions Architect",
     description:
-      'Connect for AI collaboration, consulting, or to explore agentic systems.',
-    url: 'https://daveliew.com/contact',
+      "Connect for AI voice agent projects or to explore agentic systems.",
+    url: "https://daveliew.com/contact",
   },
 };
 
