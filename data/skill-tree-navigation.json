@@ -198,16 +198,6 @@
       "position": { "x": 90, "y": 28 },
       "parentId": "ai-journey",
       "description": "Results & case studies"
-    },
-    {
-      "id": "laboratory",
-      "label": "Laboratory",
-      "href": "/laboratory",
-      "difficulty": "frontier",
-      "branch": "portfolio",
-      "position": { "x": 90, "y": 45 },
-      "parentId": "portfolio",
-      "description": "Innovation experiments"
     }
   ],
   "connections": [
@@ -229,7 +219,6 @@
     { "from": "techniques", "to": "llm-handling" },
     { "from": "agents", "to": "patterns" },
     { "from": "agents", "to": "learning-path" },
-    { "from": "agents", "to": "case-study" },
-    { "from": "portfolio", "to": "laboratory" }
+    { "from": "agents", "to": "case-study" }
   ]
 }

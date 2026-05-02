@@ -18,20 +18,6 @@
       "status": "optimized"
     },
     {
-      "route": "/philosophy",
-      "priority": "medium",
-      "targetKeywords": ["Fitzgerald Principle", "AI philosophy"],
-      "lastOptimized": "2025-01-19",
-      "status": "optimized"
-    },
-    {
-      "route": "/laboratory",
-      "priority": "medium",
-      "targetKeywords": ["AI experiments", "sustainability technology"],
-      "lastOptimized": "2025-01-19",
-      "status": "optimized"
-    },
-    {
       "route": "/contact",
       "priority": "low",
       "targetKeywords": ["contact", "David Liew contact"],

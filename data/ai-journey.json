@@ -1121,8 +1121,8 @@
           "title": "The Fitzgerald Principle",
           "description": "Most people use AI to do more. I'm exploring how to do less—systematically. AI as complementarity, not replacement. Time compounds faster than money.",
           "cta": {
-            "label": "Read Full Philosophy",
-            "href": "/philosophy"
+            "label": "Explore Context Engineering",
+            "href": "/context-engineering"
           }
         }
       ]
@@ -1266,11 +1266,11 @@
         },
         {
           "type": "feature-card",
-          "title": "Living Laboratory",
-          "description": "Every framework is tested in real implementations. Proof over promises, experiments over theories. Exploring the convergence of AI, Sustainability, and Robotics.",
+          "title": "Personal Lab",
+          "description": "Every framework is refined through agentic exploration — Claude Code orchestration, MCP servers, and context engineering patterns. Notes published as I figure things out.",
           "cta": {
-            "label": "Explore the Lab",
-            "href": "/laboratory"
+            "label": "Explore Agents",
+            "href": "/agents"
           }
         }
       ]
