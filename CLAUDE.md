@@ -68,7 +68,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - "Deploy = SEO check runs automatically"
 - "15th of month = Search Console quick review"
-- "New page = add to sitemap.ts + seo-tracker.json"
+- "New page = add to sitemap.ts"
 
 **Automated Checks** (run via `npm run seo-check`):
 
@@ -78,8 +78,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Image alt attribute presence
 
 **Analytics**: Vercel Analytics (privacy-first, auto-configured)
-
-**Tracking**: `data/seo-tracker.json` - page priorities, target keywords, optimization status
 
 **Recurring Tasks**:
 | Task | Frequency | Trigger |
@@ -146,17 +144,12 @@ _Other:_
 
 _Removed (do not re-add)_: `/philosophy`, `/laboratory` — were declared in sitemap and nav but never had pages; purged May 2026.
 
-**Key Data Files** (`/data/` - never hardcode content):
+**Key Data Files** (`/data/`):
 
 - `ai-journey.json` - Tab content for Writing hub (Why/How/What sections)
-- `experiences.json` - Career history including current Google role at top
-- `now.json` - Current focus areas (measurement, AI governance, agentic exploration)
-- `personal.json` - Virtuous cycle framing
-- `skills.json` - Skill matrix
-- `sustainability.json` - Lab details (currently not surfaced on site post-/laboratory removal)
-- `agent-experiments.json`, `voice-experiments.json` - Personal lab logs
-- `seo-tracker.json` - Page priorities and target keywords
 - `skill-tree-navigation.json` - Desktop hover dropdown data
+
+Most other page copy lives inline in `app/**/<Section>Content.tsx` rather than in JSON. The May 2026 repositioning moved content closer to the components that render it; reach for inline JSX before reintroducing a new JSON data file.
 
 ## Content Architecture (Decoupled Surfaces)
 
@@ -248,43 +241,44 @@ _Removed (do not re-add)_: `/philosophy`, `/laboratory` — were declared in sit
 - ✅ **Strongest sections (Nito-tier)**: `/hackathons`, `/agents/trust-engineering`, `/agents/mcp-trust-assessment`, `/agents/openclaw-risk-assessment`, `/context-engineering` ladder
 - ✅ **Now coherent**: Home, About, Contact, Footer, Writing hub, Agents hub
 - ⚠️ **Workshop-product (intentionally separate tone)**: `/vibe-coding`, `/teaching` — workshop-marketing copy is appropriate here
-- 📦 **Latent content**: `data/sustainability.json` (no surfacing route), `agent-experiments.json`, `voice-experiments.json`
 
 **Development Priorities** (post-repositioning):
 
 1. Cohesion check: Three-Hat → Multi-Role Fluency terminology sweep across `data/ai-journey.json`
 2. SEO/AIEO metadata optimization (ongoing)
 3. Hackathon log additions as new events happen
-4. Decide whether `data/sustainability.json` should resurface anywhere or be archived
 
 ## Theme System
 
-**Color Philosophy** (semantic meaning):
+CSS custom properties live in `styles/globals.css`. Use them via Tailwind arbitrary values rather than hex literals.
 
-- **Hot Pink (#FF0081)** - `time` - Human agency, energy, urgency
-- **Teal (#0CC0DF)** - `knowledge` - AI capabilities, growth, learning
-- **Beer Gold (#F8B400)** - `wealth` - Tangible outcomes, achievement, legacy
+- `--accent-primary` / `--accent-secondary` — studio-lime, default UI accents (links, buttons)
+- `--time-color` (hot pink #FF0081) — human agency, energy, urgency
+- `--knowledge-color` (teal #0CC0DF) — AI capabilities, growth, learning
+- `--wealth-color` (beer gold #F8B400) — tangible outcomes, achievement, legacy
+- `--background-primary` / `--background-secondary`, `--text-primary` / `--text-secondary` / `--text-muted` — base surfaces
 
-**Usage**: Theme utilities in `styles/theme.ts` provide type-safe color mappings:
-
-```typescript
-import { themeColors, getThemeColor } from "@/styles/theme";
-// Use: themeColors.border.time, themeColors.text.knowledge, etc.
-```
+Example: `text-[var(--time-color)]`, `border-[var(--accent-primary)]`.
 
 **Animation Utilities**: `utils/animations.ts` provides framer-motion helpers:
 
 ```typescript
-import { fadeInUp, containerVariants, itemVariants } from "@/utils/animations";
+import {
+  fadeInUp,
+  pageHeaderAnimation,
+  sectionAnimation,
+  footerAnimation,
+  tabContentVariants,
+} from "@/utils/animations";
 ```
 
 ## Common Development Patterns
 
 ### Content Updates
 
-1. Edit JSON files in `/data/` (e.g., `skills.json`, `experiences.json`)
-2. TypeScript interfaces in `/types/` enforce correct structure
-3. Components automatically reflect changes
+1. Most page copy lives inline in `app/**/<Section>Content.tsx` — edit there
+2. For Writing tab content, edit `data/ai-journey.json` (typed via `types/ai-journey-tabs.ts`)
+3. For nav dropdown, edit `data/skill-tree-navigation.json` (typed via `types/skill-tree.ts`)
 
 ### ESLint Quote Escaping (Common Deployment Blocker)
 
