@@ -3,15 +3,18 @@
     {
       "route": "/",
       "priority": "high",
-      "targetKeywords": ["agentic AI architect", "AI voice agents Singapore"],
-      "lastOptimized": "2025-01-19",
+      "targetKeywords": [
+        "Solutions Architect Singapore",
+        "measurement AI governance"
+      ],
+      "lastOptimized": "2026-05-02",
       "status": "optimized"
     },
     {
       "route": "/about",
       "priority": "medium",
-      "targetKeywords": ["David Liew", "AI consultant"],
-      "lastOptimized": "2025-01-19",
+      "targetKeywords": ["David Liew", "Advertising Solutions Architect"],
+      "lastOptimized": "2026-05-02",
       "status": "optimized"
     },
     {

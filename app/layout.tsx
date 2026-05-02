@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     template: "%s | David Liew",
   },
   description:
-    "Building intelligent systems that amplify human potential. Expert in agentic AI, automation, and sustainable technology solutions for purpose-driven businesses.",
+    "Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads (Finance & Brands). Ex-Meta. Singapore.",
   keywords:
-    "agentic AI architect, AI automation, intelligent systems, purpose-driven technology, sustainable AI, AI voice agents Singapore",
+    "Solutions Architect, measurement, signal integrity, AI governance, Google Ads, advertising, Singapore",
   authors: [{ name: "David Liew" }],
   creator: "David Liew",
   openGraph: {
@@ -45,23 +45,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://daveliew.com",
     siteName: "David Liew",
-    title: "David Liew - AI Solutions Architect",
+    title: "David Liew — Solutions Architect",
     description:
-      "Building intelligent systems that amplify human potential. Expert in agentic AI, automation, and sustainable technology solutions.",
+      "Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads. Ex-Meta. Singapore.",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "David Liew - AI Solutions Architect",
+        alt: "David Liew — Solutions Architect",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Liew - AI Solutions Architect",
+    title: "David Liew — Solutions Architect",
     description:
-      "Building intelligent systems that amplify human potential through purposeful technology.",
+      "Measurement, signal integrity, AI governance. Currently at Google gTech Ads. Ex-Meta.",
     images: ["/twitter-image"],
   },
   robots: {
@@ -97,23 +97,19 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "David Liew",
-              jobTitle: "AI Solutions Architect",
+              jobTitle: "Advertising Solutions Architect",
               description:
-                "Building intelligent systems that amplify human potential through purposeful technology",
+                "Solutions Architect focused on measurement, signal integrity, and AI governance for financial services and brand marketing",
               url: "https://daveliew.com",
               sameAs: [
                 "https://linkedin.com/in/daveliew",
                 "https://github.com/daveliew",
               ],
-              worksFor: {
-                "@type": "Organization",
-                name: "Agentic Brewery",
-              },
               knowsAbout: [
-                "Agentic AI",
-                "AI Automation",
-                "Sustainable Technology",
-                "Purpose-Driven Business Solutions",
+                "Advertising Solutions Architecture",
+                "Measurement and Signal Integrity",
+                "AI Governance",
+                "Human-AI Collaboration",
               ],
               address: {
                 "@type": "PostalAddress",

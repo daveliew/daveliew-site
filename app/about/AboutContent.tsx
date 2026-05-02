@@ -10,7 +10,7 @@ export default function AboutContent() {
   return (
     <PageLayout
       title="About David Liew"
-      description="AI Engineer & Builder with 10+ years building ventures from 0→1, implementing AI solutions, and scaling operations"
+      description="Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads (Finance & Brands). Ex-Meta. Singapore."
       gradientTitle
     >
       {/* Hero Section */}
@@ -20,7 +20,7 @@ export default function AboutContent() {
             <div className="flex-shrink-0">
               <Image
                 src="/images/headshot.jpg"
-                alt="David Liew - AI Solutions Architect"
+                alt="David Liew - Solutions Architect"
                 width={160}
                 height={160}
                 className="rounded-full shadow-lg"
@@ -28,10 +28,11 @@ export default function AboutContent() {
               />
             </div>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I&apos;m Dave—exploring how humans and AI work together. 10+ years
-              of building taught me patterns that work. But I&apos;m still
-              discovering new ones. Each project teaches me something for the
-              next.
+              I&apos;m Dave. Advertising Solutions Architect at Google gTech Ads
+              in Singapore, working with Finance and Brands. Ex-Meta. The
+              through-line across both: making complex technical systems produce
+              business results for the people running the businesses
+              they&apos;re meant to serve.
             </p>
           </div>
 
@@ -52,8 +53,8 @@ export default function AboutContent() {
                 AI Engineer
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Implementing human-AI collaboration systems across 3 active
-                client projects
+                Solutions Architect at Google gTech Ads. Working with Finance
+                and Brands.
               </p>
             </div>
             <div className="text-center">
@@ -267,8 +268,8 @@ export default function AboutContent() {
                   <li>• 2nd place, ElevenLabs Voice AI Hackathon</li>
                   <li>• Solo build, Gemini API Developer Competition</li>
                   <li>
-                    • 3 active client projects shipping with AI-assisted
-                    development
+                    • Personal agentic exploration: Claude Code orchestration,
+                    MCP servers, context engineering
                   </li>
                 </ul>
               </div>
@@ -284,64 +285,82 @@ export default function AboutContent() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h3 className="font-semibold mb-3 text-lg">
-                Context Engineering
+                Measurement & Signal Integrity
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Designing informational environments where human intuition and
-                AI capabilities converge naturally. The art isn&apos;t in the
-                prompts—it&apos;s in architecting the space where understanding
-                emerges.
+                The unglamorous foundation. If the signals are wrong, every
+                decision built on top of them compounds the error. Two years
+                deep in this at Meta through SKAN 4.0 and the Conversions API;
+                continuing the work at Google with Finance and Brands.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-3 text-lg">Voice-First AI</h3>
+              <h3 className="font-semibold mb-3 text-lg">
+                AI Governance & Human Judgement
+              </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Exploring voice interfaces paired with real-time reasoning. 2nd
-                place at ElevenLabs hackathon. Building toward latency-optimized
-                SME applications.
+                Where the next decade of work actually sits. As AI takes on more
+                decisions, the architecture around human judgement — what&apos;s
+                delegated, what stays human, how we know — becomes the harder
+                problem than the model itself.
               </p>
             </div>
           </div>
         </Card>
       </motion.section>
 
-      {/* What I Bring */}
+      {/* Personal Note */}
       <motion.section {...sectionAnimation(4)} className="mb-12">
-        <SectionHeader title="What I Bring" />
+        <SectionHeader title="A Personal Note" />
+        <Card className="p-6">
+          <p className="text-gray-600 dark:text-gray-400 mb-3">
+            I&apos;ve been a Google user since 2001. Search first, then Gmail
+            when it was invite-only, then Earth when it felt like sorcery. Doing
+            this work from inside the system I&apos;ve spent half my life using
+            is meaningful in a way I wasn&apos;t expecting.
+          </p>
+        </Card>
+      </motion.section>
+
+      {/* Skills */}
+      <motion.section {...sectionAnimation(5)} className="mb-12">
+        <SectionHeader title="Skills" />
         <Card className="p-6">
           <div className="grid md:grid-cols-3 gap-6">
             <div>
               <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">
-                Technical Depth
+                Technical
               </h3>
               <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
                 <li>
                   • Full-stack development (Next.js, React, TypeScript, Python)
                 </li>
-                <li>• AI implementation & prompt engineering</li>
+                <li>• AI implementation & context engineering</li>
                 <li>• System architecture & design</li>
-                <li>• Database design & optimization</li>
+                <li>• Measurement, attribution, signal integrity</li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-3 text-green-600 dark:text-green-400">
-                Business Acumen
+                Business
               </h3>
               <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
-                <li>• 0→1 venture building experience</li>
-                <li>• Operations & growth strategy</li>
-                <li>• Product development & iteration</li>
-                <li>• Revenue growth & sustainability</li>
+                <li>
+                  • Translating between technical and business stakeholders
+                </li>
+                <li>• Product strategy and roadmap</li>
+                <li>• Cross-functional team collaboration</li>
+                <li>• Financial services and brand marketing context</li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-3 text-purple-600 dark:text-purple-400">
-                Unique Perspective
+                Perspective
               </h3>
               <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2">
                 <li>• Human-AI complementarity design</li>
                 <li>• Context engineering frameworks</li>
-                <li>• Philosophical depth in technical work</li>
+                <li>• AI governance and human-judgement architecture</li>
                 <li>• ADHD-optimized workflows</li>
               </ul>
             </div>
@@ -351,15 +370,13 @@ export default function AboutContent() {
 
       {/* The Landing */}
       <motion.section
-        {...sectionAnimation(5)}
+        {...sectionAnimation(6)}
         className="bg-gradient-to-r from-blue-50 to-teal-50 dark:from-blue-900/20 dark:to-teal-900/20 rounded-lg p-8"
       >
         <div className="max-w-2xl mx-auto text-center mb-8">
-          <blockquote className="text-xl md:text-2xl font-medium text-gray-800 dark:text-gray-200 mb-4">
-            &quot;I navigate these worlds—and translate between them.&quot;
-          </blockquote>
-          <p className="text-gray-600 dark:text-gray-400">
-            That&apos;s what I bring.
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
+            If you&apos;re working on measurement, AI adoption, or governance in
+            financial services or brand marketing — happy to compare notes.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -367,7 +384,7 @@ export default function AboutContent() {
             href="/contact"
             className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200 shadow-sm"
           >
-            Get in Touch
+            Compare Notes
           </Link>
           <Link
             href="/ai-journey"

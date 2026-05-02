@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { PageLayout, Card } from "@/components/common";
 import { sectionAnimation } from "@/utils/animations";
@@ -69,26 +68,15 @@ export default function ContactContent() {
         </div>
       </motion.section>
 
-      {/* Business Inquiries Redirect */}
+      {/* Compare Notes */}
       <motion.section {...sectionAnimation(1)} className="text-center">
-        <Card className="p-8 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-blue-200 dark:border-blue-800">
-          <h3 className="text-xl font-semibold mb-4">Business Inquiries</h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
-            For AI voice agent projects and business collaborations
+        <Card className="p-8 bg-gradient-to-r from-blue-50 to-teal-50 dark:from-blue-900/20 dark:to-teal-900/20 border-blue-200 dark:border-blue-800">
+          <h3 className="text-xl font-semibold mb-4">Compare Notes</h3>
+          <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
+            If you&apos;re working on measurement, AI adoption, or governance in
+            financial services or brand marketing — happy to compare notes.
+            LinkedIn is the easiest way to reach me.
           </p>
-          <div className="space-y-4">
-            <a
-              href="https://agenticbrewery.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
-            >
-              Visit Agentic Brewery →
-            </a>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              AI voice agents for sales and customer operations
-            </p>
-          </div>
         </Card>
       </motion.section>
     </PageLayout>

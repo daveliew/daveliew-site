@@ -1,14 +1,17 @@
-import type { Metadata } from 'next';
-import AboutContent from './AboutContent';
+import type { Metadata } from "next";
+import AboutContent from "./AboutContent";
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'AI Engineer & Builder with 10+ years building ventures from 0→1. Ex-Meta. Implementing human-AI collaboration systems and Context Engineering frameworks.',
-  keywords: 'David Liew, AI engineer, context engineering, human-AI collaboration, Meta, Singapore, full-stack developer',
+  title: "About",
+  description:
+    "Advertising Solutions Architect at Google gTech Ads. Ex-Meta. Working on measurement, signal integrity, and AI governance in financial services and brand marketing. Singapore.",
+  keywords:
+    "David Liew, Solutions Architect, Google Ads, measurement, signal integrity, AI governance, Meta, Singapore",
   openGraph: {
-    title: 'About David Liew - AI Engineer & Builder',
-    description: 'AI Engineer with 10+ years building ventures. Ex-Meta. Implementing human-AI collaboration systems.',
-    type: 'profile',
+    title: "About David Liew - Solutions Architect",
+    description:
+      "Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads. Ex-Meta.",
+    type: "profile",
   },
 };
 

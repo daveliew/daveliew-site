@@ -256,20 +256,20 @@ export default function HomePage() {
               </div>
             </Card>
 
-            {/* Client Projects - Honest */}
+            {/* Agentic Exploration */}
             <Card className="p-6 hover:shadow-lg transition-shadow group">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="font-semibold group-hover:text-[#F8B400] transition-colors">
-                  3 Client Projects
+                  Agentic Exploration
                 </h3>
                 <span className="text-xs text-[#F8B400] px-2 py-1 bg-[#F8B400]/10 rounded font-medium">
-                  Learning Mode
+                  Personal Lab
                 </span>
               </div>
 
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                Working with 3 businesses on AI-powered automation. Can&apos;t
-                share details yet, but here&apos;s what I&apos;m discovering:
+                Personal experiments with agentic AI patterns. Notes from
+                what&apos;s working and what isn&apos;t:
               </p>
 
               <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 mb-3">
@@ -282,7 +282,7 @@ export default function HomePage() {
               </ul>
 
               <p className="text-xs text-[var(--deep-purple)] italic">
-                Each project teaches me something for the next one. Still
+                Each experiment teaches me something for the next one. Still
                 figuring out the patterns.
               </p>
             </Card>
@@ -326,25 +326,24 @@ export default function HomePage() {
         >
           <div className="bg-gradient-to-r from-[var(--deep-purple)]/10 via-transparent to-[var(--teal)]/10 rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-semibold mb-4">
-              Got a task that takes too long?
+              Working on similar problems?
             </h2>
             <p className="text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
-              I&apos;m exploring how AI can help delete it from your day. If
-              something I&apos;m discovering might help, let&apos;s compare
-              notes.
+              If you&apos;re working on measurement, AI adoption, or governance
+              in financial services or brand marketing — happy to compare notes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md text-white bg-gradient-to-r from-[var(--deep-purple)] to-[var(--teal)] hover:opacity-90 transition-opacity shadow-lg"
               >
-                Let&apos;s Talk
+                Compare Notes
               </Link>
               <Link
                 href="/about"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md border-2 border-[var(--deep-purple)] text-[var(--deep-purple)] hover:bg-[var(--deep-purple)]/10 transition-colors"
               >
-                Explore My Approach →
+                About →
               </Link>
             </div>
           </div>

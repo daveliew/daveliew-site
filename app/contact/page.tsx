@@ -4,13 +4,12 @@ import ContactContent from "./ContactContent";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Connect with David Liew on LinkedIn, GitHub, or through Agentic Brewery for AI voice agent projects and collaborations.",
-  keywords:
-    "contact, David Liew, LinkedIn, GitHub, AI voice agents, Agentic Brewery",
+    "Connect with David Liew on LinkedIn or GitHub. Happy to compare notes on measurement, AI adoption, or governance in financial services and brand marketing.",
+  keywords: "contact, David Liew, LinkedIn, GitHub, measurement, AI governance",
   openGraph: {
     title: "Contact David Liew",
     description:
-      "Connect on LinkedIn, GitHub, or Agentic Brewery for AI voice agent projects and collaborations.",
+      "Compare notes on measurement, AI adoption, or governance in financial services and brand marketing.",
   },
 };
 

@@ -6,15 +6,19 @@
       "description": "Practical experience implementing tech solutions for business growth",
       "experiences": [
         {
-          "role": "Independent Builder",
-          "type": "Independent",
-          "period": "2023-Present",
+          "role": "Advertising Solutions Architect",
+          "company": "Google gTech Ads",
+          "period": "2026-Present",
           "highlights": [
-            "Building AI-enhanced tools for personal projects",
-            "Experimenting with AI integration in business workflows",
-            "Creating automated systems using no-code tools"
+            "Working with Finance and Brands verticals in Singapore",
+            "Measurement, signal integrity, and AI adoption for advertisers",
+            "Translating technical systems into business outcomes for stakeholders"
           ],
-          "keySkills": ["AI Implementation", "Process Automation", "Strategic Planning"]
+          "keySkills": [
+            "Solutions Architecture",
+            "Measurement",
+            "AI Governance"
+          ]
         },
         {
           "role": "Technical Solutions Consultant",
@@ -22,10 +26,10 @@
           "period": "2022-2024",
           "highlights": [
             "Implemented AdTech solutions for enterprise clients",
-            "Developed technical solutions for business challenges",
-            "Created data-driven marketing strategies"
+            "Two years deep in SKAN 4.0 and the Conversions API",
+            "Developed technical solutions for signal-loss and attribution challenges"
           ],
-          "keySkills": ["Technical Skills", "Strategic Thinking", "Problem Solving"]
+          "keySkills": ["Technical Skills", "Measurement", "Problem Solving"]
         },
         {
           "role": "Software Engineering Student",
@@ -36,10 +40,15 @@
             "Built and deployed multiple portfolio projects",
             "Mastered JavaScript, Python, and modern web technologies"
           ],
-          "keySkills": ["Full Stack Development", "Problem Solving", "Technical Skills"]
+          "keySkills": [
+            "Full Stack Development",
+            "Problem Solving",
+            "Technical Skills"
+          ]
         }
       ]
-    }, {
+    },
+    {
       "id": "venture-building",
       "title": "Venture Building & Business Operations",
       "description": "Hands-on experience in building and scaling ventures",
@@ -53,7 +62,11 @@
             "Created personal platform as experimental launchpad for rapid 0-1 ventures",
             "Supporting businesses like rayofjoytherapy.com with digital transformation"
           ],
-          "keySkills": ["Next.js Development", "AI Integration", "Digital Transformation"]
+          "keySkills": [
+            "Next.js Development",
+            "AI Integration",
+            "Digital Transformation"
+          ]
         },
         {
           "role": "Head of Business",
@@ -64,7 +77,11 @@
             "Contributed to growth from S$100K to S$1M+ in three years",
             "Built key educational institution partnerships"
           ],
-          "keySkills": ["Strategic Planning", "Business Development", "Leadership"]
+          "keySkills": [
+            "Strategic Planning",
+            "Business Development",
+            "Leadership"
+          ]
         },
         {
           "role": "Co-Founder",
@@ -75,7 +92,11 @@
             "Curated and developed learning resources for children",
             "Managed end-to-end operations and growth strategy"
           ],
-          "keySkills": ["E-commerce", "Product Development", "Operations Management"]
+          "keySkills": [
+            "E-commerce",
+            "Product Development",
+            "Operations Management"
+          ]
         }
       ]
     },
@@ -93,7 +114,11 @@
             "Led team of 10+ staff through rapid growth phase in 2015",
             "Engineered temporary pivot to online food delivery in 2020 to weather COVID-19 pandemic"
           ],
-          "keySkills": ["Entrepreneurship", "Strategic Adaptation", "Team Scaling"]
+          "keySkills": [
+            "Entrepreneurship",
+            "Strategic Adaptation",
+            "Team Scaling"
+          ]
         },
         {
           "role": "Alpha Growth Ops Associate",
@@ -104,7 +129,11 @@
             "Contributed to 35% revenue growth through strategic initiatives",
             "Identified and executed key growth opportunities"
           ],
-          "keySkills": ["Market Analysis", "Strategic Planning", "Partnership Building"]
+          "keySkills": [
+            "Market Analysis",
+            "Strategic Planning",
+            "Partnership Building"
+          ]
         },
         {
           "role": "Business Analyst",
@@ -115,11 +144,14 @@
             "Collaborated with global stakeholders on budget planning",
             "Implemented business strategy under CFO/COO guidance"
           ],
-          "keySkills": ["Strategic Planning", "Financial Analysis", "Stakeholder Management"]
+          "keySkills": [
+            "Strategic Planning",
+            "Financial Analysis",
+            "Stakeholder Management"
+          ]
         }
       ]
     }
-   
   ],
   "projectHighlights": [
     {
@@ -140,7 +172,11 @@
         "Created repeatable processes for growth",
         "Identified key patterns for success"
       ],
-      "keySkills": ["Pattern Recognition", "Strategic Thinking", "Business Development"]
+      "keySkills": [
+        "Pattern Recognition",
+        "Strategic Thinking",
+        "Business Development"
+      ]
     }
   ]
 }

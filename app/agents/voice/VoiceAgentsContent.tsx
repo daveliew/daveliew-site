@@ -1,46 +1,54 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 const capabilities = [
   {
-    title: 'Conversational AI Agents',
-    description: 'Voice-first AI that talks naturally with your customers. Inbound support, outbound calls, appointment booking.',
-    icon: '🎙️',
+    title: "Conversational AI Agents",
+    description:
+      "Voice-first AI that talks naturally with your customers. Inbound support, outbound calls, appointment booking.",
+    icon: "🎙️",
   },
   {
-    title: 'Voice Synthesis',
-    description: 'Natural text-to-speech for any content. Product demos, explainer videos, audiobooks, podcasts.',
-    icon: '🔊',
+    title: "Voice Synthesis",
+    description:
+      "Natural text-to-speech for any content. Product demos, explainer videos, audiobooks, podcasts.",
+    icon: "🔊",
   },
   {
-    title: 'Voice Cloning',
-    description: 'Clone voices ethically for consistent brand presence. Scale your voice without scaling your time.',
-    icon: '🎭',
+    title: "Voice Cloning",
+    description:
+      "Clone voices ethically for consistent brand presence. Scale your voice without scaling your time.",
+    icon: "🎭",
   },
   {
-    title: 'Sound & Music Generation',
-    description: 'AI-generated sound effects and music for content, apps, and experiences.',
-    icon: '🎵',
+    title: "Sound & Music Generation",
+    description:
+      "AI-generated sound effects and music for content, apps, and experiences.",
+    icon: "🎵",
   },
 ];
 
 const useCases = [
   {
-    title: 'Customer Support',
-    description: '24/7 voice agents that handle inquiries, troubleshoot issues, and escalate when needed.',
+    title: "Customer Support",
+    description:
+      "24/7 voice agents that handle inquiries, troubleshoot issues, and escalate when needed.",
   },
   {
-    title: 'Appointment Booking',
-    description: 'Conversational scheduling that integrates with your calendar and CRM.',
+    title: "Appointment Booking",
+    description:
+      "Conversational scheduling that integrates with your calendar and CRM.",
   },
   {
-    title: 'Lead Qualification',
-    description: 'Outbound calls that qualify leads and book meetings for your sales team.',
+    title: "Lead Qualification",
+    description:
+      "Outbound calls that qualify leads and book meetings for your sales team.",
   },
   {
-    title: 'Content Creation',
-    description: 'Voice-overs, podcasts, and audio content at scale without studio time.',
+    title: "Content Creation",
+    description:
+      "Voice-overs, podcasts, and audio content at scale without studio time.",
   },
 ];
 
@@ -67,10 +75,14 @@ export default function VoiceAgentsContent() {
           <div className="p-8 rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border border-purple-100 dark:border-purple-800">
             <blockquote className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               <p className="mb-4">
-                <strong>Voice is the next interface.</strong> No typing, no screens, just conversation.
+                <strong>Voice is the next interface.</strong> No typing, no
+                screens, just conversation.
               </p>
               <p className="text-gray-600 dark:text-gray-400">
-                I specialize in building voice-first AI experiences using ElevenLabs. From conversational agents that handle customer calls to voice synthesis that scales your content — voice removes friction from human-AI interaction.
+                I specialize in building voice-first AI experiences using
+                ElevenLabs. From conversational agents that handle customer
+                calls to voice synthesis that scales your content — voice
+                removes friction from human-AI interaction.
               </p>
             </blockquote>
           </div>
@@ -96,7 +108,9 @@ export default function VoiceAgentsContent() {
                   ElevenLabs Worldwide Hackathon • Singapore • December 2025
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  AI jam partner for vocal practice. Conversational AI DJ + real-time backing track generation + voice coaching. Built in 12 hours, won 2nd place.
+                  AI jam partner for vocal practice. Conversational AI DJ +
+                  real-time backing track generation + voice coaching. Built in
+                  12 hours, won 2nd place.
                 </p>
                 <div className="flex gap-2 flex-wrap">
                   <span className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded">
@@ -173,7 +187,14 @@ export default function VoiceAgentsContent() {
             Tech Stack
           </h2>
           <div className="flex flex-wrap gap-3">
-            {['ElevenLabs', 'Conversational AI', 'WebRTC', 'Next.js', 'Vercel', 'MCP Integration'].map((tech) => (
+            {[
+              "ElevenLabs",
+              "Conversational AI",
+              "WebRTC",
+              "Next.js",
+              "Vercel",
+              "MCP Integration",
+            ].map((tech) => (
               <span
                 key={tech}
                 className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg font-medium"
@@ -190,7 +211,8 @@ export default function VoiceAgentsContent() {
             Ready to Give Your Business a Voice?
           </h2>
           <p className="mb-6 max-w-xl mx-auto opacity-90">
-            Whether you need a customer support agent, voice content at scale, or a custom voice experience — let&apos;s talk.
+            Whether you need a customer support agent, voice content at scale,
+            or a custom voice experience — let&apos;s talk.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
@@ -199,14 +221,6 @@ export default function VoiceAgentsContent() {
             >
               Get in Touch
             </Link>
-            <a
-              href="https://agenticbrewery.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex px-6 py-3 bg-purple-700 text-white rounded-lg font-medium hover:bg-purple-800 transition-colors"
-            >
-              Agentic Brewery →
-            </a>
           </div>
         </section>
       </div>
