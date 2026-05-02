@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Card } from "@/components/common";
@@ -74,7 +73,7 @@ export default function AgentsContent() {
       <motion.div {...fadeInUp()} className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">AI Agents</h1>
         <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
-          Where We&apos;re Going: Building AI Teams for 2026
+          Notes on agent orchestration, trust, and the patterns that emerge
         </p>
 
         {/* Core narrative */}
@@ -86,10 +85,10 @@ export default function AgentsContent() {
                 Software now has agency and personality.
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                The paradigm shift isn&apos;t about AI doing more work—it&apos;s
-                about AI becoming a capable colleague who understands context,
-                takes initiative within boundaries, and can be trusted with
-                increasing autonomy.
+                AI as a capable colleague that understands context, takes
+                initiative within boundaries, and can be trusted with increasing
+                autonomy. The interesting work is in the architecture around
+                that trust.
               </p>
             </blockquote>
           </div>

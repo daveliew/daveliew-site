@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React, { Suspense } from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { PageLayout, CTAButton } from '@/components/common';
-import { fadeInUp, sectionAnimation } from '@/utils/animations';
-import AIJourneyTabs from '@/components/ai-journey/AIJourneyTabs';
+import { Suspense } from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { PageLayout, CTAButton } from "@/components/common";
+import { fadeInUp, sectionAnimation } from "@/utils/animations";
+import AIJourneyTabs from "@/components/ai-journey/AIJourneyTabs";
 
 // Loading fallback for tabs that use useSearchParams
 function TabsLoading() {
@@ -26,22 +26,18 @@ function TabsLoading() {
 export default function AIJourneyContent() {
   return (
     <PageLayout
-      title="AI Journey"
-      description="Pioneering Human-AI Collaboration for the Next Generation"
+      title="Writing"
+      description="Notes on context engineering, Claude, agents, and human-AI collaboration"
       maxWidth="4xl"
       gradientTitle
     >
       {/* Hero Section */}
       <section className="py-12 md:py-16">
-        <motion.div
-          {...fadeInUp()}
-          className="text-center"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Pioneering Human-AI Collaboration
-          </h1>
+        <motion.div {...fadeInUp()} className="text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Writing</h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
-            Building the frameworks our children will need to thrive with AI—where human wisdom and artificial intelligence create value greater than the sum of their parts.
+            Notes on context engineering, Claude, agents, and human-AI
+            collaboration. Published as I figure things out.
           </p>
         </motion.div>
       </section>
@@ -61,19 +57,17 @@ export default function AIJourneyContent() {
         {...sectionAnimation(1)}
         className="py-12 border-t border-gray-200 dark:border-gray-700 text-center"
       >
-        <h2 className="text-3xl font-bold mb-4">Ready to Pioneer?</h2>
+        <h2 className="text-3xl font-bold mb-4">Where to start</h2>
         <p className="text-lg mb-8 max-w-xl mx-auto text-gray-600 dark:text-gray-400">
-          Start your journey into human-AI collaboration. Every framework here is battle-tested and ready to implement.
+          Two entry points depending on what you&apos;re looking for.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <CTAButton href="/ai-journey/why-ai">
-            Start with Why AI
-          </CTAButton>
+          <CTAButton href="/ai-journey/why-ai">Why AI</CTAButton>
           <Link
             href="/ai-journey/claude/overview"
             className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md border-2 border-blue-600 text-blue-600 bg-transparent hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
           >
-            Dive into Claude Mastery
+            Claude Notes
           </Link>
         </div>
       </motion.section>
