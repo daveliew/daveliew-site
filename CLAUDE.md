@@ -13,42 +13,35 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Site Purpose & Positioning
 
-**What This Is**: Portfolio exploring human-AI collaboration through the Fitzgerald Principle - "Most people use AI to do more. I'm exploring how to do less—systematically."
+**What This Is**: Personal site for an Advertising Solutions Architect at Google gTech Ads. Substance: measurement, signal integrity, AI governance — the through-line across Meta and now Google.
 
-**Core Thesis**: Time compounds faster than money. AI as complementarity (amplifies human capabilities) not replacement.
+**Tonal Reference**: nitobuendia.com — factual, restrained, achievement-anchored, no commercial CTAs, employer disclosed openly. When in doubt, ask "would Nito put this on his site?"
 
-**Target Audiences**:
-
-- **Beginners**: Philosophy → Context Engineering → LLM fundamentals → Claude Mastery
-- **Technical Professionals**: Fast-track through Technical Leadership → Claude Mastery → Advanced Systems
+**Target Audience**: Solutions Architect peers and people working on measurement, AI adoption, or governance in financial services or brand marketing. Not "explorers" or "learners" — that was an older positioning.
 
 **Key Differentiators**:
 
+- **Measurement & Signal Integrity**: Two years deep at Meta (SKAN 4.0, Conversions API); continuing at Google
+- **AI Governance & Human Judgement**: The architecture around what AI decides vs what stays human
 - **Context Engineering**: Architecting informational environments where understanding emerges (not just prompts)
 - **Multi-Role Fluency**: Rapid context switching (Systems Architect / Product Manager / Implementation)
-- **ADHD-Optimized Workflows**: Neurodivergent patterns as AI-collaboration advantage
-- **Sustainability Convergence**: AI + Climate + Robotics intersection ($50T+ opportunity)
-- **Personal Lab**: Frameworks tested through agentic exploration (Claude Code orchestration, MCP servers, context engineering)
+- **Personal Lab**: Frameworks refined through agentic exploration (Claude Code orchestration, MCP servers)
 
-**Strategic Priorities**: Portfolio activation (case studies exist but not visible), SEO/AIEO optimization, 2026 predictions content
+**Strategic Priorities**: Tonal coherence (no commercial CTAs, no mission framing), employer-safe positioning, factual hackathon and exploration write-ups.
 
 ## Career Positioning & Branding
 
-**Current Bio**: "AI Solutions Architect & Voice Agent Specialist—ex-Meta"
+**Bio**: "Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads (Finance & Brands). Ex-Meta. Singapore."
 
-**Enterprise Experience** (2022-2026):
+**Enterprise Experience**:
 
-- Meta: 2 years Technical Solutions Consultant
-- Google: 4-month Advertising SA contract (enterprise clients)
-- AWS: SG Code Campus partnership (Bedrock reselling + AI tool building)
+- **Google gTech Ads** (Apr 2026 – Present): Advertising Solutions Architect, Finance & Brands verticals
+- **Meta** (2022-2024): Technical Solutions Consultant — 2 years deep on SKAN 4.0, Conversions API, signal-loss attribution
+- **AWS / SG Code Campus** (earlier): Bedrock reselling + AI tool building
 
-**Branding Strategy**:
+**Public Disclosure**: Google role is publicly disclosed on the site (matches Solutions Architect peers like Nito Buendia). Older "do not disclose Google" guidance is stale.
 
-- **Now**: Keep current bio, mention Meta+Google conversationally when relevant
-- **After Google**: If work substantial, consider "ex-Meta, ex-Google"
-- **AWS angle**: Lead with "building AI tools" not "AWS partner"
-
-**What's rare**: Meta + Google ads insider + can build. Business bridging tech/non-tech.
+**What to Avoid**: Outside-business solicitation framing, "client projects" / "case studies" / "consulting" language, voice-agents-for-sales positioning (Agentic Brewery is sterilised — do not reintroduce). Workshop content under `/vibe-coding` is the one place workshop-marketing tone is appropriate, since it's an actual workshop product.
 
 ## Development Commands
 
@@ -111,66 +104,79 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 /ai_docs          - Comprehensive documentation
 ```
 
+**Top Nav**: About / Writing / Hackathons / Contact (collapsed from 6 items in May 2026 to mirror Nito's three-bucket structure).
+
 **Complete Site Map:**
 
 _Main Routes:_
 
-- `/` - Home (hero, virtuous cycle, Context Engineering, projects)
-- `/philosophy` - Fitzgerald Principle deep dive (9 sections)
-- `/about` - Professional journey, achievements, value proposition
-- `/laboratory` - Innovation experiments (AI/Sustainability/Robotics convergence)
-- `/contact` - Links to LinkedIn, GitHub, Agentic Brewery (voice agent solutions)
+- `/` - Home (hero, Context Engineering callout, exploration cards, compare-notes CTA)
+- `/about` - Bio, Meta→Google through-line, current focus, personal note, skills
+- `/contact` - LinkedIn, GitHub, "Compare Notes" card
 
-_AI Journey Structure:_
+_Writing (uses `/ai-journey` URL — labelled "Writing" in nav):_
 
-- `/ai-journey` - Hub with tab navigation
-- `/ai-journey/overview` - Learning philosophy & path options
+- `/ai-journey` - Hub: notes on context engineering, Claude, agents, human-AI collaboration
 - `/ai-journey/why-ai` - S-curve framework (Coatue research)
-- `/ai-journey/context-engineering` - Context Engineering framework
-- `/ai-journey/technical-leadership` - 3-client validation learnings
-- `/ai-journey/portfolio` - Case studies (data exists, awaiting activation)
-- `/ai-journey/claude/*` - Claude Mastery (8 modules):
-  - `overview`, `code`, `cookbook`, `console`, `vision`, `computer-use`, `mcp`, `2026-predictions`
+- `/ai-journey/technical-leadership` - Context Engineering patterns
+- `/ai-journey/portfolio` - Projects from hackathons and personal exploration
+- `/ai-journey/claude/*` - Claude notes (5 modules):
+  - `overview`, `code`, `capabilities`, `mcp`, `2026-predictions`
 - `/ai-journey/techniques/*` - Technical paths:
-  - `prompt-engineering`, `tool-use`, `llm-handling`, `rag`, `agent-rag`
+  - `prompt-engineering`, `tool-use`, `llm-handling`, `seo-geo-audit`
 
-_Agents Section:_
+_Context Engineering (top-level):_
 
-- `/agents` - Agent development hub
-- `/agents/overview`, `/agents/learning-path`, `/agents/patterns`
-- `/agents/trust-engineering`, `/agents/personal-systems`
+- `/context-engineering` - Hub with learning ladder
+- `/context-engineering/claude-md`, `/context-engineering/skills`, `/context-engineering/hooks`, `/context-engineering/archetypes`, `/context-engineering/seo-geo-audit`
+
+_Agents (reachable via Writing > What in nav, plus direct URL):_
+
+- `/agents` - Hub: notes on agent orchestration, trust, patterns
+- `/agents/overview`, `/agents/learning-path`, `/agents/patterns`, `/agents/personal-systems`
+- `/agents/trust-engineering`, `/agents/adoption-curve`
+- `/agents/mcp-trust-assessment`, `/agents/openclaw-risk-assessment` — substantive AI security/governance writeups
+- `/agents/voice` - ElevenLabs hackathon notes (2nd place)
+
+_Other:_
+
+- `/hackathons` - Dated, factual hackathon log (the strongest Nito-tier section)
+- `/teaching` - Workshop log (UB×SIM, RBN, Rafflesian AI)
+- `/vibe-coding`, `/vibe-coding/fundamentals`, `/vibe-coding/handout` - Workshop product (workshop-marketing tone is OK here only)
+
+_Removed (do not re-add)_: `/philosophy`, `/laboratory` — were declared in sitemap and nav but never had pages; purged May 2026.
 
 **Key Data Files** (`/data/` - never hardcode content):
 
-- `ai-journey.json` - S-curve phases, foundation skills, roadmap, **case studies** (hidden gems)
-- `ai-journey-portfolio.json` - Portfolio structure (currently "coming soon")
-- `ai-journey-learning-paths.json` - Structured learning curriculum
-- `sustainability.json` - Lab details, experiments, investment thesis
-- `skills.json`, `experiences.json`, `personal.json`, `now.json` - Professional background
+- `ai-journey.json` - Tab content for Writing hub (Why/How/What sections)
+- `experiences.json` - Career history including current Google role at top
+- `now.json` - Current focus areas (measurement, AI governance, agentic exploration)
+- `personal.json` - Virtuous cycle framing
+- `skills.json` - Skill matrix
+- `sustainability.json` - Lab details (currently not surfaced on site post-/laboratory removal)
+- `agent-experiments.json`, `voice-experiments.json` - Personal lab logs
+- `seo-tracker.json` - Page priorities and target keywords
+- `skill-tree-navigation.json` - Desktop hover dropdown data
 
 ## Content Architecture (Decoupled Surfaces)
 
-**This portfolio (daveliew.com) and GitHub profile (github.com/daveliew) are intentionally separate:**
+**daveliew.com and github.com/daveliew are intentionally separate** — different audiences, different jobs.
 
-### Portfolio (daveliew.com) - Personal Philosophy & Journey
+### daveliew.com - Personal site for Solutions Architect peers
 
-- **Narrative**: "Time compounds faster than money" + virtuous cycle
-- **Audience**: Explorers, learners, potential collaborators
-- **Content**: AI journey, learning paths, philosophical exploration
-- **Tone**: Personal, exploratory, educational
+- **Audience**: Google peers, Solutions Architect community, financial services / brand marketing folks working on measurement and governance
+- **Tone**: Factual, restrained, achievement-anchored (Nito-tier)
+- **Content**: Bio, current focus, hackathons, writing on context engineering and agents
 - **Data Source**: `/data/*.json` files in this repo
 
-### GitHub Profile (github.com/daveliew) - Professional Positioning
+### GitHub Profile (github.com/daveliew) - Professional positioning
 
-- **Narrative**: Context Engineering + Multi-Role Fluency
-- **Audience**: Hiring managers, technical peers, consulting prospects
+- **Audience**: Hiring managers, technical peers
 - **Content**: Agentic Engineer positioning, validated outcomes, metrics
 - **Tone**: Professional, credible, technically competent
 - **Data Source**: `daveliew/daveliew` repo `/data/professional-summary.json`
 
-**Why Separate**: Each surface serves a different purpose. Forcing sync would dilute both messages.
-
-**If Shared Data Needed**: Future consideration - create `shared-data.json` with only contact/project lists while keeping hero/narrative content separate.
+**Why Separate**: Different audience, different job. Forcing sync would dilute both.
 
 ## Key Frameworks & Concepts
 
@@ -207,13 +213,9 @@ _Agents Section:_
 
 ## Architecture Essentials
 
-**Core Philosophy**: Portfolio embodying the Fitzgerald Principle - holding two opposed ideas simultaneously while retaining ability to function. Built around three trends:
-
-1. **AI Revolution** - Exponential reasoning/automation capabilities
-2. **Sustainability Imperatives** - Climate urgency driving green tech
-3. **Robotic Systems** - Physical automation reaching cost parity
-
 **Tech Stack**: Next.js 16.2 with React 19, leveraging App Router, Turbopack dev builds, and React 19's improved hydration. Bundled docs at `node_modules/next/dist/docs/` — see `AGENTS.md`.
+
+**Fitzgerald Principle (legacy, vestigial)**: The site originally embodied the Fitzgerald Principle (productive tension of opposing ideas — simple surfaces with rich depth). Automated scoring still exists at `npm run philosophy-check` but the site no longer leads with this framing as primary. Treat as a design heuristic for new components, not a positioning anchor.
 
 **Data-Driven Content Pattern** (CRITICAL):
 
@@ -232,28 +234,28 @@ _Agents Section:_
 
 ## Strategic Context & Content Priorities
 
-**Recent Direction** (Last 5 commits):
+**Recent Direction** (May 2026 repositioning pass):
 
-- URL flattening for SEO/AIEO optimization (improved discoverability)
-- Footer redesign: 4-column comprehensive navigation
-- 2026 predictions content (research-backed AI trajectory)
-- Claude Mastery focus (8 modules, 2025 breakthroughs)
-- Portfolio section prep (data exists, awaiting activation)
+- Repositioned site for Google gTech Ads role; removed Agentic Brewery (including Schema.org `worksFor`)
+- Reframed "client projects" as "agentic exploration"
+- Collapsed top nav from 6 to 4 items (About / Writing / Hackathons / Contact)
+- Reframed AI Journey + Agents hub copy from mission/aspirational to factual notes
+- Dropped dead `/philosophy` and `/laboratory` routes
+- Tightened deep subpages (voice agents, patterns, portfolio, layout metadata)
 
-**Content Maturity Map** (guides development focus):
+**Content Maturity Map**:
 
-- ✅ **Most Complete**: Claude Mastery (8 modules), Philosophy (deeply articulated)
-- ✅ **Well Developed**: About, Laboratory, AI Journey structure, Home
-- 🚀 **High-Impact Growth**: Portfolio activation (case studies in JSON, not visible on site)
-- 📊 **Opportunities**: Context Engineering metrics, visual representations of agentic exploration patterns
+- ✅ **Strongest sections (Nito-tier)**: `/hackathons`, `/agents/trust-engineering`, `/agents/mcp-trust-assessment`, `/agents/openclaw-risk-assessment`, `/context-engineering` ladder
+- ✅ **Now coherent**: Home, About, Contact, Footer, Writing hub, Agents hub
+- ⚠️ **Workshop-product (intentionally separate tone)**: `/vibe-coding`, `/teaching` — workshop-marketing copy is appropriate here
+- 📦 **Latent content**: `data/sustainability.json` (no surfacing route), `agent-experiments.json`, `voice-experiments.json`
 
-**Development Priorities**:
+**Development Priorities** (post-repositioning):
 
-1. Portfolio page activation (highest ROI: credibility + SEO)
+1. Cohesion check: Three-Hat → Multi-Role Fluency terminology sweep across `data/ai-journey.json`
 2. SEO/AIEO metadata optimization (ongoing)
-3. Case study detail pages (data ready, needs UI)
-4. Testimonials/social proof integration
-5. Context Engineering metrics visualization
+3. Hackathon log additions as new events happen
+4. Decide whether `data/sustainability.json` should resurface anywhere or be archived
 
 ## Theme System
 
@@ -315,26 +317,29 @@ import { fadeInUp, containerVariants, itemVariants } from "@/utils/animations";
 
 ## Dave's Voice & Terminology
 
-**Voice Guidelines**:
+**Voice Guidelines** (Nito-tier — factual, restrained, achievement-anchored):
 
-- **Humble explorer**: "Still figuring it out", "happy to share what I've learned"
-- **Direct but warm**: Clear insights without aggressive claims or sales language
-- **Lead with contrarian insights**: "Most people use AI to do more. I use it to do less."
-- **Gentle invitations**: "Happy to chat" not "Book a call now!"
+- **Concrete over evocative**: dated, scoped, named achievements over aspirational mood pieces
+- **Notes, not pitches**: "Notes on X" / "Happy to compare notes" — not "let's talk" / "ready to build"
 - **Proper sentence case**: Web content, not WhatsApp casual
 - **Research-backed**: Cite sources for claims (e.g., "SWE-bench scores", "Coatue S-curve")
-- **Virtuous cycle**: Build time → Capture knowledge → Create value → Share freely
+- **Compare-notes invitations only**: No commercial CTAs anywhere on the main site (workshop pages excepted)
 
-**Terminology Preferences** (use these framings):
+**Terminology Preferences**:
 
-- ✅ "Context Engineering" (not "Prompt Engineering") - broader, more accurate
-- ✅ "Complementarity" (not "replacement") - AI-human relationship
-- ✅ "ADHD-optimized workflows" (not "despite ADHD") - advantage framing
-- ✅ "Multi-Role Fluency" (not "wearing multiple hats") - rapid context switching methodology
-- ✅ "Fitzgerald Principle applications" - when explaining design decisions
-- ✅ "Living laboratory" (not "case studies") - ongoing validation vs past work
+- ✅ "Context Engineering" (not "Prompt Engineering") — broader, more accurate
+- ✅ "Multi-Role Fluency" (not "wearing multiple hats" or "Three-Hat Framework") — rapid context switching
+- ✅ "Agentic exploration" / "Personal lab" (not "client projects" / "case studies" / "living laboratory")
+- ✅ "Compare notes" (not "let's talk" / "get in touch" / "book a call")
+- ✅ "Solutions Architect" (not "AI Solutions Architect" or "Voice Agent Specialist")
+- ✅ "Measurement, signal integrity, AI governance" — the substance vocabulary
 
-**Avoid**: Corporate speak, aggressive claims ("10x your productivity!"), achievement focus, overly casual tone, replacement narratives, limitation framing of neurodivergence
+**Avoid**:
+
+- Mission framing: "Pioneering", "Next generation", "Building the frameworks our children will need"
+- Commercial framing: "Battle-tested solutions", "Build your business", "Give your business a voice", "Ready to..."
+- Outside-business framing: anything that implies active solicitation of client / consulting work
+- Reintroducing: Agentic Brewery, "Voice Agent Specialist" bio, "3 active client projects"
 
 ## Detailed Documentation
 
@@ -345,8 +350,6 @@ For deep dives, see `/ai_docs/`:
 - `architecture/codebase-analysis.md` - Full site map, tech stack, patterns
 
 ---
-
-**Philosophy Integration Note**: The codebase includes automated scoring for Fitzgerald Principle adherence. Components should demonstrate productive tensions (simple surfaces with rich depth, technical rigor with human warmth, AI augmentation preserving human agency).
 
 # important-instruction-reminders
 
