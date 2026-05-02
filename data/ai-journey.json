@@ -924,14 +924,14 @@
     },
     {
       "id": "technical-leadership",
-      "title": "Three-Hat Technical Leadership Framework",
+      "title": "Multi-Role Fluency Framework",
       "description": "Master the integration of systems architecture, product management, and hands-on implementation for comprehensive AI solutions",
       "overview": "This advanced learning path teaches you to seamlessly switch between three critical perspectives: Systems Architect (big picture), Product Manager (value optimization), and Implementation (delivery excellence). Based on hard-won insights from real-world AI projects.",
       "objectives": [
         "Develop systems thinking to prevent technical debt and complexity explosion",
         "Master data-driven product management for AI features",
         "Build robust implementation practices with quality gates and monitoring",
-        "Learn to context-switch effectively between the three hats",
+        "Learn to context-switch effectively between the three roles",
         "Apply the framework to deliver technical leadership value"
       ],
       "metadata": {
@@ -952,7 +952,7 @@
       },
       "phases": [
         {
-          "title": "Phase 1: The Systems Architect Hat",
+          "title": "Phase 1: The Systems Architect Role",
           "description": "Learn to think in systems, architectures, and scalable designs that prevent future problems.",
           "modules": [
             {
@@ -982,7 +982,7 @@
           ]
         },
         {
-          "title": "Phase 2: The Product Manager Hat",
+          "title": "Phase 2: The Product Manager Role",
           "description": "Optimize for user value, business impact, and data-driven decision making.",
           "modules": [
             {
@@ -1012,7 +1012,7 @@
           ]
         },
         {
-          "title": "Phase 3: The Implementation Hat",
+          "title": "Phase 3: The Implementation Role",
           "description": "Excellence in delivery through quality gates, automation, and continuous improvement.",
           "modules": [
             {
@@ -1043,14 +1043,14 @@
         },
         {
           "title": "Phase 4: Framework Integration",
-          "description": "Apply all three hats together for comprehensive technical leadership.",
+          "description": "Apply all three roles together for comprehensive technical leadership.",
           "modules": [
             {
               "title": "Context Switching Mastery",
               "topics": [
-                "When to wear which hat",
+                "When to lead with which role",
                 "Rapid perspective switching in meetings",
-                "Balancing competing priorities across hats"
+                "Balancing competing priorities across roles"
               ]
             },
             {
@@ -1074,8 +1074,8 @@
         }
       ],
       "process": [
-        "Start with self-assessment: Which hat do you naturally wear most?",
-        "Focus on strengthening your weakest hat first",
+        "Start with self-assessment: Which role do you naturally lead with?",
+        "Focus on strengthening your weakest role first",
         "Apply the framework to a real project throughout the learning process",
         "Document your 'hard lessons learned' as you go",
         "Share insights with the community to reinforce learning"
@@ -1136,7 +1136,7 @@
       "sections": [
         {
           "type": "grid",
-          "title": "Three-Hat Framework",
+          "title": "Multi-Role Fluency",
           "description": "Rapid context switching validated across 3+ client projects",
           "items": [
             {
