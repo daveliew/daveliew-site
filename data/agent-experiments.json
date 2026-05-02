@@ -7,20 +7,28 @@
       "title": "Claude Code Workflow Mastery",
       "description": "Deep expertise in agentic coding - context engineering, task decomposition, tool orchestration",
       "status": "Active - Daily Use",
-      "validated": ["Three-Hat Framework", "Multi-project workflows", "MCP integration"]
+      "validated": [
+        "Multi-Role Fluency",
+        "Multi-project workflows",
+        "MCP integration"
+      ]
     },
     {
       "title": "Multi-Agent Orchestration",
       "description": "Learning to coordinate specialized agents via ElevenLabs conversational AI and Claude Code subagents",
       "status": "Learning",
-      "exploring": ["Agent handoffs", "Specialized roles", "Workflow automation"]
+      "exploring": [
+        "Agent handoffs",
+        "Specialized roles",
+        "Workflow automation"
+      ]
     }
   ],
   "capabilities": [
     "Context engineering for agents",
     "Task decomposition patterns",
     "Tool orchestration (MCP)",
-    "Three-Hat rapid context switching",
+    "Multi-Role rapid context switching",
     "Multi-project workflow management"
   ],
   "learnings": [

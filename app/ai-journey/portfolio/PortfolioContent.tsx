@@ -42,8 +42,8 @@ export default function PortfolioContent() {
         <div className="bg-gradient-to-r from-[var(--deep-purple)]/10 to-[var(--teal)]/10 p-6 rounded-lg border border-[var(--deep-purple)]/30">
           <p className="text-gray-700 dark:text-gray-300">
             Every project here represents applied learning—from hackathon wins
-            to production client systems. The Three-Hat Framework (Systems
-            Architect → Product Manager → Implementation) runs through each one.
+            to production client systems. Multi-Role Fluency (Systems Architect
+            → Product Manager → Implementation) runs through each one.
           </p>
         </div>
       </motion.section>
