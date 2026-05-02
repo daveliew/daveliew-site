@@ -1,10 +1,12 @@
 # CLAUDE.md
 
+@AGENTS.md
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Quick Reference
 
-**Stack**: Next.js 16 + React 19 + TypeScript + Tailwind + Framer Motion
+**Stack**: Next.js 16.2 + React 19 + TypeScript + Tailwind + Framer Motion
 **Philosophy**: Fitzgerald Principle (opposing forces in productive tension)
 **Path Alias**: `@/*` → root directory
 **Critical**: Always run `npm run pre-deploy` before committing
@@ -26,7 +28,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Multi-Role Fluency**: Rapid context switching (Systems Architect / Product Manager / Implementation)
 - **ADHD-Optimized Workflows**: Neurodivergent patterns as AI-collaboration advantage
 - **Sustainability Convergence**: AI + Climate + Robotics intersection ($50T+ opportunity)
-- **Living Laboratory**: Every framework validated across 3 active client projects
+- **Personal Lab**: Frameworks tested through agentic exploration (Claude Code orchestration, MCP servers, context engineering)
 
 **Strategic Priorities**: Portfolio activation (case studies exist but not visible), SEO/AIEO optimization, 2026 predictions content
 
@@ -172,7 +174,7 @@ _Agents Section:_
 
 ## Key Frameworks & Concepts
 
-**Context Engineering** - Validated across 3 client projects:
+**Context Engineering** - Refined through personal agentic exploration:
 
 - Architecting informational environments where understanding emerges
 - Prompts are subset of broader environmental design
@@ -211,7 +213,7 @@ _Agents Section:_
 2. **Sustainability Imperatives** - Climate urgency driving green tech
 3. **Robotic Systems** - Physical automation reaching cost parity
 
-**Tech Stack**: Next.js 16 with React 19, leveraging App Router, Turbopack dev builds, and React 19's improved hydration.
+**Tech Stack**: Next.js 16.2 with React 19, leveraging App Router, Turbopack dev builds, and React 19's improved hydration. Bundled docs at `node_modules/next/dist/docs/` — see `AGENTS.md`.
 
 **Data-Driven Content Pattern** (CRITICAL):
 
@@ -243,7 +245,7 @@ _Agents Section:_
 - ✅ **Most Complete**: Claude Mastery (8 modules), Philosophy (deeply articulated)
 - ✅ **Well Developed**: About, Laboratory, AI Journey structure, Home
 - 🚀 **High-Impact Growth**: Portfolio activation (case studies in JSON, not visible on site)
-- 📊 **Opportunities**: Testimonials from 3 client projects, Context Engineering metrics, visual representations
+- 📊 **Opportunities**: Context Engineering metrics, visual representations of agentic exploration patterns
 
 **Development Priorities**:
 
@@ -298,7 +300,7 @@ import { fadeInUp, containerVariants, itemVariants } from "@/utils/animations";
 
 ## Key Dependencies
 
-- **next** (16.0.10) - React framework with App Router and Turbopack
+- **next** (16.2.1) - React framework with App Router and Turbopack
 - **react** (^19.2.0) - React 19 with improved hydration and Actions
 - **typescript** (^5) - Strict type checking
 - **tailwindcss** (^3.4.18) - Utility-first CSS
