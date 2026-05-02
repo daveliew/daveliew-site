@@ -1,17 +1,17 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'AI Journey - David Liew',
+  title: "Writing - David Liew",
   description:
-    'Pioneering human-AI collaboration for the next generation. Learn frameworks for building AI colleagues, from fundamentals to advanced Claude mastery.',
+    "Notes on context engineering, Claude, agents, and human-AI collaboration. Published as I figure things out.",
   alternates: {
-    canonical: 'https://daveliew.com/ai-journey',
+    canonical: "https://daveliew.com/ai-journey",
   },
   openGraph: {
-    title: 'AI Journey - David Liew',
+    title: "Writing - David Liew",
     description:
-      'Pioneering human-AI collaboration for the next generation.',
-    url: 'https://daveliew.com/ai-journey',
+      "Notes on context engineering, Claude, agents, and human-AI collaboration.",
+    url: "https://daveliew.com/ai-journey",
   },
 };
 

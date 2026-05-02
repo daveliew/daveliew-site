@@ -1,17 +1,15 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'AI Portfolio - David Liew',
-  description:
-    'Real-world AI implementations and case studies. See how the Three-Hat Framework and Context Engineering principles work in production.',
+  title: "Portfolio - David Liew",
+  description: "Projects from hackathons and personal exploration with AI.",
   alternates: {
-    canonical: 'https://daveliew.com/ai-journey/portfolio',
+    canonical: "https://daveliew.com/ai-journey/portfolio",
   },
   openGraph: {
-    title: 'AI Portfolio - David Liew',
-    description:
-      'Real-world AI implementations and case studies from production systems.',
-    url: 'https://daveliew.com/ai-journey/portfolio',
+    title: "Portfolio - David Liew",
+    description: "Projects from hackathons and personal exploration with AI.",
+    url: "https://daveliew.com/ai-journey/portfolio",
   },
 };
 

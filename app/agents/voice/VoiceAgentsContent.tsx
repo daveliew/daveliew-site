@@ -66,7 +66,7 @@ export default function VoiceAgentsContent() {
             Voice Agents
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Give your business a voice. AI that speaks for you.
+            Notes on voice-first AI from hackathon and exploration work.
           </p>
         </div>
 
@@ -79,10 +79,9 @@ export default function VoiceAgentsContent() {
                 screens, just conversation.
               </p>
               <p className="text-gray-600 dark:text-gray-400">
-                I specialize in building voice-first AI experiences using
-                ElevenLabs. From conversational agents that handle customer
-                calls to voice synthesis that scales your content — voice
-                removes friction from human-AI interaction.
+                ElevenLabs has been the most interesting voice stack to build
+                with. These are notes from that work — including Jazz Scat,
+                which placed 2nd at the ElevenLabs Worldwide Hackathon.
               </p>
             </blockquote>
           </div>
@@ -207,12 +206,10 @@ export default function VoiceAgentsContent() {
 
         {/* CTA */}
         <section className="text-center p-8 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white">
-          <h2 className="text-2xl font-bold mb-4">
-            Ready to Give Your Business a Voice?
-          </h2>
+          <h2 className="text-2xl font-bold mb-4">Working on voice AI?</h2>
           <p className="mb-6 max-w-xl mx-auto opacity-90">
-            Whether you need a customer support agent, voice content at scale,
-            or a custom voice experience — let&apos;s talk.
+            Happy to compare notes on conversational agents, latency, or what
+            works (and doesn&apos;t) with ElevenLabs.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link

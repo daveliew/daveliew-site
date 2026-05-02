@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import AIJourneySubpageLayout from '@/components/ai-journey/SubpageLayout';
-import aiJourneyData from '@/data/ai-journey.json';
+import { motion } from "framer-motion";
+import Link from "next/link";
+import AIJourneySubpageLayout from "@/components/ai-journey/SubpageLayout";
+import aiJourneyData from "@/data/ai-journey.json";
 
 interface CaseStudy {
   title: string;
@@ -18,18 +18,19 @@ interface CaseStudy {
 }
 
 export default function PortfolioContent() {
-  const allProjects = (aiJourneyData.journey as { casestudies?: CaseStudy[] }).casestudies || [];
+  const allProjects =
+    (aiJourneyData.journey as { casestudies?: CaseStudy[] }).casestudies || [];
 
   // Group by category
   const voiceProjects = allProjects.filter(
-    (cs) => cs.category === 'hackathon' || cs.category === 'exploration'
+    (cs) => cs.category === "hackathon" || cs.category === "exploration",
   );
-  const clientProjects = allProjects.filter((cs) => cs.category === 'client');
+  const clientProjects = allProjects.filter((cs) => cs.category === "client");
 
   return (
     <AIJourneySubpageLayout
       title="Portfolio & Results"
-      description="Real projects demonstrating AI implementation across hackathons, experiments, and client work. These aren&apos;t theoretical—they&apos;re battle-tested solutions."
+      description="Projects from hackathons and personal exploration."
     >
       {/* Hero Section */}
       <motion.section
@@ -40,8 +41,9 @@ export default function PortfolioContent() {
       >
         <div className="bg-gradient-to-r from-[var(--deep-purple)]/10 to-[var(--teal)]/10 p-6 rounded-lg border border-[var(--deep-purple)]/30">
           <p className="text-gray-700 dark:text-gray-300">
-            Every project here represents applied learning—from hackathon wins to production client systems.
-            The Three-Hat Framework (Systems Architect → Product Manager → Implementation) runs through each one.
+            Every project here represents applied learning—from hackathon wins
+            to production client systems. The Three-Hat Framework (Systems
+            Architect → Product Manager → Implementation) runs through each one.
           </p>
         </div>
       </motion.section>
@@ -77,18 +79,21 @@ export default function PortfolioContent() {
                       <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
                         {project.title}
                       </h3>
-                      {project.category === 'hackathon' && (
+                      {project.category === "hackathon" && (
                         <span className="px-2 py-1 text-xs font-medium bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded">
                           🏆 Hackathon
                         </span>
                       )}
-                      {project.category === 'exploration' && (
+                      {project.category === "exploration" && (
                         <span className="px-2 py-1 text-xs font-medium bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded">
                           🔬 Exploration
                         </span>
                       )}
                       <span className="text-xs text-gray-500 dark:text-gray-400">
-                        {new Date(project.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                        {new Date(project.date).toLocaleDateString("en-US", {
+                          month: "short",
+                          year: "numeric",
+                        })}
                       </span>
                     </div>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -127,14 +132,16 @@ export default function PortfolioContent() {
                 </h4>
                 <ul className="space-y-2">
                   {project.outcomes.map((outcome, i) => (
-                    <li key={i} className="flex items-start gap-2 text-gray-600 dark:text-gray-400">
+                    <li
+                      key={i}
+                      className="flex items-start gap-2 text-gray-600 dark:text-gray-400"
+                    >
                       <span className="text-green-500 mt-1">✓</span>
                       {outcome}
                     </li>
                   ))}
                 </ul>
               </div>
-
             </motion.div>
           ))}
         </div>
@@ -171,18 +178,21 @@ export default function PortfolioContent() {
                       <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
                         {project.title}
                       </h3>
-                      {project.status === 'Active' && (
+                      {project.status === "Active" && (
                         <span className="px-2 py-1 text-xs font-medium bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded">
                           Active
                         </span>
                       )}
-                      {project.status === 'Completed' && (
+                      {project.status === "Completed" && (
                         <span className="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded">
                           Completed
                         </span>
                       )}
                       <span className="text-xs text-gray-500 dark:text-gray-400">
-                        {new Date(project.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                        {new Date(project.date).toLocaleDateString("en-US", {
+                          month: "short",
+                          year: "numeric",
+                        })}
                       </span>
                     </div>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -211,7 +221,10 @@ export default function PortfolioContent() {
                 </h4>
                 <ul className="space-y-2">
                   {project.outcomes.map((outcome, i) => (
-                    <li key={i} className="flex items-start gap-2 text-gray-600 dark:text-gray-400">
+                    <li
+                      key={i}
+                      className="flex items-start gap-2 text-gray-600 dark:text-gray-400"
+                    >
                       <span className="text-[var(--teal)] mt-1">✓</span>
                       {outcome}
                     </li>
@@ -235,8 +248,9 @@ export default function PortfolioContent() {
             2026 Focus: AI Agents
           </h3>
           <p className="text-gray-700 dark:text-gray-300 mb-3">
-            Moving from AI tools to autonomous agent systems. Multi-agent orchestration, trust engineering,
-            and knowledge patterns (RAG, MCP) are the next frontier.
+            Moving from AI tools to autonomous agent systems. Multi-agent
+            orchestration, trust engineering, and knowledge patterns (RAG, MCP)
+            are the next frontier.
           </p>
           <Link
             href="/agents"

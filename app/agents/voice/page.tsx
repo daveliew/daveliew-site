@@ -1,13 +1,15 @@
-import type { Metadata } from 'next';
-import VoiceAgentsContent from './VoiceAgentsContent';
+import type { Metadata } from "next";
+import VoiceAgentsContent from "./VoiceAgentsContent";
 
 export const metadata: Metadata = {
-  title: 'Voice Agents - ElevenLabs Specialization',
-  description: 'Building voice-first AI experiences with ElevenLabs. Conversational AI agents, voice synthesis, and audio generation. Give your business a voice.',
-  keywords: 'voice agents, ElevenLabs, conversational AI, voice synthesis, text to speech, AI voice, Singapore',
+  title: "Voice Agents - Notes from ElevenLabs",
+  description:
+    "Notes on voice-first AI: conversational agents, voice synthesis, and what I learned from the ElevenLabs Worldwide Hackathon (2nd place).",
+  keywords:
+    "voice agents, ElevenLabs, conversational AI, voice synthesis, text to speech",
   openGraph: {
-    title: 'Voice Agents - Give Your Business a Voice',
-    description: 'Voice-first AI experiences with ElevenLabs conversational agents.',
+    title: "Voice Agents - David Liew",
+    description: "Notes on voice-first AI from ElevenLabs hackathon work.",
   },
 };
 

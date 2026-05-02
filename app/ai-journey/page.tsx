@@ -1,13 +1,16 @@
-import type { Metadata } from 'next';
-import AIJourneyContent from './AIJourneyContent';
+import type { Metadata } from "next";
+import AIJourneyContent from "./AIJourneyContent";
 
 export const metadata: Metadata = {
-  title: 'AI Journey',
-  description: 'Pioneering human-AI collaboration for the next generation. Learn Context Engineering, Claude mastery, and practical AI implementation frameworks.',
-  keywords: 'AI learning, human-AI collaboration, Context Engineering, Claude, AI frameworks, prompt engineering, AI agents',
+  title: "Writing",
+  description:
+    "Notes on context engineering, Claude, agents, and human-AI collaboration. Published as I figure things out.",
+  keywords:
+    "context engineering, Claude, AI agents, human-AI collaboration, prompt engineering",
   openGraph: {
-    title: 'AI Journey - Human-AI Collaboration',
-    description: 'Pioneering human-AI collaboration. Learn Context Engineering, Claude mastery, and practical AI frameworks.',
+    title: "Writing - David Liew",
+    description:
+      "Notes on context engineering, Claude, agents, and human-AI collaboration.",
   },
 };
 

@@ -63,8 +63,8 @@ export default function AboutContent() {
                 Explorer
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Testing frameworks for the next generation navigating AI
-                cohabitation
+                Personal lab work on context engineering, agent trust, and
+                AI-assisted workflows.
               </p>
             </div>
           </div>

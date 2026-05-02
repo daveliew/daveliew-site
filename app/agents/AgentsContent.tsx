@@ -204,7 +204,7 @@ export default function AgentsContent() {
             <ul className="text-xs text-gray-500 dark:text-gray-500 space-y-1">
               <li>&bull; Conversational AI &amp; voice synthesis</li>
               <li>&bull; Sound &amp; music generation</li>
-              <li>&bull; Give your business a voice</li>
+              <li>&bull; Latency and turn-taking patterns</li>
             </ul>
           </Card>
         </Link>
