@@ -10,6 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Philosophy**: Fitzgerald Principle (opposing forces in productive tension)
 **Path Alias**: `@/*` → root directory
 **Critical**: Always run `npm run pre-deploy` before committing
+**Backlog**: top-3 in `ai_docs/TODO.md` § Now / Next — auto-surfaced into every fresh session by the global SessionStart hook (priorities SoT: memory `project_daveliew_site.md`)
 
 ## Positioning & Voice
 
