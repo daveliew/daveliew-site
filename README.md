@@ -18,3 +18,14 @@ Former Technical Solutions Consultant @ Meta
 ## 💬 Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/daveliew)
+
+---
+
+## Licence
+
+None, and that is deliberate. This source is public as a portfolio artifact,
+not offered for reuse. The content is my own writing and professional identity,
+so all rights are reserved. Read it, learn from it, ask me about it — please
+don't republish it as your own.
+
+© 2026 Dave Liew
