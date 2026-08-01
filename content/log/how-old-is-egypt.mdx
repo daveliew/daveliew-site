@@ -1,34 +1,79 @@
+import { Dialogue, Turn } from "@/components/log/Dialogue";
+
 export const meta = {
   title: "How old is Egypt?",
   date: "2026-08-01",
   type: "essay",
   summary:
-    "Taking turns guessing the age of Egypt with my daughter — child-led exploration with AI in the loop, and the parent's job of steering.",
+    "An annotated transcript of child-led learning: Socratic turn-taking with my daughter, and the scoped boundary where AI was allowed in.",
 };
 
 My daughter came home from school with a fact and a question. She'd learned
 that China is 4,000 years old, and that Iran and Egypt are the oldest
 countries in the world — but she wasn't sure how old they were.
 
-We took turns to guess. She opened with 7 million. I offered that maybe 7,000
-was a closer number. Then we asked her some simple math: if something is older
-than China, would its number be bigger or smaller than 4,000? She clearly
-intuited more, and landed on 7,000 as her guesstimate for Egypt and Iran.
+What followed turned into an unplanned tour of geography and economics. The
+interesting part, looking back, is the shape of it: who spoke when, and where
+the AI was allowed in.
 
-From there the thread kept pulling. We unveiled a bit of world history by
-exploring how some countries have lasted. We traced why Russia is so big and
-why it has fought so often. We looked at how Mongolia was once a huge empire
-and waned over time. And we grounded all of it in her basic understanding of
-humans: people need water, oxygen and food to survive. That model took us to
-landlocked middle Africa — paying more to obtain food and water, with less
-access to educational resources to sell, and therefore net poorer than the
-countries around them.
+## The transcript, annotated
 
-It turned into a genuinely fascinating exploration of geography and economics,
-none of it planned. The AI's job was to be the kid alongside her — following
-her curiosity, answering at her level, staying child-led. Mine was to guide
-and steer some of the thinking: choosing the next question, planting a concept
-where it would take, and knowing when to step in.
+<Dialogue>
+  <Turn speaker="kid" aside="the spark: a school fact with a missing number">
+    "China is 4,000 years old — and Egypt and Iran are even older. But how old
+    are *they*?"
+  </Turn>
+  <Turn speaker="dad" aside="commit to a guess before looking anything up">
+    "Let's take turns guessing."
+  </Turn>
+  <Turn speaker="kid" aside="a first anchor — wildly high is fine; it's hers">
+    "Seven million!"
+  </Turn>
+  <Turn speaker="dad" aside="calibrate by ordering, not by telling">
+    "Maybe 7,000 is a closer number. And if Egypt is older than China, would
+    its number be bigger or smaller than 4,000?"
+  </Turn>
+  <Turn speaker="kid" aside="she intuited her way there — the number is hers now">
+    She works it through: older means bigger than 4,000 — and lands on 7,000
+    as her guesstimate for Egypt and Iran.
+  </Turn>
+  <Turn speaker="ai" aside="AI enters only after the commitment — as the kid alongside her">
+    Only now does the AI join. Together we ask it: how do some countries last?
+    Why is Russia so big, and why has it fought so often? What happened to
+    Mongolia's huge empire?
+  </Turn>
+  <Turn speaker="dad" aside="ground every new fact in invariants she already trusts">
+    Each answer gets tested against her basic model of humans: people need
+    water, oxygen and food to survive.
+  </Turn>
+  <Turn speaker="ai" aside="the thread's payoff — geography becomes economics">
+    The thread ends in landlocked middle Africa: paying more to obtain food
+    and water, with less access to educational resources to sell — and
+    therefore net poorer than the countries around them.
+  </Turn>
+</Dialogue>
+
+## The moves
+
+1. **Guess before you look.** A committed guess turns the answer into a
+   payoff instead of a fact to absorb.
+2. **Calibrate by ordering, not telling.** "Bigger or smaller than 4,000?" is
+   a question she can win with reasoning she already has.
+3. **Ground in invariants.** Every new fact got tested against what she
+   already trusts: people need water, oxygen and food.
+4. **Pull the thread.** One answered question buys the next: Russia →
+   Mongolia → landlocked Africa.
+
+## Where the AI was allowed in — and where it wasn't
+
+The AI never answered first. The guessing game was ours: commitment,
+calibration, her landing on 7,000 — no lookup. Only after she owned a number
+did we ask the AI together, and its job then was to be the kid alongside
+her — following her curiosity, answering at her level, staying child-led.
+Mine stayed steering: choosing the next question, planting a concept where it
+would take, and knowing when to step in.
+
+An answer before the guess would have killed the game. That's the boundary.
 
 No lesson plan would have routed from "how old is Egypt?" to trade access in
 landlocked countries. The question-asking was the curriculum.
