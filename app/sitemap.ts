@@ -134,12 +134,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/ai-journey/overview`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
       url: `${baseUrl}/ai-journey/why-ai`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -207,18 +201,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/ai-journey/techniques/tool-use`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/ai-journey/techniques/rag`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/ai-journey/techniques/agent-rag`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
