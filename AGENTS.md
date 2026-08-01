@@ -22,7 +22,7 @@ Run `npm run pre-deploy` (TypeScript + ESLint + Philosophy + SEO + Build). ESLin
 
 ## Component Reuse
 
-Check `/components/common/` before creating new components: Card, PageLayout, SubpageLayout, BackLink, SectionHeader, CTAButton.
+Check `/components/common/` before creating new components: Card, PageLayout, BackLink, SectionHeader, CTAButton, MotionProvider. AI-journey subpages use `components/ai-journey/SubpageLayout` (not in common).
 
 ## Theme
 

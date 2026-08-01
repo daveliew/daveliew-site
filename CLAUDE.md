@@ -14,13 +14,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Positioning & Voice
 
-**What this is**: Personal site for an Advertising Solutions Architect at Google gTech Ads (Finance & Brands). Substance: **measurement, signal integrity, AI governance** — the through-line across Meta and now Google. Audience: Solutions Architect peers and people working on measurement, AI adoption, or governance in financial services / brand marketing (not "explorers" or "learners" — that was older positioning).
+**What this is**: Personal site for a Product Deployment Engineer at Google gTech Ads, specialising in Search+. The role combines Solutions Architect with Customer Solutions Engineering — the emphasis is **product adoption and deployment**, not vertical coverage. Substance: **product adoption, deployment, measurement integrity** — the through-line across Meta and now Google. Audience: peers doing product deployment, measurement, and AI adoption work (not "explorers" or "learners" — that was older positioning).
 
-**Bio**: "Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads (Finance & Brands). Ex-Meta. Singapore."
+**Bio**: "Product Deployment Engineer — product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta. Singapore."
 
-**Experience**: Google gTech Ads (Apr 2026–present, Advertising SA) · Meta (2022–2024, Technical Solutions Consultant — SKAN 4.0, Conversions API, signal-loss attribution) · AWS / SG Code Campus (earlier — Bedrock, AI tooling).
+**Experience**: Google gTech Ads (Apr 2026–present; Product Deployment Engineer, Search+ — previously titled Advertising Solutions Architect) · Meta (2022–2024, Technical Solutions Consultant — SKAN 4.0, Conversions API, signal-loss attribution) · AWS / SG Code Campus (earlier — Bedrock, AI tooling).
 
-**Employer disclosure**: Google role **is** publicly disclosed on the site (matches SA peers like Nito Buendia). The old "do not disclose Google" guidance is **stale — ignore it.**
+**Employer disclosure**: Google role **is** publicly disclosed on the site (matches peers like Nito Buendia). The old "do not disclose Google" guidance is **stale — ignore it.**
 
 **Tone — Nito-tier** (ref: nitobuendia.com; "would Nito put this on his site?"):
 
@@ -29,16 +29,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Proper sentence case**, research-backed (cite sources: SWE-bench, Coatue S-curve)
 - **No commercial CTAs anywhere** on the main site (workshop pages excepted)
 
-**Terminology** — ✅ use: "Context Engineering" (not Prompt Engineering) · "Multi-Role Fluency" (not Three-Hat / "multiple hats") · "Agentic exploration" / "Personal lab" (not "client projects" / "case studies") · "Compare notes" (not "let's talk" / "book a call") · "Solutions Architect" (not "AI SA" / "Voice Agent Specialist").
+**Terminology** — ✅ use: "Context Engineering" (not Prompt Engineering) · "Multi-Role Fluency" (not Three-Hat / "multiple hats") · "Agentic exploration" / "Personal lab" (not "client projects" / "case studies") · "Compare notes" (not "let's talk" / "book a call") · "Product Deployment Engineer" (not "Solutions Architect" / "AI SA" / "Voice Agent Specialist" — all superseded).
 
 **Avoid**: mission framing ("pioneering", "next generation", "frameworks our children will need"); commercial framing ("battle-tested", "build your business", "give your business a voice", "ready to…"); any outside-business solicitation; reintroducing Agentic Brewery (sterilised) or the "Voice Agent Specialist" bio / "3 active client projects". Workshop-marketing tone is OK **only** under `/vibe-coding` and `/teaching` (actual workshop products).
 
-**Decoupled surfaces**: daveliew.com and github.com/daveliew are intentionally separate — the site is Nito-tier notes for SA peers (data from `/data/*.json`); the GitHub profile is professional hiring positioning (data from the `daveliew/daveliew` repo). Don't force-sync them; it dilutes both.
+**Decoupled surfaces**: daveliew.com and github.com/daveliew are intentionally separate — the site is Nito-tier notes for engineering peers (data from `/data/*.json`); the GitHub profile is professional hiring positioning (data from the `daveliew/daveliew` repo). Don't force-sync them; it dilutes both.
 
 ## Development Commands
 
 - `npm run dev` - Start development server (http://localhost:3000)
-- `npm run build` - Build production (runs type-check + lint first)
+- `npm run build` - Build production (`prebuild` runs type-check + lint on Vercel, but NOT locally — `~/.npmrc ignore-scripts=true` blocks it; use `pre-deploy` as the local gate)
 - `npm run type-check` - TypeScript validation only
 - `npm run lint` - ESLint validation only
 - `npm run philosophy-check` - Fitzgerald Principle adherence scoring
@@ -64,11 +64,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Analytics**: Vercel Analytics (privacy-first, auto-configured)
 
 **Recurring Tasks**:
-| Task | Frequency | Trigger |
-|------|-----------|---------|
-| SEO validation | Every deploy | `npm run pre-deploy` |
-| Search Console review | Monthly | Calendar: 15th |
-| Full SEO audit | Quarterly | Jan/Apr/Jul/Oct |
+
+| Task                  | Frequency    | Trigger              |
+| --------------------- | ------------ | -------------------- |
+| SEO validation        | Every deploy | `npm run pre-deploy` |
+| Search Console review | Monthly      | Calendar: 15th       |
+| Full SEO audit        | Quarterly    | Jan/Apr/Jul/Oct      |
 
 ## Project Structure
 
@@ -77,6 +78,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```
 /app              - Next.js App Router pages & layouts
 /components       - React components (layout, common, skills, ai-journey, experience)
+/content          - Field-log MDX entries (content/log/*.mdx → rendered at /log)
 /data             - JSON content files (never hardcode content in components)
 /types            - TypeScript interfaces for data structures
 /styles           - Global CSS and theme utilities
@@ -86,9 +88,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 /ai_docs          - Comprehensive documentation
 ```
 
-**Top Nav**: About / Writing / Hackathons / Contact (collapsed from 6 items in May 2026 to mirror Nito's three-bucket structure).
+**Top Nav**: About / Writing / Log / Hackathons / Contact (collapsed from 6 items in May 2026; Log added Aug 2026 as the field-log stream — see memory `project_daveliew_site`).
 
-**Full site map**: `ai_docs/architecture/codebase-analysis.md`. _Removed routes (do not re-add)_: `/philosophy`, `/laboratory` — declared in sitemap/nav but never had pages; purged May 2026.
+**Full site map**: `ai_docs/architecture/codebase-analysis.md`. _Removed routes (do not re-add)_: `/philosophy`, `/laboratory` — declared in sitemap/nav but never had pages; purged May 2026, now 301-redirect to `/about` and `/hackathons` via `next.config.mjs`.
 
 **Key Data Files** (`/data/`):
 
@@ -121,6 +123,7 @@ _Strategic/changelog context (May 2026 repositioning, content-maturity map, acti
 1. Most page copy lives inline in `app/**/<Section>Content.tsx` — edit there
 2. For Writing tab content, edit `data/ai-journey.json` (typed via `types/ai-journey-tabs.ts`)
 3. For nav dropdown, edit `data/skill-tree-navigation.json` (typed via `types/skill-tree.ts`)
+4. Field-log entries: add `content/log/<slug>.mdx` starting with `export const meta = { title, date, type: "note" | "essay", summary }` (typed via `types/log.ts`; no YAML frontmatter — it renders as text). Index, sitemap, and static params pick it up automatically. Underscore-prefixed files are ignored.
 
 ### Adding New Pages
 
@@ -136,7 +139,7 @@ _Strategic/changelog context (May 2026 repositioning, content-maturity map, acti
 - **tailwindcss** (^3.4.18) - utility-first CSS
 - **framer-motion** (^11.18.2) - animations
 
-**Build Config** (`next.config.mjs`): MDX via `@next/mdx` (`pageExtensions: ts/tsx/md/mdx`), `optimizePackageImports: ['framer-motion']`, plus `/ai-journey/*` redirects. Path alias `@/*` → root (tsconfig.json).
+**Build Config** (`next.config.mjs`): MDX via `@next/mdx` (`pageExtensions: ts/tsx/md/mdx`, remark-gfm + rehype-pretty-code/shiki; shared MDX components in root `mdx-components.tsx`), `optimizePackageImports: ['framer-motion']`, plus `/ai-journey/*` redirects. Path alias `@/*` → root (tsconfig.json).
 
 ## Detailed Documentation
 
