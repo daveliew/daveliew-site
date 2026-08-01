@@ -149,6 +149,22 @@ const Navbar: React.FC = () => {
             />
           </div>
 
+          {/* Log */}
+          <Link
+            href="/log"
+            className={`relative transition-colors duration-200 px-1 py-2 flex items-center rounded-sm
+              hover:text-purple-600 dark:hover:text-purple-400
+              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2
+              ${
+                pathname.startsWith("/log")
+                  ? 'text-purple-600 dark:text-purple-400 font-medium after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-0.5 after:bg-purple-600 dark:after:bg-purple-400 after:rounded-full after:content-[""]'
+                  : "text-gray-700 dark:text-gray-300"
+              }
+            `}
+          >
+            <span className="text-sm md:text-base">Log</span>
+          </Link>
+
           {/* Hackathons */}
           <Link
             href="/hackathons"
@@ -246,6 +262,19 @@ const Navbar: React.FC = () => {
             }`}
           >
             About
+          </Link>
+
+          {/* Log */}
+          <Link
+            href="/log"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`py-2 ${
+              pathname.startsWith("/log")
+                ? "text-purple-600 dark:text-purple-400 font-medium"
+                : "text-gray-700 dark:text-gray-300"
+            }`}
+          >
+            Log
           </Link>
 
           {/* Hackathons */}

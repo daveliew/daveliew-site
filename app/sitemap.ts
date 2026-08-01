@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getLogEntries } from "@/utils/log";
 
 /**
  * Next.js 16 Sitemap Generation
@@ -10,10 +11,25 @@ import type { MetadataRoute } from "next";
  * 0.6 = Sub-pages and deep content
  */
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://daveliew.com";
+  const logEntries = await getLogEntries();
 
   return [
+    // Field Log
+    {
+      url: `${baseUrl}/log`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...logEntries.map((entry) => ({
+      url: `${baseUrl}/log/${entry.slug}`,
+      lastModified: new Date(entry.date),
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
+    })),
+
     // Main Pages
     {
       url: baseUrl,
