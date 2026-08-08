@@ -43,7 +43,7 @@ Cadence, memory triggers, and the recurring-task table live in the project skill
 
 **Full site map**: `ai_docs/architecture/codebase-analysis.md`. _Removed routes (do not re-add)_: `/philosophy`, `/laboratory` — declared in sitemap/nav but never had pages; purged May 2026, now 301-redirect to `/about` and `/hackathons` via `next.config.mjs`.
 
-**Key Data Files** (`/data/`): `ai-journey.json` and `skill-tree-navigation.json` feed frozen surfaces only — do not extend them. Live-surface copy lives inline in `app/**/<Section>Content.tsx`.
+**Key Data Files** (`/data/`): `ai-journey.json` feeds frozen surfaces only — do not extend it. Live-surface copy lives inline in `app/**/<Section>Content.tsx`.
 
 ## Architecture Essentials
 
