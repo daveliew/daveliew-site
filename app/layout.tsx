@@ -64,6 +64,9 @@ export const metadata: Metadata = {
       "A field log of the AI era — dated notes on four decades of tech shifts, written for future me first.",
     images: ["/twitter-image"],
   },
+  verification: {
+    google: "y5sicvbp0VL4akAiyFob6U1c_1dqLoVuDcQYlPtR6V0",
+  },
   robots: {
     index: true,
     follow: true,
