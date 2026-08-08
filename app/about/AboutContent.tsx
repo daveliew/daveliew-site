@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { Card, SectionHeader, PageLayout } from "@/components/common";
 import { sectionAnimation } from "@/utils/animations";
 
@@ -373,25 +372,28 @@ export default function AboutContent() {
         {...sectionAnimation(6)}
         className="bg-gradient-to-r from-blue-50 to-teal-50 dark:from-blue-900/20 dark:to-teal-900/20 rounded-lg p-8"
       >
-        <div className="max-w-2xl mx-auto text-center mb-8">
+        <div className="max-w-2xl mx-auto text-center">
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-            If you&apos;re working on product deployment, Search, measurement
-            integrity, or AI adoption — happy to compare notes.
+            Happy to compare notes — find me on{" "}
+            <a
+              href="https://linkedin.com/in/daveliew"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              LinkedIn
+            </a>{" "}
+            or{" "}
+            <a
+              href="https://github.com/daveliew"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+            >
+              GitHub
+            </a>
+            .
           </p>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200 shadow-sm"
-          >
-            Compare Notes
-          </Link>
-          <Link
-            href="/ai-journey"
-            className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md border-2 border-blue-600 text-blue-600 bg-transparent hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-200"
-          >
-            Explore AI Journey
-          </Link>
         </div>
       </motion.section>
     </PageLayout>

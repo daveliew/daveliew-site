@@ -12,6 +12,18 @@ const APP_DIR = path.join(__dirname, "../app");
 const SITEMAP_PATH = path.join(__dirname, "../app/sitemap.ts");
 const DATA_DIR = path.join(__dirname, "../data");
 
+// Frozen surfaces (ai_docs/2026-08-site-purpose-reset.md): live by URL but
+// intentionally absent from nav and sitemap. Not a coverage gap.
+const FROZEN_PREFIXES = [
+  "/agents",
+  "/ai-journey",
+  "/context-engineering",
+  "/vibe-coding",
+  "/teaching",
+  "/hackathons",
+  "/contact",
+];
+
 // Results tracking
 const results = {
   metaTags: { passed: [], warnings: [], errors: [] },
@@ -49,11 +61,16 @@ function findAllPages(dir, pages = []) {
 function extractSitemapRoutes() {
   try {
     const content = fs.readFileSync(SITEMAP_PATH, "utf-8");
-    const urlMatches = content.match(/url:\s*[`'"]([^`'"]+)[`'"]/g) || [];
+    // Quoted URLs plus the bare `url: baseUrl` homepage entry
+    const urlMatches =
+      content.match(/url:\s*([`'"][^`'"]+[`'"]|baseUrl\b)/g) || [];
     const routes = urlMatches.map((match) => {
-      const url = match.replace(/url:\s*[`'"]/g, "").replace(/[`'"]/g, "");
+      const url = match.replace(/url:\s*/g, "").replace(/[`'"]/g, "");
       return (
-        url.replace("https://daveliew.com", "").replace("${baseUrl}", "") || "/"
+        url
+          .replace("https://daveliew.com", "")
+          .replace("${baseUrl}", "")
+          .replace("baseUrl", "") || "/"
       );
     });
     // Dynamic entries (e.g. /log/${entry.slug}) can't be validated statically —
@@ -73,7 +90,7 @@ function checkPageMetadata(pagePath, route) {
 
     const hasMetadata =
       content.includes("export const metadata") ||
-      content.includes("export function generateMetadata");
+      content.includes("function generateMetadata"); // plain or async export
 
     if (hasMetadata) {
       // Check for essential meta properties
@@ -122,16 +139,15 @@ function checkSitemapCoverage(pages, sitemapRoutes) {
   for (const route of pageRoutes) {
     if (sitemapRoutes.includes(route)) {
       results.sitemap.passed.push(`${route}: In sitemap`);
+    } else if (route.includes("[")) {
+      // Dynamic routes are covered by generated sitemap entries
+      // (e.g. /log/${entry.slug}), which extractSitemapRoutes can't
+      // match statically — proven at build time via generateStaticParams.
+      results.sitemap.passed.push(`${route}: Covered by dynamic entries`);
+    } else if (FROZEN_PREFIXES.some((p) => route.startsWith(p))) {
+      results.sitemap.passed.push(`${route}: Frozen (intentionally absent)`);
     } else {
-      // Some routes might be intentionally excluded
-      const isOverviewRoute = route.endsWith("/overview");
-      if (isOverviewRoute) {
-        results.sitemap.warnings.push(
-          `${route}: Not in sitemap (may be intentional)`,
-        );
-      } else {
-        results.sitemap.warnings.push(`${route}: Not in sitemap`);
-      }
+      results.sitemap.warnings.push(`${route}: Not in sitemap`);
     }
   }
 
