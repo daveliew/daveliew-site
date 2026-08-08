@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact David Liew - Solutions Architect",
+  title: "Contact David Liew - Product Deployment Engineer",
   description:
-    "Connect with David Liew on LinkedIn or GitHub. Happy to compare notes on measurement, AI adoption, or governance in financial services and brand marketing. Singapore.",
+    "Connect with David Liew on LinkedIn or GitHub. Happy to compare notes on product deployment, Search, measurement integrity, or AI adoption. Singapore.",
   alternates: {
     canonical: "https://daveliew.com/contact",
   },
   openGraph: {
-    title: "Contact David Liew - Solutions Architect",
+    title: "Contact David Liew - Product Deployment Engineer",
     description:
-      "Compare notes on measurement, AI adoption, or governance in financial services and brand marketing.",
+      "Compare notes on product deployment, Search, measurement integrity, or AI adoption.",
     url: "https://daveliew.com/contact",
   },
 };

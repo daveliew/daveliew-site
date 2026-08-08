@@ -4,13 +4,13 @@ import AboutContent from "./AboutContent";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Advertising Solutions Architect at Google gTech Ads. Ex-Meta. Working on measurement, signal integrity, and AI governance in financial services and brand marketing. Singapore.",
+    "Product Deployment Engineer at Google gTech Ads. Ex-Meta. Working on product adoption, deployment, and measurement integrity, specialising in Search+. Singapore.",
   keywords:
-    "David Liew, Solutions Architect, Google Ads, measurement, signal integrity, AI governance, Meta, Singapore",
+    "David Liew, Product Deployment Engineer, Google Ads, Search, product adoption, deployment, measurement integrity, Meta, Singapore",
   openGraph: {
-    title: "About David Liew - Solutions Architect",
+    title: "About David Liew - Product Deployment Engineer",
     description:
-      "Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads. Ex-Meta.",
+      "Product Deployment Engineer — product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta.",
     type: "profile",
   },
 };

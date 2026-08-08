@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "David Liew - AI Solutions Architect";
+export const alt = "David Liew - Product Deployment Engineer";
 export const size = {
   width: 1200,
   height: 630,
@@ -90,7 +90,7 @@ export default async function Image() {
               marginBottom: "24px",
             }}
           >
-            AI Solutions Architect
+            Product Deployment Engineer
           </div>
           <div
             style={{

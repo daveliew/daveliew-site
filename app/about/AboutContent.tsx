@@ -10,7 +10,7 @@ export default function AboutContent() {
   return (
     <PageLayout
       title="About David Liew"
-      description="Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads (Finance & Brands). Ex-Meta. Singapore."
+      description="Product Deployment Engineer — product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta. Singapore."
       gradientTitle
     >
       {/* Hero Section */}
@@ -20,7 +20,7 @@ export default function AboutContent() {
             <div className="flex-shrink-0">
               <Image
                 src="/images/headshot.jpg"
-                alt="David Liew - Solutions Architect"
+                alt="David Liew - Product Deployment Engineer"
                 width={160}
                 height={160}
                 className="rounded-full shadow-lg"
@@ -28,11 +28,11 @@ export default function AboutContent() {
               />
             </div>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I&apos;m Dave. Advertising Solutions Architect at Google gTech Ads
-              in Singapore, working with Finance and Brands. Ex-Meta. The
-              through-line across both: making complex technical systems produce
-              business results for the people running the businesses
-              they&apos;re meant to serve.
+              I&apos;m Dave. Product Deployment Engineer at Google gTech Ads in
+              Singapore, specialising in Search+. Ex-Meta. The through-line
+              across both: making complex technical systems produce business
+              results for the people running the businesses they&apos;re meant
+              to serve.
             </p>
           </div>
 
@@ -53,8 +53,8 @@ export default function AboutContent() {
                 AI Engineer
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Solutions Architect at Google gTech Ads. Working with Finance
-                and Brands.
+                Product Deployment Engineer at Google gTech Ads. Specialising in
+                Search+.
               </p>
             </div>
             <div className="text-center">
@@ -291,7 +291,7 @@ export default function AboutContent() {
                 The unglamorous foundation. If the signals are wrong, every
                 decision built on top of them compounds the error. Two years
                 deep in this at Meta through SKAN 4.0 and the Conversions API;
-                continuing the work at Google with Finance and Brands.
+                continuing the work at Google across Search+ deployments.
               </p>
             </div>
             <div>
@@ -350,7 +350,7 @@ export default function AboutContent() {
                 </li>
                 <li>• Product strategy and roadmap</li>
                 <li>• Cross-functional team collaboration</li>
-                <li>• Financial services and brand marketing context</li>
+                <li>• Search advertising and product deployment context</li>
               </ul>
             </div>
             <div>
@@ -375,8 +375,8 @@ export default function AboutContent() {
       >
         <div className="max-w-2xl mx-auto text-center mb-8">
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-            If you&apos;re working on measurement, AI adoption, or governance in
-            financial services or brand marketing — happy to compare notes.
+            If you&apos;re working on product deployment, Search, measurement
+            integrity, or AI adoption — happy to compare notes.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

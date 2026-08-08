@@ -20,8 +20,9 @@ const Footer: React.FC = () => {
               David Liew
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              Solutions Architect — measurement, signal integrity, AI
-              governance. Currently at Google gTech Ads. Ex-Meta.
+              Product Deployment Engineer — product adoption, deployment,
+              measurement integrity. Currently at Google gTech Ads (Search+).
+              Ex-Meta.
             </p>
 
             {/* Social Links with Icons */}

@@ -329,8 +329,8 @@ export default function HomePage() {
               Working on similar problems?
             </h2>
             <p className="text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
-              If you&apos;re working on measurement, AI adoption, or governance
-              in financial services or brand marketing — happy to compare notes.
+              If you&apos;re working on product deployment, Search, measurement
+              integrity, or AI adoption — happy to compare notes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

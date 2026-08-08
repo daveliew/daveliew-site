@@ -1,10 +1,10 @@
-# Dave Liew - AI Solutions Architect (Full Documentation)
+# Dave Liew - Product Deployment Engineer (Full Documentation)
 
 > Building AI colleagues, not AI tools. Exploring human-AI collaboration through the Fitzgerald Principle.
 
 ## About David Liew
 
-David Liew is an AI engineer and builder based in Singapore, pioneering practical frameworks for human-AI collaboration. Background includes Meta (Technical Solutions Consultant) and Google (Advertising Solutions Architect). His work focuses on Context Engineering—architecting what AI knows before it reasons—rather than prompt tricks.
+David Liew is an AI engineer and builder based in Singapore, pioneering practical frameworks for human-AI collaboration. Background includes Meta (Technical Solutions Consultant) and Google (Product Deployment Engineer, gTech Ads — Search+). His work focuses on Context Engineering—architecting what AI knows before it reasons—rather than prompt tricks.
 
 Core belief: "Time compounds faster than money." AI should amplify human capabilities, not replace human agency.
 

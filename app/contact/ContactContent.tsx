@@ -73,9 +73,9 @@ export default function ContactContent() {
         <Card className="p-8 bg-gradient-to-r from-blue-50 to-teal-50 dark:from-blue-900/20 dark:to-teal-900/20 border-blue-200 dark:border-blue-800">
           <h3 className="text-xl font-semibold mb-4">Compare Notes</h3>
           <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
-            If you&apos;re working on measurement, AI adoption, or governance in
-            financial services or brand marketing — happy to compare notes.
-            LinkedIn is the easiest way to reach me.
+            If you&apos;re working on product deployment, Search, measurement
+            integrity, or AI adoption — happy to compare notes. LinkedIn is the
+            easiest way to reach me.
           </p>
         </Card>
       </motion.section>

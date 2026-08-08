@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     template: "%s | David Liew",
   },
   description:
-    "Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads (Finance & Brands). Ex-Meta. Singapore.",
+    "Product Deployment Engineer — product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta. Singapore.",
   keywords:
-    "Solutions Architect, measurement, signal integrity, AI governance, Google Ads, advertising, Singapore",
+    "Product Deployment Engineer, product adoption, deployment, measurement integrity, Google Ads, Search, advertising, Singapore",
   authors: [{ name: "David Liew" }],
   creator: "David Liew",
   openGraph: {
@@ -45,23 +45,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://daveliew.com",
     siteName: "David Liew",
-    title: "David Liew — Solutions Architect",
+    title: "David Liew — Product Deployment Engineer",
     description:
-      "Solutions Architect — measurement, signal integrity, AI governance. Currently at Google gTech Ads. Ex-Meta. Singapore.",
+      "Product Deployment Engineer — product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta. Singapore.",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "David Liew — Solutions Architect",
+        alt: "David Liew — Product Deployment Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Liew — Solutions Architect",
+    title: "David Liew — Product Deployment Engineer",
     description:
-      "Measurement, signal integrity, AI governance. Currently at Google gTech Ads. Ex-Meta.",
+      "Product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta.",
     images: ["/twitter-image"],
   },
   robots: {
@@ -97,18 +97,18 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "David Liew",
-              jobTitle: "Advertising Solutions Architect",
+              jobTitle: "Product Deployment Engineer",
               description:
-                "Solutions Architect focused on measurement, signal integrity, and AI governance for financial services and brand marketing",
+                "Product Deployment Engineer at Google gTech Ads focused on product adoption, deployment, and measurement integrity, specialising in Search+",
               url: "https://daveliew.com",
               sameAs: [
                 "https://linkedin.com/in/daveliew",
                 "https://github.com/daveliew",
               ],
               knowsAbout: [
-                "Advertising Solutions Architecture",
+                "Product Deployment Engineering",
+                "Search Advertising Products",
                 "Measurement and Signal Integrity",
-                "AI Governance",
                 "Human-AI Collaboration",
               ],
               address: {

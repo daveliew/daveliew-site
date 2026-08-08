@@ -1,4 +1,4 @@
-# Dave Liew - AI Solutions Architect
+# Dave Liew - Product Deployment Engineer
 
 > Building AI colleagues, not AI tools. Exploring human-AI collaboration through the Fitzgerald Principle.
 
@@ -12,6 +12,7 @@ David Liew is an AI engineer and builder based in Singapore, pioneering practica
 - **Complementarity**: AI amplifies human capabilities; it does not replace them
 
 ## Primary Content Areas
+- /log/ - Field log: dated notes on the AI era at two speeds (fast observations, occasional slow essays)
 - /ai-journey/ - Learning paths for AI collaboration (Why -> How -> What)
 - /context-engineering/ - Context Engineering methodology (CLAUDE.md, skills, hooks, archetypes, SEO/GEO audit)
 - /ai-journey/claude/ - Claude mastery modules (8 comprehensive guides)

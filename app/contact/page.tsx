@@ -4,12 +4,13 @@ import ContactContent from "./ContactContent";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Connect with David Liew on LinkedIn or GitHub. Happy to compare notes on measurement, AI adoption, or governance in financial services and brand marketing.",
-  keywords: "contact, David Liew, LinkedIn, GitHub, measurement, AI governance",
+    "Connect with David Liew on LinkedIn or GitHub. Happy to compare notes on product deployment, Search, measurement integrity, or AI adoption.",
+  keywords:
+    "contact, David Liew, LinkedIn, GitHub, Search, product deployment, measurement",
   openGraph: {
     title: "Contact David Liew",
     description:
-      "Compare notes on measurement, AI adoption, or governance in financial services and brand marketing.",
+      "Compare notes on product deployment, Search, measurement integrity, or AI adoption.",
   },
 };
 
