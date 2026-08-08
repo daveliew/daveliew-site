@@ -1,25 +1,18 @@
-# David Liew
+# daveliew.com
 
-> Innovating at the crossroads of human-AI code copiloting
+> A field log of the AI era — dated notes on four decades of tech shifts,
+> written for future me first. Others overhear.
 
-Former Technical Solutions Consultant @ Meta
+![Next.js](https://img.shields.io/badge/Next.js-16-black) ![React](https://img.shields.io/badge/React-19-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-blue)
 
-![Claude](https://img.shields.io/badge/Claude-API-orange) ![Next.js](https://img.shields.io/badge/Next.js-15-black) ![TypeScript](https://img.shields.io/badge/TypeScript-blue) ![Supabase](https://img.shields.io/badge/Supabase-green) ![React](https://img.shields.io/badge/React-19-61DAFB)
+The site is a field log plus a thin About page. Log entries are MDX files in
+`content/log/`; the decision record for this shape is
+`ai_docs/2026-08-site-purpose-reset.md`. Earlier curriculum pages remain live
+at their URLs but are frozen — unmaintained and unlisted.
 
----
-
-## 🔗 Where to Find Me
-
-- **[daveliew.com](https://daveliew.com)** - Philosophy, musings, AI journey
-- **[agenticbrewery.ai](https://agenticbrewery.ai)** - Work & consulting
-
----
-
-## 💬 Connect
+## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/daveliew)
-
----
 
 ## Licence
 
