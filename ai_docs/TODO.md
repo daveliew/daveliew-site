@@ -7,9 +7,9 @@
 
 ## Now / Next
 
-1. Push the Aug 2026 site-purpose reset (6 local commits, ce7d820..c4fce51) to main, then post-deploy: verify live homepage/title, resubmit sitemap.xml in Search Console — see ai_docs/2026-08-site-purpose-reset.md
-2. Write the next log entry — the log IS the site now; `content/log/<slug>.mdx` per CLAUDE.md
-3. Settle the agenticbrewery.ai open questions (employer disclosure, résumé home, migration scope) — reset doc § Open questions; separate project, separate session
+1. Write the next log entry — the log IS the site now; `content/log/<slug>.mdx` per CLAUDE.md
+2. Settle the agenticbrewery.ai open questions (employer disclosure, résumé home, migration scope) — reset doc § Open questions; separate project, separate session
+3. First real monthly Search Console review (15th): property `https://daveliew.com/` under daveliew@gmail.com was created 2026-08-08 (meta-tag verified, sitemap Success/5 pages) — it never existed before, so this will be its first month of data
 
 ## Backlog
 
