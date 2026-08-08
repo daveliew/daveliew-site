@@ -7,33 +7,26 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Quick Reference
 
 **Stack**: Next.js 16.2 + React 19 + TypeScript + Tailwind + Framer Motion
-**Philosophy**: Fitzgerald Principle (opposing forces in productive tension)
+**Purpose**: a field log plus a thin About — decision record: `ai_docs/2026-08-site-purpose-reset.md`
 **Path Alias**: `@/*` → root directory
 **Critical**: Always run `npm run pre-deploy` before committing
 **Backlog**: top-3 in `ai_docs/TODO.md` § Now / Next — auto-surfaced into every fresh session by the global SessionStart hook (priorities SoT: memory `project_daveliew_site.md`)
 
-## Positioning & Voice
+## Purpose & Voice
 
-**What this is**: Personal site for a Product Deployment Engineer at Google gTech Ads, specialising in Search+. The role combines Solutions Architect with Customer Solutions Engineering — the emphasis is **product adoption and deployment**, not vertical coverage. Substance: **product adoption, deployment, measurement integrity** — the through-line across Meta and now Google. Audience: peers doing product deployment, measurement, and AI adoption work (not "explorers" or "learners" — that was older positioning).
+**What this is**: a field log plus a thin About page. Nothing else — no curriculum, no portfolio, no tabs. Decision record: `ai_docs/2026-08-site-purpose-reset.md` (Aug 2026; supersedes the May 2026 repositioning's audience and scope).
 
-**Bio**: "Product Deployment Engineer — product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta. Singapore."
+**Reader**: future Dave. Others overhear — the register never adjusts for an audience. Not "peers", not "explorers", not "learners".
 
-**Experience**: Google gTech Ads (Apr 2026–present; Product Deployment Engineer, Search+ — previously titled Advertising Solutions Architect) · Meta (2022–2024, Technical Solutions Consultant — SKAN 4.0, Conversions API, signal-loss attribution) · AWS / SG Code Campus (earlier — Bedrock, AI tooling).
+**Spine**: the four-decade arc (pre-internet → internet → mobile → cloud → AI) as the frame · raising kids through those shifts as the recurring lens · human-tech interaction as the standing subject.
 
-**Employer disclosure**: Google role **is** publicly disclosed on the site (matches peers like Nito Buendia). The old "do not disclose Google" guidance is **stale — ignore it.**
+**Register**: raw and specific. The contract is `/log/what-this-log-is` ("written for future me first"); the reference piece is `/log/how-old-is-egypt`. No explaining for an audience, no generalising to be useful, no commercial CTAs anywhere.
 
-**Tone — Nito-tier** (ref: nitobuendia.com; "would Nito put this on his site?"):
+**Employer disclosure**: the Google role stays publicly disclosed on daveliew.com as fact, not identity. Verified facts only: Google gTech Ads (Apr 2026–present; Product Deployment Engineer, Search+) · Meta (2022–2024, Technical Solutions Consultant — SKAN 4.0, Conversions API, signal-loss attribution) · AWS / SG Code Campus (earlier).
 
-- **Concrete over evocative** — dated, scoped, named achievements; no aspirational mood pieces
-- **Notes, not pitches** — "Notes on X" / "Happy to compare notes", never "let's talk" / "ready to build"
-- **Proper sentence case**, research-backed (cite sources: SWE-bench, Coatue S-curve)
-- **No commercial CTAs anywhere** on the main site (workshop pages excepted)
+**Frozen surfaces — do not extend, re-link, or audit**: the 2025–2026 curriculum (`/ai-journey`, `/context-engineering`, `/agents`, `/vibe-coding`, `/teaching`) plus `/hackathons` and `/contact`. Live by URL, absent from nav and sitemap, no `noindex`. Writing them was how Dave learned; they are finished, not neglected. A future migration to agenticbrewery.ai is a separate project — open questions in the reset doc.
 
-**Terminology** — ✅ use: "Context Engineering" (not Prompt Engineering) · "Multi-Role Fluency" (not Three-Hat / "multiple hats") · "Agentic exploration" / "Personal lab" (not "client projects" / "case studies") · "Compare notes" (not "let's talk" / "book a call") · "Product Deployment Engineer" (not "Solutions Architect" / "AI SA" / "Voice Agent Specialist" — all superseded).
-
-**Avoid**: mission framing ("pioneering", "next generation", "frameworks our children will need"); commercial framing ("battle-tested", "build your business", "give your business a voice", "ready to…"); any outside-business solicitation; reintroducing Agentic Brewery (sterilised) or the "Voice Agent Specialist" bio / "3 active client projects". Workshop-marketing tone is OK **only** under `/vibe-coding` and `/teaching` (actual workshop products).
-
-**Decoupled surfaces**: daveliew.com and github.com/daveliew are intentionally separate — the site is Nito-tier notes for engineering peers (data from `/data/*.json`); the GitHub profile is professional hiring positioning (data from the `daveliew/daveliew` repo). Don't force-sync them; it dilutes both.
+**Decoupled surfaces**: github.com/daveliew stays the professional/hiring surface (data from the `daveliew/daveliew` repo). Don't force-sync it with the site; it dilutes both.
 
 ## Development Commands
 
@@ -46,16 +39,11 @@ Cadence, memory triggers, and the recurring-task table live in the project skill
 
 ## Project Structure
 
-**Top Nav**: About / Writing / Log / Hackathons / Contact (collapsed from 6 items in May 2026; Log added Aug 2026 as the field-log stream — see memory `project_daveliew_site`).
+**Top Nav**: Log / About (stripped Aug 2026 per the reset; homepage renders the log, `/log` is the full archive).
 
 **Full site map**: `ai_docs/architecture/codebase-analysis.md`. _Removed routes (do not re-add)_: `/philosophy`, `/laboratory` — declared in sitemap/nav but never had pages; purged May 2026, now 301-redirect to `/about` and `/hackathons` via `next.config.mjs`.
 
-**Key Data Files** (`/data/`):
-
-- `ai-journey.json` - Tab content for Writing hub (Why/How/What sections)
-- `skill-tree-navigation.json` - Desktop hover dropdown data
-
-Most other page copy lives inline in `app/**/<Section>Content.tsx` rather than in JSON. The May 2026 repositioning moved content closer to the components that render it; reach for inline JSX before reintroducing a new JSON data file.
+**Key Data Files** (`/data/`): `ai-journey.json` and `skill-tree-navigation.json` feed frozen surfaces only — do not extend them. Live-surface copy lives inline in `app/**/<Section>Content.tsx`.
 
 ## Architecture Essentials
 
@@ -71,10 +59,9 @@ _Strategic/changelog context (May 2026 repositioning, content-maturity map, acti
 
 ### Content Updates
 
-1. Most page copy lives inline in `app/**/<Section>Content.tsx` — edit there
-2. For Writing tab content, edit `data/ai-journey.json` (typed via `types/ai-journey-tabs.ts`)
-3. For nav dropdown, edit `data/skill-tree-navigation.json` (typed via `types/skill-tree.ts`)
-4. Field-log entries: add `content/log/<slug>.mdx` starting with `export const meta = { title, date, type: "note" | "essay", summary }` (typed via `types/log.ts`; no YAML frontmatter — it renders as text). Index, sitemap, and static params pick it up automatically. Underscore-prefixed files are ignored.
+1. Field-log entries: add `content/log/<slug>.mdx` starting with `export const meta = { title, date, type: "note" | "essay", summary }` (typed via `types/log.ts`; no YAML frontmatter — it renders as text). Homepage, `/log` index, sitemap, and static params pick it up automatically. Underscore-prefixed files are ignored.
+2. Other live-surface copy (About) lives inline in `app/**/<Section>Content.tsx` — edit there.
+3. Frozen surfaces get no content updates (see Purpose & Voice).
 
 ## Detailed Documentation
 
