@@ -31,11 +31,11 @@ const workSans = Work_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://daveliew.com"),
   title: {
-    default: "David Liew",
+    default: "David Liew — Field Log",
     template: "%s | David Liew",
   },
   description:
-    "Product Deployment Engineer — product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta. Singapore.",
+    "A field log of the AI era — dated notes on four decades of tech shifts and raising kids through them. Written for future me first. Singapore.",
   keywords:
     "Product Deployment Engineer, product adoption, deployment, measurement integrity, Google Ads, Search, advertising, Singapore",
   authors: [{ name: "David Liew" }],
@@ -45,23 +45,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://daveliew.com",
     siteName: "David Liew",
-    title: "David Liew — Product Deployment Engineer",
+    title: "David Liew — Field Log",
     description:
-      "Product Deployment Engineer — product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta. Singapore.",
+      "A field log of the AI era — dated notes on four decades of tech shifts and raising kids through them. Written for future me first. Singapore.",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "David Liew — Product Deployment Engineer",
+        alt: "David Liew — Field Log",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Liew — Product Deployment Engineer",
+    title: "David Liew — Field Log",
     description:
-      "Product adoption, deployment, measurement integrity. Currently at Google gTech Ads (Search+). Ex-Meta.",
+      "A field log of the AI era — dated notes on four decades of tech shifts, written for future me first.",
     images: ["/twitter-image"],
   },
   robots: {
