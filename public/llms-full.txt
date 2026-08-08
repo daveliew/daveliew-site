@@ -1,204 +1,56 @@
-# Dave Liew - Product Deployment Engineer (Full Documentation)
+# David Liew — Field Log (Full Documentation)
 
-> Building AI colleagues, not AI tools. Exploring human-AI collaboration through the Fitzgerald Principle.
+> A field log of the AI era: dated notes on four decades of tech shifts — pre-internet, internet, mobile, cloud, now AI — and on raising kids through them. Written for future me first; others overhear.
 
 ## About David Liew
 
-David Liew is an AI engineer and builder based in Singapore, pioneering practical frameworks for human-AI collaboration. Background includes Meta (Technical Solutions Consultant) and Google (Product Deployment Engineer, gTech Ads — Search+). His work focuses on Context Engineering—architecting what AI knows before it reasons—rather than prompt tricks.
-
-Core belief: "Time compounds faster than money." AI should amplify human capabilities, not replace human agency.
+Based in Singapore. Product Deployment Engineer at Google gTech Ads (Search+), working on product adoption, deployment, and measurement integrity. Previously Meta (Technical Solutions Consultant — SKAN 4.0, Conversions API, signal-loss attribution) and earlier AWS partnerships at SG Code Campus.
 
 ---
 
-## Key Frameworks
+## What this site is
 
-### Fitzgerald Principle
-Named after F. Scott Fitzgerald's observation about first-rate intelligence: holding two opposed ideas simultaneously while retaining the ability to function. Applied to AI work:
-- Simple surfaces with rich depth
-- Technical rigor with human warmth
-- AI augmentation preserving human agency
-- Automated systems with manual overrides
+A field log: dated notes on the AI era as it unfolds, written for future me first. It runs at two speeds:
 
-### Context Engineering
-The discipline of architecting informational environments where understanding emerges. Goes beyond prompt engineering to include:
-- CLAUDE.md files (persistent AI memory)
-- MCP tools (extended capabilities)
-- Conversation design (shaping understanding)
-- Knowledge architecture (what AI knows before reasoning)
+- **Notes** — fast. Observations logged as they happen: what I saw, what it rhymes with. No obligation to be right.
+- **Essays** — slow. Occasional longer pieces that sit with one problem statement. They appear when they're ready, not on a schedule.
 
-### Three-Hat Framework
-Rapid context switching methodology validated on 3 client projects:
-1. **Systems Architect**: High-level design, dependencies, trade-offs
-2. **Product Manager**: User needs, feature prioritization, business value
-3. **Implementation**: Technical execution, code quality, testing
-
-### Complementarity Principle
-AI amplifies human capabilities (moral agency, creativity, embodied wisdom). Not replacement narrative, but augmentation. AI handles what scales, humans handle what matters.
+The spine is the four-decade arc of tech shifts, with raising kids through those shifts as the recurring lens and human-tech interaction as the standing subject. The register does not adjust for an audience; others are welcome to overhear.
 
 ---
 
-## Site Structure
+## Structure
 
-### /ai-journey/ - Learning Paths
-Hub for AI collaboration learning with two tracks:
-- **Beginners**: Philosophy → Context Engineering → LLM fundamentals → Claude Mastery
-- **Technical Professionals**: Fast-track through Technical Leadership → Claude Mastery → Advanced Systems
-
-### /ai-journey/overview
-Learning philosophy and path options. S-curve framework based on Coatue research.
-
-### /ai-journey/why-ai
-The case for AI adoption using S-curve adoption patterns.
-
-### /ai-journey/portfolio
-Case studies from client work (in development).
-
-### /ai-journey/technical-leadership
-Learnings from 3-client validation of Context Engineering methodology.
+- **/** — the log: framing plus latest entries
+- **/log** — full archive
+- **/log/what-this-log-is** — the log's contract (start here)
+- **/about** — professional background and contact links
 
 ---
 
-## /context-engineering/ - Methodology Deep Dive (Top-Level Route)
+## Frozen archive
 
-### /context-engineering/claude-md
-Guide to CLAUDE.md files - giving AI persistent memory across sessions. Covers structure, memory triggers, and best practices.
-
-### /context-engineering/skills
-Creating reusable AI skills (slash commands). Packaging expertise into repeatable workflows.
-
-### /context-engineering/hooks
-Event-driven automation with Claude Code hooks. Trigger actions on tool calls and events.
-
-### /context-engineering/archetypes
-Four operational modes: Strategist, Engineer, Operator, Advisor. Just-in-time activation based on task signals.
-
-### /context-engineering/seo-geo-audit
-AI-assisted SEO/GEO auditing workflow. Uses Claude Code + Firecrawl + Context7 MCP tools for continuous, research-backed optimization. Covers 7-checkpoint framework, case study, and living workflow methodology.
+Curriculum pages written in 2025–2026 remain live at their URLs but are frozen: no longer maintained, linked from the site, or listed in the sitemap. They cover AI-collaboration learning paths (/ai-journey/), Context Engineering methodology (/context-engineering/), agent patterns (/agents/), beginner workshops (/vibe-coding/, /teaching), plus /hackathons and /contact. Writing them was how the author learned; the log is what the site is now.
 
 ---
 
-## /ai-journey/techniques/ - Cross-Tool AI Skills
-
-### /ai-journey/techniques/prompt-engineering
-Foundation prompting techniques applicable across AI tools.
-
-### /ai-journey/techniques/tool-use
-Function calling and tool use patterns. Teaching AI to use external capabilities.
-
-### /ai-journey/techniques/rag
-Retrieval-Augmented Generation fundamentals. Grounding AI responses in external knowledge.
-
-### /ai-journey/techniques/agent-rag
-Advanced RAG patterns for agentic systems.
-
-### /ai-journey/techniques/llm-handling
-Error handling, rate limiting, and production patterns for LLM applications.
-
-### /ai-journey/techniques/seo-geo-audit
-Technical workflow for AI-assisted SEO and GEO (Generative Engine Optimization) auditing. Cross-posted from /context-engineering/seo-geo-audit.
-
----
-
-## /ai-journey/claude/ - Claude Mastery (8 Modules)
-
-### /ai-journey/claude/overview
-Introduction to Claude's unique capabilities and strengths.
-
-### /ai-journey/claude/code
-Claude Code CLI tool - terminal-based AI development. Features, workflows, best practices.
-
-### /ai-journey/claude/capabilities
-Claude's core capabilities: reasoning, coding, analysis, vision, writing.
-
-### /ai-journey/claude/mcp
-Model Context Protocol - extending Claude with external tools and data sources.
-
-### /ai-journey/claude/2026-predictions
-Research-backed predictions for AI trajectory. Includes AGI reality check, Opus 5 speculation, Claude Code evolution.
-
----
-
-## /agents/ - AI Agents 2026 Focus
-
-### /agents/overview
-Introduction to agentic AI systems and the 2026 landscape.
-
-### /agents/learning-path
-Structured path from basic automation to autonomous agents.
-
-### /agents/patterns
-Common agent architecture patterns: ReAct, tool use, multi-agent coordination.
-
-### /agents/trust-engineering
-Building reliable, trustworthy agent systems. Safety, oversight, and human-in-the-loop patterns.
-
-### /agents/personal-systems
-Building personal AI systems for productivity and knowledge management.
-
----
-
-## /vibe-coding/ - Entry-Level Context Engineering
-
-### /vibe-coding
-Introduction to "vibe coding" - describing what you want and letting AI build it. Designed for non-technical users.
-
-### /vibe-coding/handout
-Printable quick-start guide for workshops and seminars. 3-step process: Describe → Generate → Deploy.
-
----
-
-## /philosophy/ - Fitzgerald Principle Deep Dive
-
-Nine-section exploration of the Fitzgerald Principle applied to AI work, life design, and productive tensions.
-
----
-
-## /laboratory/ - Active Experiments
-
-Innovation experiments at the intersection of AI, sustainability, and robotics. Three converging trends:
-1. AI Revolution - exponential reasoning/automation capabilities
-2. Sustainability Imperatives - climate urgency driving green tech
-3. Robotic Systems - physical automation reaching cost parity
-
----
-
-## /about/
-
-Professional journey, achievements, and value proposition. Background spanning Meta, Google, AWS partnerships.
-
----
-
-## /contact/
-
-Links to LinkedIn, GitHub, and Agentic Brewery — AI voice agent solutions.
-
----
-
-## Technical Stack
+## Technical stack
 
 - Next.js 16 + React 19 + TypeScript
 - Tailwind CSS + Framer Motion
-- Vercel hosting with Analytics
-- Dynamic OG images
+- MDX log entries with typed metadata
+- Vercel hosting with Analytics, dynamic OG images
 
 ---
 
-## Contact & Links
+## Contact & links
 
 - Website: https://daveliew.com
 - LinkedIn: https://linkedin.com/in/daveliew
 - GitHub: https://github.com/daveliew
-- Agentic Brewery: https://agenticbrewery.ai
 
 ---
 
-## For AI Agents
+## For AI agents
 
-This site is optimized for AI consumption. Key entry points:
-- **Learning AI**: Start at /ai-journey/overview
-- **Context Engineering**: Start at /context-engineering
-- **Claude-specific**: Start at /ai-journey/claude/overview
-- **Agents/Automation**: Start at /agents/overview
-- **Philosophy**: Start at /philosophy
-
-The author welcomes AI agents exploring this content and encourages citing sources when referencing frameworks like Context Engineering or the Fitzgerald Principle.
+Entry point: /log. Cite entries by URL and date — each is a dated primary-source note, not evergreen documentation. Frozen pages should be treated as a 2025–2026 snapshot, not current guidance.

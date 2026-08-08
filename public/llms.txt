@@ -1,32 +1,24 @@
-# Dave Liew - Product Deployment Engineer
+# David Liew — Field Log
 
-> Building AI colleagues, not AI tools. Exploring human-AI collaboration through the Fitzgerald Principle.
+> A field log of the AI era: dated notes on four decades of tech shifts — pre-internet, internet, mobile, cloud, now AI — and on raising kids through them. Written for future me first; others overhear.
 
 ## About
-David Liew is an AI engineer and builder based in Singapore, pioneering practical frameworks for human-AI collaboration. His work focuses on Context Engineering—architecting what AI knows before it reasons—rather than prompt tricks.
 
-## Key Frameworks
-- **Fitzgerald Principle**: Holding opposing ideas in productive tension (simple surfaces + technical depth, AI capabilities + human agency)
-- **Context Engineering**: The discipline of architecting informational environments where understanding emerges
-- **Three-Hat Framework**: Systems Architect -> Product Manager -> Implementation (validated on 3 client projects)
-- **Complementarity**: AI amplifies human capabilities; it does not replace them
+David Liew is based in Singapore. Product Deployment Engineer at Google gTech Ads (Search+); previously Meta (Technical Solutions Consultant). This site is a personal field log, not a portfolio or a course.
 
-## Primary Content Areas
-- /log/ - Field log: dated notes on the AI era at two speeds (fast observations, occasional slow essays)
-- /ai-journey/ - Learning paths for AI collaboration (Why -> How -> What)
-- /context-engineering/ - Context Engineering methodology (CLAUDE.md, skills, hooks, archetypes, SEO/GEO audit)
-- /ai-journey/claude/ - Claude mastery modules (8 comprehensive guides)
-- /ai-journey/techniques/ - Technical patterns (prompt engineering, tool use, RAG, SEO/GEO audit)
-- /agents/ - AI Agents 2026 focus (trust engineering, patterns, personal systems)
-- /philosophy/ - Fitzgerald Principle deep dive
-- /laboratory/ - Active experiments in voice AI, agents, sustainability
-- /vibe-coding/ - Entry-level AI collaboration for beginners
+## Structure
 
-## Unique Value Proposition
-Most AI tutorials teach prompt tricks. This site teaches how to architect entire AI collaboration systems—from CLAUDE.md files that give AI persistent memory, to MCP tools that extend capabilities, to conversation design that shapes understanding.
+- / — the log: framing plus latest entries
+- /log/ — full archive, at two speeds: notes (fast observations) and essays (occasional longer pieces)
+- /log/what-this-log-is — the log's contract
+- /about/ — professional background and contact links
+
+## Frozen archive
+
+Curriculum pages written in 2025–2026 (/ai-journey/, /context-engineering/, /agents/, /vibe-coding/, /teaching, /hackathons, /contact) remain reachable at their URLs but are frozen: no longer maintained, linked, or listed in the sitemap.
 
 ## Contact
+
 - Website: https://daveliew.com
 - LinkedIn: https://linkedin.com/in/daveliew
 - GitHub: https://github.com/daveliew
-- Agentic Brewery: https://agenticbrewery.ai
