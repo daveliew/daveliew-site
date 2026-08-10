@@ -130,15 +130,6 @@ export default function RootLayout({
               "@type": "WebSite",
               name: "David Liew",
               url: "https://daveliew.com",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: {
-                  "@type": "EntryPoint",
-                  urlTemplate:
-                    "https://daveliew.com/ai-journey?q={search_term_string}",
-                },
-                "query-input": "required name=search_term_string",
-              },
             }),
           }}
         />
