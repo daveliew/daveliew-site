@@ -78,7 +78,5 @@ presented as unreadable text).
 
 ## Current open findings (delete a line when fixed)
 
-- SearchAction in `app/layout.tsx:134` targets `/ai-journey?q=` — no search
-  exists there.
 - "evergreen pages" line in `/log/what-this-log-is` predates the log-only
   reality.
