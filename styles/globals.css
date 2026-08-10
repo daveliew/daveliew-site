@@ -32,6 +32,9 @@
   --background-secondary: var(--studio-black-light);
   --accent-primary: var(--studio-lime);
   --accent-secondary: var(--studio-lime-muted);
+  --accent-tertiary: var(
+    --teal
+  ); /* third concept color on frozen curriculum pages */
 
   /* Three Pillar System Colors */
   --time-color: var(--hot-pink);

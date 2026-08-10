@@ -78,10 +78,6 @@ presented as unreadable text).
 
 ## Current open findings (delete a line when fixed)
 
-- `--accent-tertiary` referenced 15× in `app/vibe-coding/fundamentals/FundamentalsContent.tsx`
-  - `app/ai-journey/techniques/TechniquesContent.tsx` but defined nowhere —
-    fossil grep 1 fails on this today (found 2026-08-10, frozen pages, fix is
-    a taste call: define the variable or retire the references).
 - SearchAction in `app/layout.tsx:134` targets `/ai-journey?q=` — no search
   exists there.
 - "evergreen pages" line in `/log/what-this-log-is` predates the log-only
