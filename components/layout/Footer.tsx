@@ -6,13 +6,10 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
-      {/* Gradient border effect */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-pink-500 via-teal-500 to-yellow-500" />
-
+    <footer className="border-t border-gray-800">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-10">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-gray-400">
             &copy; {currentYear} David Liew
           </p>
 
@@ -21,7 +18,7 @@ const Footer: React.FC = () => {
               href="https://linkedin.com/in/daveliew"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              className="flex items-center text-gray-300 hover:text-[var(--accent-primary)] transition-colors duration-200"
             >
               <svg
                 className="w-5 h-5 mr-2"
@@ -38,7 +35,7 @@ const Footer: React.FC = () => {
               href="https://github.com/daveliew"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+              className="flex items-center text-gray-300 hover:text-[var(--accent-primary)] transition-colors duration-200"
             >
               <svg
                 className="w-5 h-5 mr-2"
