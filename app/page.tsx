@@ -9,12 +9,12 @@ export default async function HomePage() {
   const recent = entries.slice(0, RECENT_COUNT);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12 md:py-16">
+    <div className="max-w-2xl mx-auto px-4 py-12 md:py-16">
       <header className="mb-12">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           A field log of the AI era
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+        <p className="text-gray-400 leading-relaxed">
           Four decades of tech shifts — pre-internet, internet, mobile, cloud,
           now AI. This log keeps dated notes on the newest one as it unfolds,
           and on raising kids through it. Written for future me first; others
@@ -23,7 +23,7 @@ export default async function HomePage() {
       </header>
 
       {recent.length === 0 ? (
-        <p className="text-gray-600 dark:text-gray-400">No entries yet.</p>
+        <p className="text-gray-400">No entries yet.</p>
       ) : (
         <ul className="space-y-8">
           {recent.map((entry) => (
@@ -32,7 +32,7 @@ export default async function HomePage() {
                 <div className="flex items-center gap-3 text-sm mb-1">
                   <time
                     dateTime={entry.date}
-                    className="text-gray-500 dark:text-gray-400 tabular-nums"
+                    className="text-gray-400 font-mono"
                   >
                     {entry.date}
                   </time>
@@ -41,15 +41,13 @@ export default async function HomePage() {
                 <h2 className="text-xl font-semibold">
                   <Link
                     href={`/log/${entry.slug}`}
-                    className="hover:text-[var(--accent-primary)] transition-colors"
+                    className="text-gray-100 hover:text-[var(--accent-primary)] transition-colors"
                   >
                     {entry.title}
                   </Link>
                 </h2>
                 {entry.summary && (
-                  <p className="text-gray-600 dark:text-gray-400 mt-1">
-                    {entry.summary}
-                  </p>
+                  <p className="text-gray-400 mt-1">{entry.summary}</p>
                 )}
               </article>
             </li>

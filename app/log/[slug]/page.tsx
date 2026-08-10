@@ -35,13 +35,10 @@ export default async function LogEntryPage({ params }: LogEntryPageProps) {
   )) as { default: ComponentType; meta: LogEntryMeta };
 
   return (
-    <article className="max-w-3xl mx-auto px-4 py-12">
+    <article className="max-w-2xl mx-auto px-4 py-12">
       <header className="mb-8">
         <div className="flex items-center gap-3 text-sm mb-2">
-          <time
-            dateTime={meta.date}
-            className="text-gray-500 dark:text-gray-400 tabular-nums"
-          >
+          <time dateTime={meta.date} className="text-gray-400 font-mono">
             {meta.date}
           </time>
           <TypeBadge type={meta.type} />
@@ -51,7 +48,7 @@ export default async function LogEntryPage({ params }: LogEntryPageProps) {
 
       <Entry />
 
-      <footer className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-700">
+      <footer className="mt-12 pt-6 border-t border-gray-800">
         <Link
           href="/log"
           className="text-[var(--accent-primary)] hover:underline"

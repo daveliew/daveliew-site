@@ -9,7 +9,7 @@ const typeStyles: Record<LogEntryType, string> = {
 export function TypeBadge({ type }: { type: LogEntryType }) {
   return (
     <span
-      className={`text-xs uppercase tracking-wide px-2 py-0.5 rounded border ${typeStyles[type]}`}
+      className={`text-xs font-mono uppercase tracking-wide px-2 py-0.5 rounded border ${typeStyles[type]}`}
     >
       {type}
     </span>

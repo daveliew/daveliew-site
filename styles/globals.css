@@ -57,7 +57,7 @@
   h2,
   h3,
   h4 {
-    @apply text-[var(--text-primary)] font-bold font-heading;
+    @apply text-[var(--text-primary)] font-bold;
   }
 
   h1 {
