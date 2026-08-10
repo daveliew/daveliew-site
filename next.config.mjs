@@ -141,22 +141,29 @@ const nextConfig = {
         permanent: true,
       },
 
-      // RAG content consolidated into agents patterns
+      // RAG content consolidated into agents patterns (now on agenticbrewery.ai)
       {
         source: "/ai-journey/techniques/rag",
-        destination: "/agents/patterns",
+        destination: "https://www.agenticbrewery.ai/agents/patterns",
         permanent: true,
       },
       {
         source: "/ai-journey/techniques/agent-rag",
-        destination: "/agents/learning-path",
+        destination: "https://www.agenticbrewery.ai/agents/learning-path",
         permanent: true,
       },
 
-      // Voice Agents moved under /agents
+      // Voice Agents moved under /agents (now on agenticbrewery.ai)
       {
         source: "/voice-agents",
-        destination: "/agents/voice",
+        destination: "https://www.agenticbrewery.ai/agents/voice",
+        permanent: true,
+      },
+
+      // Agents pillar migrated to agenticbrewery.ai (paths mirror one-to-one)
+      {
+        source: "/agents/:path*",
+        destination: "https://www.agenticbrewery.ai/agents/:path*",
         permanent: true,
       },
 
