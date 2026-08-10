@@ -1,5 +1,5 @@
-import type { MDXComponents } from 'mdx/types';
-import Link from 'next/link';
+import type { MDXComponents } from "mdx/types";
+import Link from "next/link";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -10,7 +10,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </h1>
     ),
     h2: ({ children }) => (
-      <h2 className="text-3xl font-semibold mb-4 mt-8 text-gray-900 dark:text-gray-100 border-b-2 border-[var(--color-knowledge)] pb-2">
+      <h2 className="text-3xl font-semibold mb-4 mt-8 text-gray-900 dark:text-gray-100 border-b-2 border-gray-700 pb-2">
         {children}
       </h2>
     ),
@@ -35,13 +35,13 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     // Links with Fitzgerald hot pink accent
     a: ({ href, children }) => {
       // External links
-      if (href?.startsWith('http')) {
+      if (href?.startsWith("http")) {
         return (
           <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--color-time)] hover:text-[var(--color-knowledge)] underline transition-colors"
+            className="text-[var(--accent-primary)] hover:text-[var(--accent-secondary)] underline transition-colors"
           >
             {children}
           </a>
@@ -50,8 +50,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       // Internal links
       return (
         <Link
-          href={href || '#'}
-          className="text-[var(--color-time)] hover:text-[var(--color-knowledge)] underline transition-colors"
+          href={href || "#"}
+          className="text-[var(--accent-primary)] hover:text-[var(--accent-secondary)] underline transition-colors"
         >
           {children}
         </Link>
@@ -69,15 +69,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </ol>
     ),
-    li: ({ children }) => (
-      <li className="leading-relaxed">
-        {children}
-      </li>
-    ),
+    li: ({ children }) => <li className="leading-relaxed">{children}</li>,
 
     // Inline code with subtle background
     code: ({ children }) => (
-      <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono text-[var(--color-time)]">
+      <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">
         {children}
       </code>
     ),
@@ -91,7 +87,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
     // Blockquotes with Fitzgerald teal accent
     blockquote: ({ children }) => (
-      <blockquote className="border-l-4 border-[var(--color-knowledge)] pl-4 py-2 my-4 italic text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800/50">
+      <blockquote className="border-l-4 border-[var(--accent-primary)]/60 pl-4 py-2 my-4 italic text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800/50">
         {children}
       </blockquote>
     ),
@@ -110,9 +106,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </div>
     ),
     thead: ({ children }) => (
-      <thead className="bg-gray-50 dark:bg-gray-800">
-        {children}
-      </thead>
+      <thead className="bg-gray-50 dark:bg-gray-800">{children}</thead>
     ),
     tbody: ({ children }) => (
       <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
@@ -138,11 +132,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
 
     // Emphasis/italic
-    em: ({ children }) => (
-      <em className="italic">
-        {children}
-      </em>
-    ),
+    em: ({ children }) => <em className="italic">{children}</em>,
 
     ...components,
   };
