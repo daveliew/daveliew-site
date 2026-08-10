@@ -5,22 +5,25 @@
 @tailwind utilities;
 
 :root {
+  /* Dark-only site: keeps native form controls/scrollbars dark too */
+  color-scheme: dark;
+
   /* Core color palette - Architectural Studio Theme */
-  --studio-black: #0E0E14;
-  --studio-black-light: #1A1A24;
-  --studio-lime: #C6FF33;
-  --studio-lime-muted: #A8D929;
-  --studio-white: #FAFAFA;
-  --studio-gray: #8B9DC3;
-  --studio-gray-dark: #6B7A99;
-  
+  --studio-black: #0e0e14;
+  --studio-black-light: #1a1a24;
+  --studio-lime: #c6ff33;
+  --studio-lime-muted: #a8d929;
+  --studio-white: #fafafa;
+  --studio-gray: #8b9dc3;
+  --studio-gray-dark: #6b7a99;
+
   /* Dave's Vibrant Palette - Left+Right Brain */
-  --hot-pink: #FF0081;
-  --teal: #0CC0DF;
-  --gold: #F8B400;
-  --deep-purple: #6B46C1;
-  --emerald: #10B981;
-  
+  --hot-pink: #ff0081;
+  --teal: #0cc0df;
+  --gold: #f8b400;
+  --deep-purple: #6b46c1;
+  --emerald: #10b981;
+
   /* Semantic colors */
   --text-primary: var(--studio-white);
   --text-secondary: var(--studio-gray);
@@ -29,14 +32,14 @@
   --background-secondary: var(--studio-black-light);
   --accent-primary: var(--studio-lime);
   --accent-secondary: var(--studio-lime-muted);
-  
+
   /* Three Pillar System Colors */
   --time-color: var(--hot-pink);
   --knowledge-color: var(--teal);
   --wealth-color: var(--gold);
   --strategy-color: var(--deep-purple);
   --growth-color: var(--emerald);
-  
+
   /* Color variants with opacity */
   --studio-lime-10: rgba(198, 255, 51, 0.1);
   --studio-lime-20: rgba(198, 255, 51, 0.2);
@@ -46,40 +49,58 @@
 @layer base {
   body {
     @apply bg-[var(--background-primary)] text-[var(--text-primary)];
-    font-family: var(--font-work-sans), 'Work Sans', sans-serif;
+    font-family: var(--font-work-sans), "Work Sans", sans-serif;
   }
 
   /* Typography */
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply text-[var(--text-primary)] font-bold font-heading;
   }
 
-  h1 { @apply text-4xl leading-tight mb-6; }
-  h2 { @apply text-3xl leading-tight mb-5; }
-  h3 { @apply text-2xl leading-tight mb-4; }
-  h4 { @apply text-xl leading-tight mb-3; }
+  h1 {
+    @apply text-4xl leading-tight mb-6;
+  }
+  h2 {
+    @apply text-3xl leading-tight mb-5;
+  }
+  h3 {
+    @apply text-2xl leading-tight mb-4;
+  }
+  h4 {
+    @apply text-xl leading-tight mb-3;
+  }
 
-  p { @apply text-[var(--text-primary)] mb-4 leading-relaxed; }
+  p {
+    @apply text-[var(--text-primary)] mb-4 leading-relaxed;
+  }
 
   a {
     @apply text-[var(--accent-primary)] hover:text-[var(--accent-secondary)] transition-colors duration-200;
   }
 
   /* Lists */
-  ul, ol { @apply mb-4 pl-6; }
-  li { @apply mb-2 leading-relaxed; }
+  ul,
+  ol {
+    @apply mb-4 pl-6;
+  }
+  li {
+    @apply mb-2 leading-relaxed;
+  }
 }
 
 @layer components {
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .btn {
     @apply px-4 py-2 rounded-md bg-[var(--accent-primary)] text-[var(--background-primary)] 
            hover:bg-[var(--accent-secondary)] transition-colors duration-200 font-medium;
   }
-  
+
   .card {
     @apply bg-[var(--background-secondary)] rounded-lg p-6 shadow-lg 
            hover:shadow-xl transition-shadow duration-200;
@@ -94,18 +115,18 @@
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .accent-text {
     @apply text-[var(--accent-primary)];
   }
-  
+
   .font-heading {
-    font-family: var(--font-jura), 'Jura', sans-serif;
+    font-family: var(--font-jura), "Jura", sans-serif;
     letter-spacing: 0.02em;
   }
 
   .font-navbar {
-    font-family: var(--font-jura), 'Jura', sans-serif;
+    font-family: var(--font-jura), "Jura", sans-serif;
     letter-spacing: 0.03em;
     font-weight: 500;
   }
@@ -114,7 +135,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

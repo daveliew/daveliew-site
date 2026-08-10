@@ -91,7 +91,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${jura.variable} ${workSans.variable}`}>
+    <html lang="en" className={`${jura.variable} ${workSans.variable} dark`}>
       <head>
         <script
           type="application/ld+json"
@@ -145,7 +145,7 @@ export default function RootLayout({
       </head>
       <body>
         <MotionProvider>
-          <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 flex flex-col">
+          <div className="min-h-screen bg-gray-900 text-gray-200 flex flex-col">
             <Navbar />
             <main className="flex-grow">{children}</main>
             <Footer />
