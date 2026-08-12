@@ -34,6 +34,15 @@ export default async function LogEntryPage({ params }: LogEntryPageProps) {
     `@/content/log/${slug}.mdx`
   )) as { default: ComponentType; meta: LogEntryMeta };
 
+  const refs = await Promise.all(
+    (meta.refs ?? []).map(async (refSlug) => {
+      const { meta: refMeta } = (await import(
+        `@/content/log/${refSlug}.mdx`
+      )) as { meta: LogEntryMeta };
+      return { slug: refSlug, title: refMeta.title };
+    }),
+  );
+
   return (
     <article className="max-w-2xl mx-auto px-4 py-12">
       <header className="mb-8">
@@ -49,6 +58,22 @@ export default async function LogEntryPage({ params }: LogEntryPageProps) {
       <Entry />
 
       <footer className="mt-12 pt-6 border-t border-gray-800">
+        {refs.length > 0 && (
+          <p className="text-sm text-gray-400 mb-4">
+            Builds on{" "}
+            {refs.map((ref, i) => (
+              <span key={ref.slug}>
+                {i > 0 && " · "}
+                <Link
+                  href={`/log/${ref.slug}`}
+                  className="text-[var(--accent-primary)] hover:underline"
+                >
+                  {ref.title}
+                </Link>
+              </span>
+            ))}
+          </p>
+        )}
         <Link
           href="/log"
           className="text-[var(--accent-primary)] hover:underline"
