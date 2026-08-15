@@ -9,7 +9,7 @@
 
 1. Write the next log entry — pick an unlit star from `npm run sky-census` (the declared sky lives in `data/sky.json`); `content/log/<slug>.mdx` per CLAUDE.md
 2. Settle the agenticbrewery.ai open questions (employer disclosure, résumé home, migration scope) — reset doc § Open questions; separate project, separate session
-3. First real monthly Search Console review (15th): property `https://daveliew.com/` under daveliew@gmail.com was created 2026-08-08 (meta-tag verified, sitemap Success/5 pages) — it never existed before, so this will be its first month of data
+3. (dropped 2026-08-15) Monthly GSC review demoted to a quarterly 2-min smoke check riding the Jan/Apr/Jul/Oct audit — no metric watching; see `.claude/skills/seo-process/SKILL.md`
 
 ## Backlog
 
