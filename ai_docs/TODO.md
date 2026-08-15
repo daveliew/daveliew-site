@@ -7,9 +7,10 @@
 
 ## Now / Next
 
-1. Write the next log entry — pick an unlit star from `npm run sky-census` (the declared sky lives in `data/sky.json`); `content/log/<slug>.mdx` per CLAUDE.md
-2. Settle the agenticbrewery.ai open questions (employer disclosure, résumé home, migration scope) — reset doc § Open questions; separate project, separate session
-3. (dropped 2026-08-15) Monthly GSC review demoted to a quarterly 2-min smoke check riding the Jan/Apr/Jul/Oct audit — no metric watching; see `.claude/skills/seo-process/SKILL.md`
+1. Migrate `/ai-journey` (14 routes) to agenticbrewery.ai, then redirect + delete — the last pillar leaving. Its own session: ~5,000 lines TSX / 32 files + 1,279-line `data/ai-journey.json`, port into AB's dark theme. `components/content/SeoGeoAuditContent.tsx` can only be deleted after. Plan: `ai_docs/2026-08-two-surfaces-manifest.md`
+2. Expand `/vibe-coding` — UNFROZEN 2026-08-15, now a living, indexed surface that grows (it is what people actually ask for). Open: does it earn a nav entry?
+3. Write the next log entry — pick an unlit star from `npm run sky-census` (declared sky: `data/sky.json`); `content/log/<slug>.mdx` per CLAUDE.md
+4. Rule for all surface questions: **daveliew.com holds nothing finished, agenticbrewery.ai holds nothing living.** `/hackathons`, `/teaching`, `/contact` stay here (frozen). AB open questions #1 employer disclosure and #2 résumé home remain open; #3/#4 answered by action
 
 ## Backlog
 
