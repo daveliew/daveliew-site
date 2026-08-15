@@ -24,7 +24,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Employer disclosure**: the Google role stays publicly disclosed on daveliew.com as fact, not identity. Verified facts only: Google gTech Ads (Apr 2026–present; Product Deployment Engineer, Search+) · Meta (2022–2024, Technical Solutions Consultant — SKAN 4.0, Conversions API, signal-loss attribution) · AWS / SG Code Campus (earlier).
 
-**Frozen surfaces — do not extend, re-link, or audit**: the 2025–2026 curriculum (`/ai-journey`, `/context-engineering`, `/agents`, `/vibe-coding`, `/teaching`) plus `/hackathons` and `/contact`. Live by URL, absent from nav and sitemap, no `noindex`. Writing them was how Dave learned; they are finished, not neglected. A future migration to agenticbrewery.ai is a separate project — open questions in the reset doc.
+**Frozen surfaces — do not extend, re-link, or audit**: `/ai-journey`, `/teaching`, `/hackathons`, `/contact`. Live by URL, absent from nav and sitemap, no `noindex`. Writing them was how Dave learned; they are finished, not neglected.
+
+**Gone from this site (2026-08-15)**: `/agents` and `/context-engineering` were deleted and now 308 one-to-one to agenticbrewery.ai. Do not re-add. `/ai-journey` is queued to follow.
+
+**`/vibe-coding` is LIVE, not frozen (unfrozen 2026-08-15)** — the one course surface that stays here and keeps growing, because it is the answer people actually ask for ("how do I start?"). Extend it freely; it is in the sitemap. Its three routes are the hub, `/fundamentals`, and `/handout`.
+
+Surface split: **daveliew.com holds nothing finished, agenticbrewery.ai holds nothing living.** Route-by-route inventory and dispositions: `ai_docs/2026-08-two-surfaces-manifest.md`.
 
 **Decoupled surfaces**: github.com/daveliew stays the professional/hiring surface (data from the `daveliew/daveliew` repo). Don't force-sync it with the site; it dilutes both.
 
