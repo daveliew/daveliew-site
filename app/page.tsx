@@ -1,16 +1,22 @@
 import Link from "next/link";
 import { getLogEntries } from "@/utils/log";
 import { TypeBadge } from "@/components/log/TypeBadge";
+import { layoutSky, type SkyManifest } from "@/utils/sky";
+import { SkyChart } from "@/components/sky/SkyChart";
+import skyManifest from "@/data/sky.json";
 
 const RECENT_COUNT = 10;
 
 export default async function HomePage() {
   const entries = await getLogEntries();
   const recent = entries.slice(0, RECENT_COUNT);
+  const layout = layoutSky(skyManifest as SkyManifest, entries);
+  const count = (state: string) =>
+    layout.stars.filter((s) => s.state === state).length;
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-12 md:py-16">
-      <header className="mb-12">
+    <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
+      <header className="mb-8 max-w-2xl">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           A field log of the AI era
         </h1>
@@ -22,10 +28,17 @@ export default async function HomePage() {
         </p>
       </header>
 
+      <SkyChart layout={layout} />
+
+      <p className="mt-4 mb-12 text-sm text-gray-500 font-mono">
+        {count("lit")} lit · {count("shelved")} shelved · {count("unwritten")}{" "}
+        unwritten — the empty sky is the to-do list
+      </p>
+
       {recent.length === 0 ? (
         <p className="text-gray-400">No entries yet.</p>
       ) : (
-        <ul className="space-y-8">
+        <ul className="space-y-8 max-w-2xl">
           {recent.map((entry) => (
             <li key={entry.slug}>
               <article>
@@ -65,15 +78,6 @@ export default async function HomePage() {
           </Link>
         </p>
       )}
-
-      <p className="mt-10">
-        <Link
-          href="/sky"
-          className="text-[var(--text-muted)] hover:text-[var(--accent-primary)] transition-colors"
-        >
-          ✦ The sky — the whole territory, lit and unlit
-        </Link>
-      </p>
     </div>
   );
 }
