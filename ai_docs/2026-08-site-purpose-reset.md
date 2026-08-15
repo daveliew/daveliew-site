@@ -72,6 +72,31 @@ it. There is no unfinished obligation buried in `/ai-journey`, `/agents`,
    the same daveliew.com outcome at a fraction of the cost, and keeps the
    migration available later.
 
+### Status as of 2026-08-15 — Q3 and Q4 have been answered by action
+
+Q3 and Q4 above are stale. agenticbrewery.ai is no longer a thin venture site
+shipping a default README: it has a `/learn` hub and **two of the four pillars are
+already migrated** — `/context-engineering` (5 pages, the pilot) and `/agents`
+(9 pages), per AB commits `a5107b1` and `2c28bbc`. `/learn` renders **AI Journey**
+and **Vibe Coding** as declared-but-pending.
+
+So the answer to Q4 was **both**: freeze on daveliew.com _and_ migrate to AB, running
+in that order.
+
+The two pillars are at **different stages**, verified against production 2026-08-15:
+`/agents/*` is **done** — `next.config.mjs:164` 308s it to AB, leaving 10 unreachable
+page files here to delete. `/context-engineering/*` is **half-done** — copied to AB but
+still returning 200 here, with both domains self-canonicalising the same 6 pages. It
+needs the twin redirect rule.
+
+Q1 (employer disclosure) and Q2 (résumé home) remain genuinely open, and Q1 gets more
+pressing if `/contact` moves to AB.
+
+Full route-by-route inventory of both surfaces, with dispositions and the order of
+work, is in `ai_docs/2026-08-two-surfaces-manifest.md`. The design for what AB's
+`/learn` becomes is in AB's repo at
+`ai_docs/strategy/2026-08-learn-path-spine.md`.
+
 ## What this supersedes
 
 - **`CLAUDE.md` Positioning & Voice** — currently states the audience is "peers
