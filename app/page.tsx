@@ -3,6 +3,7 @@ import { getLogEntries } from "@/utils/log";
 import { TypeBadge } from "@/components/log/TypeBadge";
 import { layoutSky, type SkyManifest } from "@/utils/sky";
 import { SkyChart } from "@/components/sky/SkyChart";
+import { SkyLegend } from "@/components/sky/SkyLegend";
 import skyManifest from "@/data/sky.json";
 
 const RECENT_COUNT = 10;
@@ -11,8 +12,6 @@ export default async function HomePage() {
   const entries = await getLogEntries();
   const recent = entries.slice(0, RECENT_COUNT);
   const layout = layoutSky(skyManifest as SkyManifest, entries);
-  const count = (state: string) =>
-    layout.stars.filter((s) => s.state === state).length;
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
@@ -30,10 +29,11 @@ export default async function HomePage() {
 
       <SkyChart layout={layout} />
 
-      <p className="mt-4 mb-12 text-sm text-gray-500 font-mono">
-        {count("lit")} lit · {count("shelved")} shelved · {count("unwritten")}{" "}
-        unwritten — the empty sky is the to-do list
-      </p>
+      <SkyLegend
+        layout={layout}
+        className="mt-4 mb-12"
+        suffix="the empty sky is the to-do list"
+      />
 
       {recent.length === 0 ? (
         <p className="text-gray-400">No entries yet.</p>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getLogEntries } from "@/utils/log";
 import { layoutSky, type SkyManifest } from "@/utils/sky";
 import { SkyChart } from "@/components/sky/SkyChart";
+import { SkyLegend } from "@/components/sky/SkyLegend";
 import skyManifest from "@/data/sky.json";
 
 export const metadata: Metadata = {
@@ -14,8 +15,6 @@ export const metadata: Metadata = {
 export default async function SkyPage() {
   const entries = await getLogEntries();
   const layout = layoutSky(skyManifest as SkyManifest, entries);
-  const count = (state: string) =>
-    layout.stars.filter((s) => s.state === state).length;
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
@@ -31,10 +30,7 @@ export default async function SkyPage() {
 
       <SkyChart layout={layout} />
 
-      <p className="mt-4 text-sm text-gray-500 font-mono">
-        {count("lit")} lit · {count("shelved")} shelved · {count("unwritten")}{" "}
-        unwritten
-      </p>
+      <SkyLegend layout={layout} className="mt-4" />
 
       {/* The chart is canvas; every navigable star is also a real link. */}
       <nav aria-label="All stars" className="sr-only">

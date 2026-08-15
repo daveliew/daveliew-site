@@ -46,12 +46,22 @@ export interface SkyEdge {
   to: string;
 }
 
+export interface SkyBand {
+  era: string;
+  /** Unit y of the band's upper edge (zenith side). */
+  top: number;
+  /** Unit y of the band's lower edge (horizon side). */
+  bottom: number;
+  center: number;
+  height: number;
+}
+
 export interface SkyLayout {
   eras: string[];
   stars: PositionedStar[];
   edges: SkyEdge[];
-  /** Unit y of each era band's center, keyed by era. */
-  bandCenters: Record<string, number>;
+  /** Era bands from horizon (oldest) to zenith, heights weighted by star count. */
+  bands: SkyBand[];
 }
 
 export const HORIZON_Y = 0.9;
@@ -70,12 +80,27 @@ export function layoutSky(
   entries: LogEntry[],
 ): SkyLayout {
   const bySlug = new Map(entries.map((e) => [e.slug, e]));
-  const bandHeight = (HORIZON_Y - SKY_TOP) / manifest.eras.length;
   // Oldest era sits just above the horizon; the current era near the zenith.
-  const bandCenters: Record<string, number> = {};
+  // Band heights follow sqrt(star count) so a crowded era gets room without
+  // flattening the sparse ones to slivers.
+  const weights = manifest.eras.map((era) =>
+    Math.sqrt(Math.max(1, manifest.stars.filter((s) => s.era === era).length)),
+  );
+  const totalWeight = weights.reduce((a, b) => a + b, 0);
+  const bands: SkyBand[] = [];
+  let bottom = HORIZON_Y;
   manifest.eras.forEach((era, i) => {
-    bandCenters[era] = HORIZON_Y - (i + 0.5) * bandHeight;
+    const height = ((HORIZON_Y - SKY_TOP) * weights[i]) / totalWeight;
+    bands.push({
+      era,
+      top: bottom - height,
+      bottom,
+      center: bottom - height / 2,
+      height,
+    });
+    bottom -= height;
   });
+  const bandByEra = new Map(bands.map((b) => [b.era, b]));
 
   const stars: PositionedStar[] = [];
   for (const era of manifest.eras) {
@@ -89,6 +114,7 @@ export function layoutSky(
       if (da !== db) return da ? -1 : 1;
       return a.id.localeCompare(b.id);
     });
+    const eraBand = bandByEra.get(era)!;
     band.forEach((s, idx) => {
       const entry = s.entry ? bySlug.get(s.entry) : undefined;
       const state: StarState = entry ? "lit" : s.url ? "shelved" : "unwritten";
@@ -102,7 +128,7 @@ export function layoutSky(
         date: entry?.date,
         note: s.note ?? entry?.summary,
         x: X_MARGIN + ((idx + 0.5) / band.length) * (1 - 2 * X_MARGIN),
-        y: bandCenters[era] + (unitHash(s.id) - 0.5) * bandHeight * 0.6,
+        y: eraBand.center + (unitHash(s.id) - 0.5) * eraBand.height * 0.6,
       });
     });
   }
@@ -125,5 +151,5 @@ export function layoutSky(
     }
   }
 
-  return { eras: manifest.eras, stars, edges, bandCenters };
+  return { eras: manifest.eras, stars, edges, bands };
 }
