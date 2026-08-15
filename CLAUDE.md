@@ -6,9 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Quick Reference
 
-**Stack**: Next.js 16.2 + React 19 + TypeScript + Tailwind + Framer Motion
 **Purpose**: a field log plus a thin About — decision record: `ai_docs/2026-08-site-purpose-reset.md`
-**Path Alias**: `@/*` → root directory
 **Critical**: Always run `npm run pre-deploy` before committing
 **Backlog**: top-3 in `ai_docs/TODO.md` § Now / Next — auto-surfaced into every fresh session by the global SessionStart hook (priorities SoT: memory `project_daveliew_site.md`)
 
@@ -53,7 +51,7 @@ Cadence, memory triggers, and the recurring-task table live in the project skill
 
 ## Architecture Essentials
 
-**Tech Stack**: Next.js 16.2 with React 19, leveraging App Router, Turbopack dev builds, and React 19's improved hydration. Bundled docs at `node_modules/next/dist/docs/` — see `AGENTS.md`.
+Bundled Next.js docs at `node_modules/next/dist/docs/` — see `AGENTS.md`.
 
 **Fitzgerald Principle (legacy, vestigial)**: The site originally embodied the Fitzgerald Principle (productive tension of opposing ideas — simple surfaces with rich depth). Automated scoring still exists at `npm run philosophy-check` but the site no longer leads with this framing as primary. Treat as a design heuristic for new components, not a positioning anchor.
 
