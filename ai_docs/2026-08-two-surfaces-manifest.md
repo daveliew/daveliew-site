@@ -60,8 +60,9 @@ domains currently claim the same six pages.
    keeps growing, because it is what people actually ask for — the trigger was a friend
    asking "got any good vibe coding resources? how did you learn?" Its `/handout`
    (printable quick start, prompt templates) and `/fundamentals` (interactive events /
-   state / conditionals demo) are the literal answer. AB's `/learn` still lists Vibe
-   Coding as "Migrating" — **that is now wrong and needs fixing in the AB repo.**
+   state / conditionals demo) are the literal answer. ✅ AB's `/learn` no longer
+   advertises it: AB commit `64c143c` removed the greyed "Migrating" placeholder cards
+   entirely, so `/learn` now lists only pillars that have actually landed.
 2. **`/hackathons`, `/teaching`, `/contact` are not commercial.** Grepped: `/contact` and
    `/hackathons` contain **zero** booking/pricing/hire language. They are journey record,
    not a sales funnel, and they stay. The only commercial residue found anywhere is
@@ -126,11 +127,13 @@ the 308 carry them; absolute AB URLs fail the census.
 **Remaining:**
 
 5. **Migrate `/ai-journey` (14 routes) to AB**, then redirect and delete. The last large
-   chunk, and real content work rather than config. `SeoGeoAuditContent.tsx` can be
-   deleted only once this lands.
-6. **Fix AB's `/learn`**: it still lists Vibe Coding as "Migrating". Vibe Coding is
-   staying on daveliew.com, so that pillar card should say so and link out, and the
-   Context Engineering / Agents cards should reflect that both pillars have fully arrived.
+   chunk, and real content work rather than config — roughly 5,000 lines of TSX across 32
+   files plus a 1,279-line `data/ai-journey.json`, with two single files over 900 lines.
+   It needs porting into AB's dark theme and Navbar/Footer conventions, so it is its own
+   session. `SeoGeoAuditContent.tsx` can be deleted only once this lands.
+6. ~~Fix AB's `/learn`~~ — ✅ resolved upstream by AB commit `64c143c`, which deleted the
+   pending placeholder cards rather than correcting them. Add an AI Journey card when it
+   actually lands, not before.
 7. **Optional cleanup**: strip the "Available for corporate training" commercial language
    from `/teaching`'s metadata — it conflicts with the site's no-commercial-CTA rule.
 
