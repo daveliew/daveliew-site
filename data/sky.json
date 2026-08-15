@@ -1,5 +1,5 @@
 {
-  "$comment": "The declared sky: topics in Dave's head awaiting transfer into log entries. Stars with an `entry` slug are lit (written); stars without are the to-do list. Eras are the four-decade spine. Validated + counted by scripts/sky-census.js at pre-deploy. This file is public in the repo — private topics stay out.",
+  "$comment": "The declared sky: everything this log claims as territory. Stars with `entry` are lit (written log entries); stars with `url` are shelved work, frozen but live at their URLs (re-linking them here was Dave's explicit 2026-08-15 reversal of the reset's no-re-link clause); stars with neither are declared-but-unwritten — the to-do list. Eras are the four-decade spine. Validated + counted by scripts/sky-census.js at pre-deploy; rendered at /sky. This file is public in the repo — private topics stay out.",
   "eras": ["pre-internet", "internet", "mobile", "cloud", "ai"],
   "stars": [
     {
@@ -95,6 +95,54 @@
       "era": "ai",
       "lens": "kids",
       "note": "The recurring lens as a standing subject, beyond one transcript."
+    },
+    {
+      "id": "ai-journey",
+      "title": "AI Journey",
+      "era": "ai",
+      "lens": "craft",
+      "url": "/ai-journey",
+      "note": "The 2025–2026 curriculum hub — writing it was how I learned. Frozen, still live."
+    },
+    {
+      "id": "context-engineering",
+      "title": "Context Engineering",
+      "era": "ai",
+      "lens": "craft",
+      "url": "/context-engineering",
+      "note": "Frozen course surface, still live at its URL."
+    },
+    {
+      "id": "vibe-coding",
+      "title": "Vibe Coding",
+      "era": "ai",
+      "lens": "craft",
+      "url": "/vibe-coding",
+      "note": "Frozen course surface, still live at its URL."
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching",
+      "era": "ai",
+      "lens": "craft",
+      "url": "/teaching",
+      "note": "Frozen teaching surface, still live at its URL."
+    },
+    {
+      "id": "hackathons",
+      "title": "Hackathons",
+      "era": "ai",
+      "lens": "craft",
+      "url": "/hackathons",
+      "note": "The hackathon record. Frozen, still live."
+    },
+    {
+      "id": "agents",
+      "title": "Agents",
+      "era": "ai",
+      "lens": "craft",
+      "url": "/agents",
+      "note": "Left the site 2026-08 — 308 one-to-one to agenticbrewery.ai."
     }
   ]
 }

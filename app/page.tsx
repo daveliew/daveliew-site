@@ -65,6 +65,15 @@ export default async function HomePage() {
           </Link>
         </p>
       )}
+
+      <p className="mt-10">
+        <Link
+          href="/sky"
+          className="text-[var(--text-muted)] hover:text-[var(--accent-primary)] transition-colors"
+        >
+          ✦ The sky — the whole territory, lit and unlit
+        </Link>
+      </p>
     </div>
   );
 }

@@ -22,7 +22,9 @@ const SCAN_PATHS = [
   "app/layout.tsx",
   "app/about",
   "app/log",
+  "app/sky",
   "components/log",
+  "components/sky",
   "components/layout",
   "components/common",
 ];
