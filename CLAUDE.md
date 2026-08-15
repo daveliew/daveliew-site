@@ -35,7 +35,7 @@ Gotcha: `prebuild` runs type-check + lint on Vercel but NOT locally (`~/.npmrc i
 
 ## SEO Process
 
-Cadence, memory triggers, and the recurring-task table live in the project skill `.claude/skills/seo-process/SKILL.md` — invoke it for deploy checks, the monthly Search Console review, and quarterly audits. `npm run seo-check` runs inside `pre-deploy`.
+Cadence, memory triggers, and the recurring-task table live in the project skill `.claude/skills/seo-process/SKILL.md` — invoke it for deploy checks and the quarterly audit (which carries a 2-min GSC smoke check; the monthly review was deliberately dropped 2026-08-15, no metric watching). `npm run seo-check` runs inside `pre-deploy`.
 
 ## Project Structure
 
