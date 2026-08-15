@@ -30,7 +30,10 @@ a finding. Baseline 2026-08-10: 46/46 static pages, 3 log slugs.
 
 ## Drive
 
-Live surfaces (expect 200): `/ /log /log/<slug> /about`
+Live surfaces (expect 200): `/ /log /log/<slug> /about /sky`
+
+`/sky` extras: HTML carries the full star layout payload + counts line +
+sr-only nav of star links; canvas hit-test/click needs the browser layer.
 
 Frozen curriculum spot-checks (expect 200, content unchanged by design):
 `/ai-journey /agents /context-engineering /vibe-coding /teaching /contact`
@@ -78,5 +81,4 @@ presented as unreadable text).
 
 ## Current open findings (delete a line when fixed)
 
-- "evergreen pages" line in `/log/what-this-log-is` predates the log-only
-  reality.
+- (none)
