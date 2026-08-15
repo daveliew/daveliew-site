@@ -1,0 +1,100 @@
+{
+  "$comment": "The declared sky: topics in Dave's head awaiting transfer into log entries. Stars with an `entry` slug are lit (written); stars without are the to-do list. Eras are the four-decade spine. Validated + counted by scripts/sky-census.js at pre-deploy. This file is public in the repo — private topics stay out.",
+  "eras": ["pre-internet", "internet", "mobile", "cloud", "ai"],
+  "stars": [
+    {
+      "id": "the-staple-test",
+      "title": "The staple test",
+      "era": "pre-internet",
+      "lens": "craft",
+      "note": "Cars, silly experiments, cause and effect by hand. Measured my reaction time against a stapler — too slow, hospital, staple removed, curiosity kept. Hands-on doer, literally."
+    },
+    {
+      "id": "mario-in-an-analog-house",
+      "title": "Mario in an analog house",
+      "era": "pre-internet",
+      "lens": "human-tech",
+      "note": "An old Nintendo as the one screen worth tinkering with, in a world that was otherwise all analog."
+    },
+    {
+      "id": "warcraft-on-dial-up",
+      "title": "Disconnected: Warcraft on dial-up",
+      "era": "internet",
+      "lens": "human-tech",
+      "note": "1995. Parents call the house mid-game and the line drops. The internet as a thing you could lose to a phone call."
+    },
+    {
+      "id": "low-ping-advantage",
+      "title": "Low ping on Singtel Magix",
+      "era": "internet",
+      "lens": "human-tech",
+      "note": "Secondary school, Counter-Strike, an unfair advantage measured in milliseconds. The uncommoditized, heterogeneous, wild-west internet — the good old days."
+    },
+    {
+      "id": "first-html",
+      "title": "First HTML, and the relics",
+      "era": "internet",
+      "lens": "craft",
+      "note": "Clunky websites, writing HTML thinking 'what the heck is this'. Blogs were the rage — Blogspot; relics now: Yahoo, Altavista, Netscape. What lasted built a moat."
+    },
+    {
+      "id": "learning-to-search",
+      "title": "Learning to search, learning to prompt",
+      "era": "internet",
+      "lens": "human-tech",
+      "note": "Discovering Google Earth and Maps; realising most people never learned how to wield information. The same skill each era: how do you prompt, what is context, do you know LLMs are probabilistic? Knowing how an era begins — jump in with two feet, two hands, and try things."
+    },
+    {
+      "id": "child-led-learning",
+      "title": "Child-led learning, AI at the boundary",
+      "era": "ai",
+      "lens": "kids",
+      "entry": "how-old-is-egypt",
+      "note": "Where the AI is allowed in, and where it isn't."
+    },
+    {
+      "id": "the-reset",
+      "title": "Counting the site, freezing the course",
+      "era": "ai",
+      "lens": "meta",
+      "entry": "thirty-three-of-forty",
+      "note": "Structure displacing writing, caught by an audit."
+    },
+    {
+      "id": "spatial-nav",
+      "title": "Maps before territory",
+      "era": "ai",
+      "lens": "meta",
+      "entry": "the-empty-sky",
+      "note": "Why the star chart is parked; spatial need not mean 3D."
+    },
+    {
+      "id": "adoption-curve",
+      "title": "The adoption curve, as essays",
+      "era": "ai",
+      "lens": "craft",
+      "note": "Frozen with /agents; the argument deserves log essays."
+    },
+    {
+      "id": "signal-loss",
+      "title": "Signal loss: the mobile measurement years",
+      "era": "mobile",
+      "lens": "career",
+      "note": "SKAN 4.0, Conversions API, attribution losing its signal."
+    },
+    {
+      "id": "teaching-years",
+      "title": "The teaching years",
+      "era": "cloud",
+      "lens": "career",
+      "note": "SG Code Campus / AWS era — needs transfer."
+    },
+    {
+      "id": "kids-through-shifts",
+      "title": "Raising kids through the shifts",
+      "era": "ai",
+      "lens": "kids",
+      "note": "The recurring lens as a standing subject, beyond one transcript."
+    }
+  ]
+}

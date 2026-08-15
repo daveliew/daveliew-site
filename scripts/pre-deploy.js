@@ -39,6 +39,11 @@ const CHECKS = {
     name: "Internal Link Resolution",
     critical: true,
   },
+  skyCensus: {
+    command: "npm run sky-census",
+    name: "Sky Census (declared vs written)",
+    critical: true,
+  },
   build: {
     command: "npm run build",
     name: "Production Build",

@@ -17,6 +17,7 @@
     "seo-check": "node scripts/seo-check.js",
     "check-log-meta": "node scripts/check-log-meta.js",
     "check-links": "node scripts/check-internal-links.js",
+    "sky-census": "node scripts/sky-census.js",
     "pre-deploy": "node scripts/pre-deploy.js",
     "deploy-check": "npm run pre-deploy",
     "quick-check": "node scripts/quick-check.js"
