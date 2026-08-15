@@ -167,6 +167,15 @@ const nextConfig = {
         permanent: true,
       },
 
+      // Context-engineering pillar migrated to agenticbrewery.ai (paths mirror
+      // one-to-one). Added when the local pages were deleted — without this the
+      // six URLs would 404 instead of landing on their AB copies.
+      {
+        source: "/context-engineering/:path*",
+        destination: "https://www.agenticbrewery.ai/context-engineering/:path*",
+        permanent: true,
+      },
+
       // 4-pillar refactor redirects
       {
         source: "/laboratory",
